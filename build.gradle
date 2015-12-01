@@ -4,6 +4,11 @@ buildscript {
     repositories {
         jcenter()
     }
+//    ext {
+//              projectBuildToolsVersion = BUILD_TOOLS_VERSION
+//              projectMinSdkVersion = Integer.parseInt(MIN_SDK_VERSION)
+//              projectCompileSdkVersion = Integer.parseInt(COMPILE_SDK_VERSION)
+//           }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.0.0-alpha1'
 
