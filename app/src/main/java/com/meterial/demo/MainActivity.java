@@ -14,21 +14,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.meterial.demo.activity.BannerActivity;
 import com.meterial.demo.activity.CoordinatorAndFloating;
+import com.meterial.demo.activity.EndlessRecycle;
 import com.meterial.demo.activity.ImmersionStatusBar;
+import com.meterial.demo.activity.RecyclerViewUsed;
 import com.meterial.demo.adapter.MySimpleAdapter;
 import com.meterial.demo.holder.OnItemClick;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnItemClick{
+public class MainActivity extends AppCompatActivity implements OnItemClick {
 
     private Toolbar mToolbar;
     private DrawerLayout mDlayout;
     private ActionBarDrawerToggle mDrawerToggle;
     private RecyclerView mRecycler;
     private MySimpleAdapter mAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick{
 
     }
 
-    private void initView(){
+    private void initView() {
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         if (navigationView != null) {
             setupDrawerContent(navigationView);
@@ -48,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick{
 
         mToolbar.setTitle("MyMaterial");
         setSupportActionBar(mToolbar);
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDlayout, mToolbar,  R.string.drawer_open,
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDlayout, mToolbar, R.string.drawer_open,
                 R.string.drawer_close);
         mDrawerToggle.syncState();
         mDlayout.setDrawerListener(mDrawerToggle);
@@ -61,12 +65,16 @@ public class MainActivity extends AppCompatActivity implements OnItemClick{
         List<String> list = new ArrayList<String>();
         list.add("沉浸式状态栏");
         list.add("CoordinatorAndFloating");
-        for(int i=0;i<=10;i++){
-            list.add(i+"");
+        list.add("banner&TextInputLayout");
+        list.add("recylerView表格");
+        list.add("recylerView自动加载");
+        for (int i = 0; i <= 10; i++) {
+            list.add(i + "");
         }
-        mAdapter = new MySimpleAdapter(this,list,this);
+        mAdapter = new MySimpleAdapter(this, list, this);
         mRecycler.setAdapter(mAdapter);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.sample_actions, menu);
@@ -87,8 +95,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClick{
 
     @Override
     public void onItemClick(long id) {
-        Toast.makeText(this,""+id,Toast.LENGTH_SHORT).show();
-        switch ((int)id){
+        Toast.makeText(this, "" + id, Toast.LENGTH_SHORT).show();
+        switch ((int) id) {
             case 0:
                 Intent intent = new Intent(this, ImmersionStatusBar.class);
                 startActivity(intent);
@@ -96,6 +104,18 @@ public class MainActivity extends AppCompatActivity implements OnItemClick{
             case 1:
                 Intent intent1 = new Intent(this, CoordinatorAndFloating.class);
                 startActivity(intent1);
+                break;
+            case 2:
+                Intent intent2 = new Intent(this, BannerActivity.class);
+                startActivity(intent2);
+                break;
+            case 3:
+                Intent intent3 = new Intent(this,RecyclerViewUsed.class);
+                startActivity(intent3);
+                break;
+            case 4:
+                Intent intent4 = new Intent(this,EndlessRecycle.class);
+                startActivity(intent4);
                 break;
             default:
                 break;

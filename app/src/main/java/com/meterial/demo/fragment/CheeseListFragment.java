@@ -17,11 +17,12 @@
 package com.meterial.demo.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,24 +35,49 @@ import com.meterial.demo.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CheeseListFragment extends Fragment {
-
+public class CheeseListFragment extends LazyBaseFragment {
+    // 标志位，标志已经初始化完成。
+    private boolean isPrepared;
+    private RecyclerView rv;
+    /** 是否已被加载过一次，第二次就不再去请求数据了 */
+    private boolean mHasLoadedOnce;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        RecyclerView rv = (RecyclerView) inflater.inflate(
-                R.layout.fragment_cheese_list, container, false);
-        setupRecyclerView(rv);
+        Log.e("====","=======oncreadonc");
+        if(rv == null){
+            rv = (RecyclerView) inflater.inflate( R.layout.fragment_cheese_list, container, false);
+            isPrepared = true;
+            lazyLoad();
+            setupRecyclerView(rv);
+        }
         return rv;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        //viewpager 默认保留三个  其他倒会被 销毁 此处倒adapter  deatch
+        Log.e("====","=======desdesdesdes");
+    }
+
+
     private void setupRecyclerView(RecyclerView recyclerView) {
+        mHasLoadedOnce = true;
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
         List<String> list = new ArrayList<String>();
         for(int i=0;i<=10;i++){
             list.add(i+"");
         }
         recyclerView.setAdapter(new SimpleStringRecyclerViewAdapter(getActivity(),list));
+    }
+
+    @Override
+    protected void lazyLoad() {
+        if(!isPrepared || !isVisiable || mHasLoadedOnce){
+            return;
+        }
+        //setupRecyclerView(rv);
     }
 
     public static class SimpleStringRecyclerViewAdapter
@@ -102,16 +128,15 @@ public class CheeseListFragment extends Fragment {
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mBoundString = mValues.get(position);
-            holder.mTextView.setText(mValues.get(position));
+            holder.mTextView.setText(""+System.currentTimeMillis());
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Context context = v.getContext();
-//                    Intent intent = new Intent(context, CheeseDetailActivity.class);
-//                    intent.putExtra(CheeseDetailActivity.EXTRA_NAME, holder.mBoundString);
-//
-//                    context.startActivity(intent);
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, CheeseDetailActivity.class);
+
+                    context.startActivity(intent);
                 }
             });
 
