@@ -24,8 +24,24 @@
         <activity android:name=".activity.BannerActivity"
                   android:theme="@style/BlankTheme"/>
         <activity android:name=".activity.RecyclerViewUsed"/>
-        <activity android:name=".activity.EndlessRecycle"
+        <activity android:name=".activity.EndlessRecycle"/>
+
+
+        <activity android:name=".activity.TransitionMainActivity"
             />
+
+        <activity android:name=".activity.TransitonActivity1"
+                  />
+        <activity android:name=".activity.TransitionActivity2"
+                  />
+
+
+
+        <activity android:name=".activity.CircularRevealActivity"/>
+        <activity android:name=".activity.BottomSheetActivity"/>
+        <activity android:name=".activity.NestedScrollViewActivity"/>
+        <activity android:name=".activity.RecyclerViewBehaviorActivity"/>
+        <activity android:name=".activity.BeautifulBottomSheetActivity"/>
     </application>
 
 </manifest>

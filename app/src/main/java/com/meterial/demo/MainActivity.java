@@ -15,10 +15,13 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.meterial.demo.activity.BannerActivity;
+import com.meterial.demo.activity.BottomSheetActivity;
+import com.meterial.demo.activity.CircularRevealActivity;
 import com.meterial.demo.activity.CoordinatorAndFloating;
 import com.meterial.demo.activity.EndlessRecycle;
 import com.meterial.demo.activity.ImmersionStatusBar;
 import com.meterial.demo.activity.RecyclerViewUsed;
+import com.meterial.demo.activity.TransitionMainActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
 import com.meterial.demo.holder.OnItemClick;
 
@@ -68,6 +71,9 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("banner&TextInputLayout");
         list.add("recylerView表格");
         list.add("recylerView自动加载");
+        list.add("共享动画");
+        list.add("圆形显示隐藏");
+        list.add("BottomSheet");
         for (int i = 0; i <= 10; i++) {
             list.add(i + "");
         }
@@ -116,6 +122,18 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 4:
                 Intent intent4 = new Intent(this,EndlessRecycle.class);
                 startActivity(intent4);
+                break;
+            case 5:
+                Intent intent5 = new Intent(this, TransitionMainActivity.class);
+                startActivity(intent5);
+                break;
+            case 6:
+                Intent intent6 = new Intent(this,CircularRevealActivity.class);
+                startActivity(intent6);
+                break;
+            case 7:
+                Intent intent7 = new Intent(this, BottomSheetActivity.class);
+                startActivity(intent7);
                 break;
             default:
                 break;

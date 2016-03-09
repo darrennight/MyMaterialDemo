@@ -50,6 +50,8 @@ public class BannerAdapter extends RecyclingPagerAdapter {
             holder = ((ViewHolder) convertView.getTag());
 
         }
+//        mList.get(getPosition(position));
+
         holder.imageView.setImageResource(R.mipmap.ic_launcher);
         return convertView;
     }

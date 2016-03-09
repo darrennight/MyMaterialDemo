@@ -27,6 +27,7 @@ public class RecyclerViewUsed extends AppCompatActivity implements SwipeRefreshL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_use_recycler);
         initView();
+
     }
 
     private void setRefresh(){
