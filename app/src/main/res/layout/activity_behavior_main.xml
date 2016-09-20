@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_bh_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="behavior显示隐藏底部导航"/>
+
+    <Button
+        android:id="@+id/btn_bh_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="behavior滑动删除"/>
+
+    <Button
+        android:id="@+id/btn_bh_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="behaviordemo"/>
+
+</LinearLayout>

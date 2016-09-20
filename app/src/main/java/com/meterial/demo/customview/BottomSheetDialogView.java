@@ -1,9 +1,12 @@
 package com.meterial.demo.customview;
 
 import android.content.Context;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,6 +68,35 @@ public class BottomSheetDialogView {
         recyclerView.setAdapter(new SimpleAdapter());
 
         dialog.setContentView(view);
+
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+        View parent = (View) view.getParent();
+        BottomSheetBehavior behavior = BottomSheetBehavior.from(parent);
+        view.measure(0, 0);
+        behavior.setPeekHeight(view.getMeasuredHeight());
+        CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) parent.getLayoutParams();
+        params.gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
+        parent.setLayoutParams(params);
+//        这段代码 设置对话框完全显示 内容多 不适合使用  默认即可
+//＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//        behavior.setState();
+
+
+
+        /*bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+            @Override
+            public void onStateChanged(@NonNull View bottomSheet, int newState) {
+                if (newState == BottomSheetBehavior.STATE_HIDDEN) {
+                    mBottomSheetDialog.dismiss();
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                }
+            }
+
+            @Override
+            public void onSlide(@NonNull View bottomSheet, float slideOffset) {
+            }
+        });*/
+
         dialog.show();
     }
 
@@ -110,7 +142,7 @@ public class BottomSheetDialogView {
 
         @Override
         public int getItemCount() {
-            return sStringList.length;
+            return 3;
         }
     }
 }

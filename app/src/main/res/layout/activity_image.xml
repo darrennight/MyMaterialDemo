@@ -12,11 +12,10 @@
     <TextView  
         android:fitsSystemWindows="true"  
         android:clipToPadding="true"  
-  
-        android:layout_width="match_parent"  
+        android:layout_width="match_parent"
         android:layout_height="100dp"  
         android:background="#009959"  
-        android:text="你好，请问你有男朋友吗"/>  
+        android:text="你好，沉浸状态"/>
   
   
     <Button  

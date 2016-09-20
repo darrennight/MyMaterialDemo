@@ -7,4 +7,38 @@
     <color name="color_bread_blue">#FF4ABDCC</color>
 
     <color name="colorDivider">#60000000</color>
+
+
+
+    <!-- Background color for light CardView. -->
+    <color name="cardview_light_background">#FFFAFAFA</color>
+    <!-- Background color for dark CardView. -->
+    <color name="cardview_dark_background">#FF202020</color>
+    <!-- Shadow color for the first pixels around CardView. -->
+    <color name="cardview_shadow_start_color">#3F51B5</color>
+    <!-- Shadow color for the furthest pixels around CardView. -->
+    <color name="cardview_shadow_end_color">#3F51B5</color>
+
+    <color name="rainbow_red">@android:color/holo_red_light</color>
+    <color name="rainbow_green">@android:color/holo_green_light</color>
+    <color name="rainbow_blue">@android:color/holo_blue_light</color>
+    <color name="rainbow_purple">@android:color/holo_purple</color>
+    <color name="rainbow_yellow">@android:color/holo_orange_light</color>
+
+
+    <color name="sa_green">#1E9618</color>
+    <color name="sa_green_transparent">#201E9618</color>
+    <color name="sa_accent">#4EE147</color>
+
+
+    <color name="themeColor">#4ABDCC</color>
+    <color name="chh_tabtext_selected">#424242</color>
+    <color name="chh_bg">#fbfbfb</color>
+
+
+
+    <color name="chh_split_line_trans">#99eeeeee</color>
+    <color name="white">#FFFFFF</color>
+
+
 </resources>

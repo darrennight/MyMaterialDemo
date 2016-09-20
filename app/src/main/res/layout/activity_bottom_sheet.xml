@@ -47,4 +47,25 @@
         android:background="@android:color/black"
         android:text="BottomSheetbeaut"/>
 
+
+    <TextView
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:text="BottomDialog"/>
+
+
+    <TextView
+        android:id="@+id/btn_pop_window"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:text="BottomPopWindow"/>
 </LinearLayout>

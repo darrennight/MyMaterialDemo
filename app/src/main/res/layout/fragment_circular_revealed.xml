@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                tools:context="com.meterial.demo.fragment.CircularRevealedFragment">
+
+    <ImageView
+        android:id="@+id/image_header"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="haha"
+        android:scaleType="centerCrop"
+        android:transitionName="kittenImage"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_header"
+        android:background="@color/color_bread_blue"
+        android:lineSpacingExtra="2dp"
+        android:textSize="18sp"
+        android:text="123asdghhpehgioa"/>
+
+</RelativeLayout>

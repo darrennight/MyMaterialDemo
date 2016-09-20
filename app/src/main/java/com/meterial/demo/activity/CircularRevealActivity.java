@@ -4,15 +4,23 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.annotation.TargetApi;
+import android.app.Fragment;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewAnimationUtils;
+import android.view.animation.Interpolator;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.meterial.demo.R;
+import com.meterial.demo.fragment.CircularRevealedFragment;
 
 /**
  * Created by zenghao on 16/2/18.
@@ -22,11 +30,17 @@ public class CircularRevealActivity extends AppCompatActivity {
     private ImageView launcher = null;
     private Button small;
     private Button big;
+    private FloatingActionButton mFab;
+    private FrameLayout mFragmentContainer;
+    private Fragment mFragment;
+    private Animator mCircularReveal;
+    private Interpolator mInterpolator;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circular);
+        mInterpolator = new FastOutSlowInInterpolator();
         launcher = ((ImageView) findViewById(R.id.iv_launcher));
         small = ((Button) findViewById(R.id.btn_small));
         big = ((Button) findViewById(R.id.btn_big));
@@ -43,6 +57,72 @@ public class CircularRevealActivity extends AppCompatActivity {
             public void onClick(View v) {
                 revealImageCircular();
 //                animatorBit();
+
+            }
+        });
+        mFragmentContainer = ((FrameLayout) findViewById(R.id.frame_container));
+        mFab = ((FloatingActionButton) findViewById(R.id.fab_reveal));
+        mFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mFragment = new CircularRevealedFragment();
+                getFragmentManager().beginTransaction()
+                        .replace(mFragmentContainer.getId(), mFragment).commit();
+                revealFragmentContainer(v, mFragmentContainer);
+            }
+        });
+    }
+
+
+    private void revealFragmentContainer(final View clickedView, final View fragmentContainer) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            revealFragmentContainerLollipop(clickedView, fragmentContainer);
+        } else {
+            fragmentContainer.setVisibility(View.VISIBLE);
+            clickedView.setVisibility(View.GONE);
+        }
+    }
+
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private void revealFragmentContainerLollipop(final View clickedView,
+                                                 final View fragmentContainer) {
+        prepareCircularReveal(clickedView, fragmentContainer);
+        clickedView.animate()
+                .scaleX(0f)
+                .scaleY(0f)
+                .setInterpolator(mInterpolator)
+                .setListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animation) { }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        fragmentContainer.setVisibility(View.VISIBLE);
+                        mCircularReveal.start();
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animation) { }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animation) { }
+                })
+                .start();
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private void prepareCircularReveal(View startView, View targetView) {
+        int centerX = (startView.getLeft() + startView.getRight()) / 2;
+        int centerY = (startView.getTop() + startView.getBottom()) / 2;
+        float finalRadius = (float) Math.hypot((double) centerX, (double) centerY);
+
+        mCircularReveal = ViewAnimationUtils.createCircularReveal(targetView, centerX, centerY, 0, finalRadius);
+
+        mCircularReveal.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                mCircularReveal.removeListener(this);
             }
         });
     }

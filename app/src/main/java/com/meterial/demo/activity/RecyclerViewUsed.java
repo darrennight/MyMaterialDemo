@@ -71,6 +71,7 @@ public class RecyclerViewUsed extends AppCompatActivity implements SwipeRefreshL
         manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
+                //3列 设置宽度占几列
                 return (3 - position % 3);
             }
         });
@@ -78,7 +79,7 @@ public class RecyclerViewUsed extends AppCompatActivity implements SwipeRefreshL
 
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setHasFixedSize(false);
         //mRecyclerView.addItemDecoration(new MarginDecoration(this));
 
         List<String> list = new ArrayList<String>();

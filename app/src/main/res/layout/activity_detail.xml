@@ -69,7 +69,7 @@
             android:orientation="vertical"
             android:paddingTop="24dp">
 
-            <android.support.v7.widget.CardView
+            <com.meterial.demo.testcatd.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/card_margin">
@@ -92,9 +92,9 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </com.meterial.demo.testcatd.CardView>
 
-            <android.support.v7.widget.CardView
+            <com.meterial.demo.testcatd.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/card_margin"
@@ -119,9 +119,9 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </com.meterial.demo.testcatd.CardView>
 
-            <android.support.v7.widget.CardView
+            <com.meterial.demo.testcatd.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/card_margin"
@@ -146,7 +146,7 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </com.meterial.demo.testcatd.CardView>
 
         </LinearLayout>
 

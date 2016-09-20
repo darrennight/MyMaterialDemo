@@ -9,8 +9,9 @@ android {
 
     defaultConfig {
         applicationId "com.meterial.demo"
-        minSdkVersion 21
+        minSdkVersion 14
         targetSdkVersion 23
+        //23 pop dialog 底部弹出从虚拟机下面
 
 //        minSdkVersion projectMinSdkVersion
 //        targetSdkVersion projectCompileSdkVersion
@@ -39,5 +40,7 @@ dependencies {
     compile "com.android.support:design:$supportVersion"
     compile "com.android.support:cardview-v7:$supportVersion"
     compile "com.android.support:palette-v7:$supportVersion"
-//    compile "com.android.support:animated-vector-drawable:$supportVersion"
+    compile "com.android.support:animated-vector-drawable:$supportVersion"
+
+    compile 'com.nineoldandroids:library:2.4.0'
 }

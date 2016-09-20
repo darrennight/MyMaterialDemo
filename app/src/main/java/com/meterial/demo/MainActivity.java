@@ -1,5 +1,6 @@
 package com.meterial.demo;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -14,6 +15,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.meterial.demo.MDesign.BehaviorMainActivity;
+import com.meterial.demo.ProjectUse.ProjectUserMainActivity;
+import com.meterial.demo.RecycleViewCommon.RVCommonActivity;
 import com.meterial.demo.activity.BannerActivity;
 import com.meterial.demo.activity.BottomSheetActivity;
 import com.meterial.demo.activity.CircularRevealActivity;
@@ -21,9 +25,13 @@ import com.meterial.demo.activity.CoordinatorAndFloating;
 import com.meterial.demo.activity.EndlessRecycle;
 import com.meterial.demo.activity.ImmersionStatusBar;
 import com.meterial.demo.activity.RecyclerViewUsed;
+import com.meterial.demo.activity.Smallwidget;
 import com.meterial.demo.activity.TransitionMainActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
+import com.meterial.demo.customview.MDDialog;
 import com.meterial.demo.holder.OnItemClick;
+import com.meterial.demo.scene.TransitionActivity;
+import com.meterial.demo.svg.SvgActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,10 +81,17 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("recylerView自动加载");
         list.add("共享动画");
         list.add("圆形显示隐藏");
-        list.add("BottomSheet");
-        for (int i = 0; i <= 10; i++) {
-            list.add(i + "");
-        }
+        list.add("底部弹出菜单BottomSheet");
+        list.add("小widget");
+        list.add("svg测试");
+        list.add("recylerview通用holder和adapter测试");
+        list.add("beHavior");
+        list.add("Scene");
+        list.add("项目调研使用");
+        list.add("mdDialog");
+//        for (int i = 0; i <= 10; i++) {
+//            list.add(i + "");
+//        }
         mAdapter = new MySimpleAdapter(this, list, this);
         mRecycler.setAdapter(mAdapter);
     }
@@ -134,6 +149,51 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 7:
                 Intent intent7 = new Intent(this, BottomSheetActivity.class);
                 startActivity(intent7);
+                break;
+            case 8:
+                Intent intent8 = new Intent(this, Smallwidget.class);
+                startActivity(intent8);
+                break;
+            case 9:
+                Intent intent9 = new Intent(this, SvgActivity.class);
+                startActivity(intent9);
+                break;
+            case 10:
+                Intent intent10 = new Intent(this, RVCommonActivity.class);
+                startActivity(intent10);
+                break;
+            case 11:
+                Intent intent11 = new Intent(this, BehaviorMainActivity.class);
+                startActivity(intent11);
+                break;
+            case 12:
+                Intent intent12 = new Intent(this, TransitionActivity.class);
+                startActivity(intent12);
+                break;
+            case 13:
+                Intent intent13 = new Intent(this, ProjectUserMainActivity.class);
+                startActivity(intent13);
+                break;
+            case 14:
+                new MDDialog.Builder(this)
+                        .setTitle("hahahtitle")
+                        .setTitleColor(getResources().getColor(R.color.themeColor))
+//                        .setMessage("hahaTips")
+                        .setPositive("qued")
+                        .setNegetive("cancan")
+                        .setmNegetiveListener(new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(MainActivity.this,"sfaf",Toast.LENGTH_SHORT).show();
+                            }
+                        })
+//                        .setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                            @Override
+//                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                                Toast.makeText(MainActivity.this,"posp"+position,Toast.LENGTH_SHORT).show();
+//                            }
+//                        })
+                        .build();
                 break;
             default:
                 break;

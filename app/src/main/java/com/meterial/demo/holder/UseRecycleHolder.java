@@ -1,7 +1,7 @@
 package com.meterial.demo.holder;
 
 import android.view.View;
-import android.widget.TextView;
+import android.widget.EditText;
 
 import com.meterial.demo.R;
 
@@ -10,9 +10,9 @@ import com.meterial.demo.R;
  */
 public class UseRecycleHolder extends MyBaseHolder {
 
-    public TextView mTxt;
+    public EditText mTxt;
     public UseRecycleHolder(View itemView){
         super(itemView);
-        mTxt = ((TextView) itemView.findViewById(R.id.tv_txt));
+        mTxt = ((EditText) itemView.findViewById(R.id.tv_txt));
     }
 }

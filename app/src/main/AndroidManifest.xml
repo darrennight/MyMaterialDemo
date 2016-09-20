@@ -29,6 +29,7 @@
 
         <activity android:name=".activity.TransitionMainActivity"
             />
+        <activity android:name=".MDTransition.TestActivity"/>
 
         <activity android:name=".activity.TransitonActivity1"
                   />
@@ -41,7 +42,27 @@
         <activity android:name=".activity.BottomSheetActivity"/>
         <activity android:name=".activity.NestedScrollViewActivity"/>
         <activity android:name=".activity.RecyclerViewBehaviorActivity"/>
-        <activity android:name=".activity.BeautifulBottomSheetActivity"/>
+        <activity android:name=".activity.BeautifulBottomSheetActivity"
+            />
+        <activity android:name=".activity.Smallwidget"/>
+        <activity android:name=".svg.SvgActivity"/>
+        <activity android:name=".RecycleViewCommon.RVCommonActivity"/>
+        <activity android:name=".MDesign.BehaviorMainActivity"/>
+        <activity android:name=".MDesign.BehaviorActivity"/>
+        <activity android:name=".MDesign.BehaviorActivity1"/>
+        <activity android:name=".MDesign.demo.MainActivity"/>
+        <activity android:name=".MDesign.demo.BackTopActivity"/>
+        <activity android:name=".MDesign.demo.ZhihuActivity"/>
+        <activity android:name=".scene.TransitionActivity"/>
+        <activity android:name=".ProjectUse.ProjectUserMainActivity"/>
+
+        <activity android:name=".ProjectUse.OneActivity"/>
+        <activity android:name=".ProjectUse.ArcMotion.ArcMotionActivity"/>
+        <activity android:name=".ProjectUse.ArcMotion.ArcMotionSecondActivity"
+                  android:theme="@style/ActivityTransparent"/>
+
+        <activity android:name=".ProjectUse.sceneLayout.TestSceneActivity"/>
+        <activity android:name=".ProjectUse.seneFragment.TestSceneFragmentActivity"/>
     </application>
 
 </manifest>

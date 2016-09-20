@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!--   &lt;!&ndash; Background color for light CardView. &ndash;&gt;
+    <color name="cardview_light_background">#3F51B5</color>
+    &lt;!&ndash; Background color for dark CardView. &ndash;&gt;
+    <color name="cardview_dark_background">#3F51B5</color>
+    &lt;!&ndash; Shadow color for the first pixels around CardView. &ndash;&gt;
+    <color name="cardview_shadow_start_color">#3F51B5</color>
+    &lt;!&ndash; Shadow color for the furthest pixels around CardView. &ndash;&gt;
+    <color name="cardview_shadow_end_color">#3F51B5</color>
+-->
+
+
+
+</resources>

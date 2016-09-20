@@ -35,6 +35,7 @@ public class RecyclerUseAdapter extends RecyclerView.Adapter<MyBaseHolder> {
 
         UseRecycleHolder myHolder = ((UseRecycleHolder) holder);
         myHolder.mTxt.setText(mList.get(position));
+        myHolder.mTxt.setLongClickable(true);
 
     }
 
