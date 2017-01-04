@@ -9,6 +9,7 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -19,6 +20,8 @@ import com.meterial.demo.R;
 
 /**
  * Created by zenghao on 16/9/13.
+ * https://github.com/sd6352051/NiftyDialogEffects
+ * 对话框动画
  */
 public class MDDialog {
 
@@ -31,7 +34,7 @@ public class MDDialog {
         mBuilder = new AlertDialog.Builder(context, R.style.BreadTripAlerDialogStyle);
 
         initDialogBase(context,inBuilder);
-        initMenuView(context,new String[]{"hahah","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee"},mBuilder,inBuilder);
+        //initMenuView(context,new String[]{"hahah","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee","hhhee"},mBuilder,inBuilder);
         initDialogSetting(inBuilder);
 
 //        dialog.hide();
@@ -70,6 +73,16 @@ public class MDDialog {
         mBuilder.setOnDismissListener(inBuilder.mDismissListener);
 
 
+    }
+
+    /**
+     * 对话框动画
+     * 项目中请使用 属性动画 目前测试用的是补间动画
+     * @param dialog
+     */
+    private void testAnim(AlertDialog dialog){
+       Window window = dialog.getWindow(); //得到对话框
+         window.setWindowAnimations(R.style.dialogWindowAnim); //设置窗口弹出动画
     }
 
     private void initDialogSetting(Builder inBuilder){
@@ -116,6 +129,8 @@ public class MDDialog {
         if(inBuilder.positiveTextSize != 0){
             btnPositive.setTextSize(TypedValue.COMPLEX_UNIT_SP,inBuilder.positiveTextSize);
         }
+
+        testAnim(dialog);
     }
 
 

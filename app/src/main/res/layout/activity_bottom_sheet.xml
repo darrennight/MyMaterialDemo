@@ -68,4 +68,16 @@
         android:textColor="@android:color/white"
         android:background="@android:color/black"
         android:text="BottomPopWindow"/>
+
+
+    <TextView
+        android:id="@+id/btn_bottom_dialog_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:text="BottomdialogFragment"/>
+
 </LinearLayout>

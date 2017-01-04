@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.meterial.demo.R;
+import com.meterial.demo.bottomDialog.BottomDialogShowActivity;
 import com.meterial.demo.customview.BottomSheetDialogView;
 import com.meterial.demo.customview.TripListPop;
 
@@ -26,6 +27,7 @@ public class BottomSheetActivity extends AppCompatActivity {
     private TextView btn_beaut;
     private TextView btn_dialog;
     private TextView btn_pop_window;
+    private TextView btn_dialog_fragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class BottomSheetActivity extends AppCompatActivity {
         btn_beaut = ((TextView) findViewById(R.id.btn_beaut));
         btn_dialog = ((TextView) findViewById(R.id.btn_dialog));
         btn_pop_window = ((TextView) findViewById(R.id.btn_pop_window));
+        btn_dialog_fragment = ((TextView) findViewById(R.id.btn_bottom_dialog_fragment));
 
         mApiSupport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +82,13 @@ public class BottomSheetActivity extends AppCompatActivity {
                 TripListPop pop = new TripListPop(BottomSheetActivity.this);
                 pop.showAtLocation(btn_pop_window, Gravity.BOTTOM, 0, 0);
                 pop.update();
+            }
+        });
+
+        btn_dialog_fragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BottomSheetActivity.this, BottomDialogShowActivity.class));
             }
         });
     }

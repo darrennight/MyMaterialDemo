@@ -41,4 +41,8 @@
     <color name="white">#FFFFFF</color>
 
 
+    <color name="primary">#785447</color>
+    <color name="primaryDark">#5B3F36</color>
+
+
 </resources>

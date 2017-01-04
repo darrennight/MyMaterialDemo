@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.meterial.demo.CoordinatorLayout.TestCoordinatorLayoutActivity;
 import com.meterial.demo.MDesign.BehaviorMainActivity;
 import com.meterial.demo.ProjectUse.ProjectUserMainActivity;
 import com.meterial.demo.RecycleViewCommon.RVCommonActivity;
@@ -28,6 +29,7 @@ import com.meterial.demo.activity.RecyclerViewUsed;
 import com.meterial.demo.activity.Smallwidget;
 import com.meterial.demo.activity.TransitionMainActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
+import com.meterial.demo.commonActivity.VerticalTextVActivity;
 import com.meterial.demo.customview.MDDialog;
 import com.meterial.demo.holder.OnItemClick;
 import com.meterial.demo.scene.TransitionActivity;
@@ -74,21 +76,23 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         mRecycler.setLayoutManager(lm);
         mRecycler.setItemAnimator(new DefaultItemAnimator());
         List<String> list = new ArrayList<String>();
-        list.add("沉浸式状态栏");
-        list.add("CoordinatorAndFloating");
-        list.add("banner&TextInputLayout");
-        list.add("recylerView表格");
-        list.add("recylerView自动加载");
-        list.add("共享动画");
-        list.add("圆形显示隐藏");
-        list.add("底部弹出菜单BottomSheet");
-        list.add("小widget");
-        list.add("svg测试");
-        list.add("recylerview通用holder和adapter测试");
-        list.add("beHavior");
-        list.add("Scene");
-        list.add("项目调研使用");
-        list.add("mdDialog");
+        list.add("0沉浸式状态栏");
+        list.add("1CoordinatorAndFloating");
+        list.add("2banner&TextInputLayout");
+        list.add("3recylerView表格");
+        list.add("4recylerView自动加载");
+        list.add("5共享动画");
+        list.add("6圆形显示隐藏");
+        list.add("7底部弹出菜单BottomSheet");
+        list.add("8小widget");
+        list.add("9svg测试");
+        list.add("10recylerview通用holder和adapter测试");
+        list.add("11beHavior");
+        list.add("12Scene");
+        list.add("13项目调研使用");
+        list.add("14mdDialog");
+        list.add("15垂直TextView");
+        list.add("16CoordinatorLayout测试");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -178,7 +182,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
                 new MDDialog.Builder(this)
                         .setTitle("hahahtitle")
                         .setTitleColor(getResources().getColor(R.color.themeColor))
-//                        .setMessage("hahaTips")
+                        .setMessage("hahaTips")
                         .setPositive("qued")
                         .setNegetive("cancan")
                         .setmNegetiveListener(new DialogInterface.OnClickListener() {
@@ -194,6 +198,15 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
 //                            }
 //                        })
                         .build();
+                break;
+
+            case 15:
+                Intent intent15 = new Intent(this, VerticalTextVActivity.class);
+                startActivity(intent15);
+                break;
+            case 16:
+                Intent intent16 = new Intent(this, TestCoordinatorLayoutActivity.class);
+                startActivity(intent16);
                 break;
             default:
                 break;

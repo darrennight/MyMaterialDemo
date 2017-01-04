@@ -15,6 +15,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
         <activity android:name=".activity.ImmersionStatusBar"/>
         <activity android:name=".activity.CoordinatorAndFloating"/>
@@ -63,6 +66,26 @@
 
         <activity android:name=".ProjectUse.sceneLayout.TestSceneActivity"/>
         <activity android:name=".ProjectUse.seneFragment.TestSceneFragmentActivity"/>
+        <activity android:name=".bottomDialog.BottomDialogShowActivity"/>
+
+        <activity android:name=".commonActivity.TestShortcutsActivity">
+
+            <!--<meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" /> 需要写在app mainactivity入口里面-->
+            </activity>
+
+        <activity android:name=".commonActivity.VerticalTextVActivity"/>
+        <activity android:name=".CoordinatorLayout.TestCoordinatorLayoutActivity"/>
+        <activity android:name=".CoordinatorLayout.TestActivity1"/>
+        <activity android:name=".CoordinatorLayout.TestActivity2"/>
+        <activity android:name=".CoordinatorLayout.TestActivity3"/>
+        <activity android:name=".CoordinatorLayout.TestActivity4"/>
+        <activity android:name=".CoordinatorLayout.TestActivity5"/>
+        <activity android:name=".CoordinatorLayout.TestActivity6"/>
+        <activity android:name=".CoordinatorLayout.TestActivity7"/>
+        <activity android:name=".CoordinatorLayout.TestActivity8"/>
+        <activity android:name=".CoordinatorLayout.TestActivity9"/>
+        <activity android:name=".CoordinatorLayout.TestActivity10"/>
     </application>
 
 </manifest>

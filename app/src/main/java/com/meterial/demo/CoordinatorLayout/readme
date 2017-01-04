@@ -1,0 +1,39 @@
+CoordinatorLayout是FrameLayout布局
+
+ app:layout_scrollFlags:
+ 					scroll: 所有想滚动出屏幕的view都需要设置这个flag- 没有设置这个flag的view将被固定在屏幕顶部。
+ 					enterAlways: 这个flag让任意向下的滚动都会导致该view变为可见，启用快速“返回模式”。
+ 					enterAlwaysCollapsed: 当你的视图已经设置minHeight属性又使用此标志时，你的视图只能已最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。
+					exitUntilCollapsed: 滚动退出屏幕，最后折叠在顶端。
+					sanp ：回弹效果 滑动松开手
+					1.scroll 表示CollapsingToolbarLayout可以滚动（不设置的话头部的ImageView将不能折叠）
+			        2.enterAlways 表示底部的滚动控件只要向下滚动，头部就显示出来
+			        3.enterAlwaysCollapsed 表示当底部滚动控件滚动见顶时，头部显示出来
+			        4.exitUntilCollapsed 表示头部折叠到最小高度时（Toolbar的高度），就不再折叠
+			        5.snap 表示在滑动过程中如果停止滑动，则头部会就近折叠（要么恢复原状，要么折叠成一个Toolbar）
+
+为了使得Toolbar可以滑动，我们必须还得有个条件，就是CoordinatorLayout布局下包裹一个可以滑动的布局，比如 RecyclerView，
+NestedScrollView(经过测试，ListView，ScrollView不支持)具有滑动效果的组件。并且给这些组件设置如下属性来告诉CoordinatorLayout，
+该组件是带有滑动行为的组件，然后CoordinatorLayout在接受到滑动时会通知AppBarLayout 中可滑动的Toolbar可以滑出屏幕了。
+滚动视图需要下面属性
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+
+<android.support.v7.widget.Toolbar
+        android:id="@+id/main.toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_anchor="@id/frameLayout"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+app:layout_anchor - 设置FAB的锚点，即以哪个控件为参照点设置位置。
+app:layout_anchorGravity - 设置FAB相对锚点的位置，值有 bottom、center、right、left、top等。
+
+
+CoordinatorLayout
+AppBarLayout
+CollapsingToolbarLayout
+behavior
+NestedScrollView
