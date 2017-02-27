@@ -2,12 +2,14 @@
 <manifest package="com.meterial.demo"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
         <activity android:name=".activity.SplashActivity"
                   android:theme="@style/SplashStyle">
             <intent-filter>
@@ -86,6 +88,27 @@
         <activity android:name=".CoordinatorLayout.TestActivity8"/>
         <activity android:name=".CoordinatorLayout.TestActivity9"/>
         <activity android:name=".CoordinatorLayout.TestActivity10"/>
+        <activity android:name=".CoordinatorLayout.custom.LoadHeaderImageFromNetworkActivity"/>
+        <activity android:name=".CoordinatorLayout.custom.MainActivity"/>
+        <activity android:name=".customview.NestedScrolling.TestActivity"/>
+
+        <activity android:name=".MDTransition.MorphTransitions.MainActivity"/>
+        <activity android:name=".MDTransition.MorphTransitions.DialogActivity"/>
+        <activity android:name=".MDTransition.MorphTransitions.FullScreenActivity"/>
+
+
+        <activity android:name=".CoordinatorLayout.third.FiveActivity"/>
+        <activity android:name=".CoordinatorLayout.third.FourActivity"/>
+        <activity android:name=".CoordinatorLayout.third.MainActivity"/>
+        <activity android:name=".CoordinatorLayout.third.SecondActivity"/>
+        <activity android:name=".CoordinatorLayout.third.SixActivity"/>
+        <activity android:name=".CoordinatorLayout.third.ThirdActivity"/>
+        <activity android:name=".CoordinatorLayout.third.SevenActivity"/>
+
+        <activity android:name=".LottieAnim.MainActivity"/>
+        <activity android:name=".LottieAnim.FontActivity"/>
+        <activity android:name=".LottieAnim.AppIntroActivity"/>
+
     </application>
 
 </manifest>

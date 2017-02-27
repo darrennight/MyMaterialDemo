@@ -24,20 +24,21 @@
             app:collapsedTitleGravity="right"
             app:expandedTitleGravity="left|bottom"
             >
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/backdrop"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="0.5"
                 android:scaleType="centerCrop"
-                android:src="@drawable/a5"/>
+                android:src="@drawable/a5"/>-->
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar_test4"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
                 />
             <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
             <!--|enterAlways|snap  app:layout_scrollFlags="scroll|enterAlways|snap"-->

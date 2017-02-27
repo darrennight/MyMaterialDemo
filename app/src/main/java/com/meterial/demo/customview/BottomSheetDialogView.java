@@ -142,7 +142,7 @@ public class BottomSheetDialogView {
 
         @Override
         public int getItemCount() {
-            return 3;
+            return 5;
         }
     }
 }

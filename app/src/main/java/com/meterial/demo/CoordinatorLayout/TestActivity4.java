@@ -2,6 +2,7 @@ package com.meterial.demo.CoordinatorLayout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -29,6 +30,8 @@ public class TestActivity4 extends AppCompatActivity implements OnItemClick {
     private RecyclerView mRecyclerView;
     private Toolbar mToolbar;
     private MySimpleAdapter mAdapter;
+
+    private ActionBar mActionbar;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,12 @@ public class TestActivity4 extends AppCompatActivity implements OnItemClick {
         mToolbar = ((Toolbar) findViewById(R.id.toolbar_test4));
         mToolbar.setTitle("CoordinatorTest1");
         setSupportActionBar(mToolbar);
+
+        mActionbar = getSupportActionBar();
+        mActionbar.setDisplayHomeAsUpEnabled(true);
+        mActionbar.setHomeAsUpIndicator(R.drawable.ic_arrow_white_24dp);
+
+
 
         mRecyclerView = ((RecyclerView) findViewById(R.id.rv_test4));
         LinearLayoutManager lm = new LinearLayoutManager(this);

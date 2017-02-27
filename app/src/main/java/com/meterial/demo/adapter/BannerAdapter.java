@@ -53,7 +53,7 @@ public class BannerAdapter extends RecyclingPagerAdapter {
 
         }
         holder.mNum.setText(""+position);
-//        mList.get(getPosition(position));
+        //mList.get(getPosition(position));
 
         holder.imageView.setImageResource(R.mipmap.ic_launcher);
         return convertView;

@@ -45,4 +45,30 @@
     <color name="primaryDark">#5B3F36</color>
 
 
+    <color name="c_home_city_font">#f27242</color>
+    <color name="c_kitchen_detail_little_table_line">#eeeeee</color>
+
+    <color name="gray">#ddd</color>
+    <color name="bg_page">#F6F6F6</color>
+    <color name="text_color">#43BBE7</color>
+
+
+    <color name="divider">#D3D3D3</color>
+    <color name="strong">#FF5B26</color>
+
+    <color name="red_226">#E25E5E</color>
+    <color name="error_color">#FF4081</color>
+
+
+    <color name="font_text">#000</color>
+    <color name="color_999">#999</color>
+    <color name="color_eee">#eee</color>
+    <color name="font_info">#999</color>
+    <color name="font_tips">#CCC</color>
+    <color name="border_block">#EAEAEA</color>
+    <color name="color_ccc">#CCC</color>
+    <color name="left">#fc6a7b</color>
+    <color name="right">#2aad95</color>
+    <color name="white_two">#ddd</color>
+
 </resources>

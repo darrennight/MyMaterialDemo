@@ -47,6 +47,8 @@ public class BannerActivity extends SwipeActivity {
         viewPager.setAutoScrollDurationFactor(10);
         viewPager.setStopScrollWhenTouch(true);
         //viewPager.setCurrentItem(1000*imageIdList.size());
+        //viewPager显示之前设置没问题 显示之后显示卡
+        viewPager.setCurrentItem(Integer.MAX_VALUE/2);
         viewPager.setCycle(true);
 
         final TextInputLayout inputLayout = (TextInputLayout)findViewById(R.id.textInput);

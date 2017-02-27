@@ -6,7 +6,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import com.meterial.demo.CoordinatorLayout.custom.LoadHeaderImageFromNetworkActivity;
+import com.meterial.demo.CoordinatorLayout.custom.MainActivity;
 import com.meterial.demo.R;
+import com.meterial.demo.customview.NestedScrolling.TestActivity;
 
 /**
  *CoordinatorLayout各种用法
@@ -25,6 +28,8 @@ public class TestCoordinatorLayoutActivity extends AppCompatActivity {
     private Button mButton8;
     private Button mButton9;
     private Button mButton10;
+    private Button mButton11;
+    private Button mButton12;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,6 +118,28 @@ public class TestCoordinatorLayoutActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(TestCoordinatorLayoutActivity.this,TestActivity10.class));
+                    }
+                });
+
+        mButton11 = ((Button) findViewById(R.id.btn_11));
+        mButton11.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //加载本地图片
+                        startActivity(new Intent(TestCoordinatorLayoutActivity.this,MainActivity.class));
+                        //加载网络图片
+                        //startActivity(new Intent(TestCoordinatorLayoutActivity.this,LoadHeaderImageFromNetworkActivity.class));
+
+                        //startActivity(new Intent(TestCoordinatorLayoutActivity.this, TestActivity.class));
+                    }
+                });
+
+        mButton12 = ((Button) findViewById(R.id.btn_12));
+        mButton12.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(TestCoordinatorLayoutActivity.this,
+                                com.meterial.demo.CoordinatorLayout.third.MainActivity.class));
                     }
                 });
 

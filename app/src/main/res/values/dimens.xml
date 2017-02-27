@@ -20,4 +20,14 @@
     <dimen name="spacing_normal">16dp</dimen>
     <dimen name="image_width">120dp</dimen>
     <dimen name="title_margin">20dp</dimen>
+
+
+
+    <dimen name="drag_dismiss_distance">112dp</dimen> <!-- 2 * ?android:actionBarSize -->
+
+    <dimen name="dialog_corners">2dp</dimen>
+
+    <dimen name="font_space_width">12dp</dimen>
+
+
 </resources>

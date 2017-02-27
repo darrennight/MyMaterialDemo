@@ -30,4 +30,24 @@
         <attr name="finalHeight" format="dimension"/>
     </declare-styleable>
 
+
+    <declare-styleable name="CoordinatorTabLayout">
+        <attr name="contentScrim" format="color" />
+        <attr name="tabIndicatorColor" format="color" />
+        <attr name="tabTextColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MySelectView">
+        <attr name="textColor" format="color"></attr>
+        <attr name="lineColor" format="color"></attr>
+        <attr name="textSize" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyChartView">
+        <attr name="leftColor" format="color"></attr>
+        <attr name="rightColor" format="color"></attr>
+        <attr name="xyColor" format="color"></attr>
+    </declare-styleable>
+
 </resources>

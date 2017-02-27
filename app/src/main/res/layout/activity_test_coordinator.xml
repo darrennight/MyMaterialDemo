@@ -74,4 +74,18 @@
         android:text="test10"
         />
 
+    <Button
+        android:id="@+id/btn_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test11"
+        />
+
+    <Button
+        android:id="@+id/btn_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test12"
+        />
+
 </LinearLayout>

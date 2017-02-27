@@ -93,6 +93,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("14mdDialog");
         list.add("15垂直TextView");
         list.add("16CoordinatorLayout测试");
+        list.add("17共享动画");
+        list.add("18lottie动画Sample");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -207,6 +209,17 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 16:
                 Intent intent16 = new Intent(this, TestCoordinatorLayoutActivity.class);
                 startActivity(intent16);
+                break;
+
+            case 17:
+                Intent intent17 = new Intent(this, com.meterial.demo.MDTransition.MorphTransitions.MainActivity.class);
+                startActivity(intent17);
+                break;
+
+
+            case 18:
+                Intent intent18 = new Intent(this, com.meterial.demo.LottieAnim.MainActivity.class);
+                startActivity(intent18);
                 break;
             default:
                 break;
