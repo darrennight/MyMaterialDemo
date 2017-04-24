@@ -30,6 +30,7 @@ public class BottomSheetActivity extends AppCompatActivity {
     private TextView btn_pop_window;
     private TextView btn_dialog_fragment;
     private TextView btn_custum_bottom;
+    private TextView btn_use;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +44,9 @@ public class BottomSheetActivity extends AppCompatActivity {
         btn_pop_window = ((TextView) findViewById(R.id.btn_pop_window));
         btn_dialog_fragment = ((TextView) findViewById(R.id.btn_bottom_dialog_fragment));
         btn_custum_bottom = ((TextView) findViewById(R.id.btn_bottom_custum_view));
+        btn_use = ((TextView) findViewById(R.id.btn_use));
+
+        initShareMenu();
 
         mApiSupport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +105,14 @@ public class BottomSheetActivity extends AppCompatActivity {
                 new ShareView(BottomSheetActivity.this).show();
             }
         });
+
+        btn_use.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showShareDialog();
+            }
+        });
+
     }
 
     public void openBottomSheet () {
@@ -165,5 +177,47 @@ public class BottomSheetActivity extends AppCompatActivity {
                 mBottomSheetDialog.dismiss();
             }
         });
+    }
+
+    private View mShareMenu;
+    private Dialog mBottomSheetDialog;
+    private TextView mShareCircle;
+    private TextView mShareFriend;
+    private TextView mShareSina;
+    private void initShareMenu(){
+        mShareMenu = getLayoutInflater().inflate (R.layout.layout_wish_share, null);
+        mShareCircle = ((TextView) mShareMenu.findViewById(R.id.tv_wish_share_circle));
+        mShareFriend = ((TextView) mShareMenu.findViewById(R.id.tv_wish_share_friend));
+        mShareSina = ((TextView) mShareMenu.findViewById(R.id.tv_wish_share_sina));
+
+        mShareMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hideShareDialog();
+            }
+        });
+        /*mShareCircle.setOnClickListener(this);
+        mShareFriend.setOnClickListener(this);
+        mShareSina.setOnClickListener(this);*/
+    }
+
+    private void showShareDialog(){
+
+        if(mBottomSheetDialog == null){
+            mBottomSheetDialog = new Dialog (this, R.style.WishShareDialog);
+            mBottomSheetDialog.setContentView (mShareMenu);
+            mBottomSheetDialog.setCancelable (true);
+            mBottomSheetDialog.getWindow ().setLayout (LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            mBottomSheetDialog.getWindow ().setGravity (Gravity.BOTTOM);
+        }
+
+        mBottomSheetDialog.show ();
+
+    }
+
+    private void hideShareDialog(){
+        if(mBottomSheetDialog!=null){
+            mBottomSheetDialog.cancel();
+        }
     }
 }

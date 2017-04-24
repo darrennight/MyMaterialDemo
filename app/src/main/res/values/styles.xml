@@ -47,7 +47,10 @@
     </style>
 
     <style name="SplashStyle" parent="AppBaseTheme">
-        <item name="android:background">@color/color_bread_blue</item>
+        <!--启动页面避免 白屏黑屏 下面两种方式都可以-->
+        <!--<item name="android:background">@color/color_bread_blue</item>-->
+        <item name="android:background">@drawable/main_default</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
     <style name="Widget.CardContent" parent="android:Widget">
         <item name="android:paddingLeft">16dp</item>
@@ -167,4 +170,41 @@
     <style name="TabTextAppearence" parent="TextAppearance.Design.Tab">
         <item name="textAllCaps">false</item>
     </style>
+
+    <style name="TitleTextApperance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="uncheckSrc" format="reference"></attr>
+        <attr name="checkSrc" format="reference"></attr>
+        <attr name="boardWidth" format="dimension"></attr>
+        <attr name="uncheckRevealColor" format="color"></attr>
+        <attr name="checkRevealColor" format="color"></attr>
+    </declare-styleable>
+
+
+    <style name="LightToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="WishShareDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/WishAnimBottom</item>
+    </style>
+
+    <style name="WishAnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/wish_share_in</item>
+        <item name="android:windowExitAnimation">@anim/wish_share_out</item>
+    </style>
+
+
     </resources>

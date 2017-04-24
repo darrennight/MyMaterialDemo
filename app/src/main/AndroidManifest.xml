@@ -108,7 +108,21 @@
         <activity android:name=".LottieAnim.MainActivity"/>
         <activity android:name=".LottieAnim.FontActivity"/>
         <activity android:name=".LottieAnim.AppIntroActivity"/>
-
+        <activity android:name=".commonActivity.ToolbarTitleAnimation"/>
+        <activity android:name=".commonActivity.CircleImageViewActivity"/>
+        <activity android:name=".commonActivity.TestPinActivity"/>
+        <activity android:name=".commonActivity.WheelActivity"/>
+        <activity android:name=".commonActivity.wheel.WheelActivity1"/>
+        <activity android:name=".commonActivity.chanelView.MainActivity"/>
+        <activity android:name=".commonActivity.verticalslide.MainActivity"/>
+        <activity android:name=".commonActivity.SecretActivity"/>
+        <activity android:name=".commonActivity.PanningViewActivity"/>
+        <activity android:name=".commonActivity.spruce.SpruceActivity"/>
+        <activity android:name=".commonActivity.spruce.RecyclerActivity"/>
+        <activity android:name=".commonActivity.GossipActivity"/>
+        <activity android:name=".commonActivity.TestTextSwitcher"/>
+        <activity android:name=".commonActivity.ratinbar.TestRatinBarActivity"/>
+        <activity android:name=".commonActivity.cardview.MainActivity"/>
     </application>
 
 </manifest>

@@ -76,8 +76,8 @@
         android:layout_height="30dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/avator"
-        app:border_color="@android:color/white"
-        app:border_width="2dp"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
         app:finalHeight1="50dp"
         app:layout_behavior="com.meterial.demo.CoordinatorLayout.Behavior.CustomBehavior"
         />

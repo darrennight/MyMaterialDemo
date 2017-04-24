@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/vertical_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/vertical"/>
+
+        <RadioGroup
+            android:id="@+id/vertical_weighted_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/vertical_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/light"/>
+
+            <RadioButton
+                android:id="@+id/vertical_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/medium"/>
+
+            <RadioButton
+                android:id="@+id/vertical_heavy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heavy"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/horizontal_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/horizontal"/>
+
+        <RadioGroup
+            android:id="@+id/horizontal_weighted_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/horizontal_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/light"/>
+
+            <RadioButton
+                android:id="@+id/horizontal_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/medium"/>
+
+            <RadioButton
+                android:id="@+id/horizontal_heavy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heavy"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</merge>

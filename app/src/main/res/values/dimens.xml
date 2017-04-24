@@ -28,6 +28,7 @@
     <dimen name="dialog_corners">2dp</dimen>
 
     <dimen name="font_space_width">12dp</dimen>
+    <dimen name="base_padding">16dp</dimen>
 
 
 </resources>

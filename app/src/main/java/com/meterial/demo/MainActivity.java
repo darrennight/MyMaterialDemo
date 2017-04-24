@@ -13,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.widget.Toast;
 
 import com.meterial.demo.CoordinatorLayout.TestCoordinatorLayoutActivity;
@@ -29,8 +30,21 @@ import com.meterial.demo.activity.RecyclerViewUsed;
 import com.meterial.demo.activity.Smallwidget;
 import com.meterial.demo.activity.TransitionMainActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
+import com.meterial.demo.commonActivity.CircleImageViewActivity;
+import com.meterial.demo.commonActivity.GossipActivity;
+import com.meterial.demo.commonActivity.PanningViewActivity;
+import com.meterial.demo.commonActivity.SecretActivity;
+import com.meterial.demo.commonActivity.TestPinActivity;
+import com.meterial.demo.commonActivity.TestTextSwitcher;
+import com.meterial.demo.commonActivity.ToolbarTitleAnimation;
 import com.meterial.demo.commonActivity.VerticalTextVActivity;
+import com.meterial.demo.commonActivity.WheelActivity;
+import com.meterial.demo.commonActivity.ratinbar.TestRatinBarActivity;
+import com.meterial.demo.commonActivity.spruce.RecyclerActivity;
+import com.meterial.demo.commonActivity.spruce.SpruceActivity;
+import com.meterial.demo.commonActivity.wheel.WheelActivity1;
 import com.meterial.demo.customview.MDDialog;
+import com.meterial.demo.customview.PanningView;
 import com.meterial.demo.holder.OnItemClick;
 import com.meterial.demo.scene.TransitionActivity;
 import com.meterial.demo.svg.SvgActivity;
@@ -95,6 +109,21 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("16CoordinatorLayout测试");
         list.add("17共享动画");
         list.add("18lottie动画Sample");
+        list.add("19toolBarTitleAnim");
+        list.add("20圆形头像");
+        list.add("21微信支付宝密码输入");
+        list.add("22wheel");
+        list.add("23wheel第二个");
+        list.add("24");
+        list.add("25垂直滑动下一个页面");
+        list.add("26字符串字符渐隐渐现");
+        list.add("27背景图片左右移动");
+        list.add("28列表item动画");
+        list.add("29列表item动画");
+        list.add("30圆形菜单");
+        list.add("31textswitcher&&&FadeTextView");
+        list.add("32ratingbar");
+        list.add("33自定义cardView");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -221,8 +250,88 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
                 Intent intent18 = new Intent(this, com.meterial.demo.LottieAnim.MainActivity.class);
                 startActivity(intent18);
                 break;
+
+            case 19:
+                Intent intent19 = new Intent(this, ToolbarTitleAnimation.class);
+                startActivity(intent19);
+                break;
+
+            case 20:
+                Intent intent20 = new Intent(this, CircleImageViewActivity.class);
+                startActivity(intent20);
+                break;
+
+            case 21:
+                Intent intent21 = new Intent(this, TestPinActivity.class);
+                startActivity(intent21);
+                break;
+
+            case 22:
+                Intent intent22 = new Intent(this, WheelActivity.class);
+                startActivity(intent22);
+                break;
+
+            case 23:
+                Intent intent23 = new Intent(this, WheelActivity1.class);
+                startActivity(intent23);
+                break;
+
+            case 24:
+                Intent intent24 = new Intent(this, com.meterial.demo.commonActivity.chanelView.MainActivity.class);
+                startActivity(intent24);
+                break;
+
+            case 25:
+                Intent intent25 = new Intent(this, com.meterial.demo.commonActivity.verticalslide.MainActivity.class);
+                startActivity(intent25);
+                break;
+
+            case 26:
+                Intent intent26 = new Intent(this, SecretActivity.class);
+                startActivity(intent26);
+                break;
+
+            case 27:
+                Intent intent27 = new Intent(this, PanningViewActivity.class);
+                startActivity(intent27);
+                break;
+
+            case 28:
+                Intent intent28 = new Intent(this, RecyclerActivity.class);
+                startActivity(intent28);
+                break;
+
+            case 29:
+                Intent intent29 = new Intent(this, SpruceActivity.class);
+                startActivity(intent29);
+                break;
+
+            case 30:
+                Intent intent30 = new Intent(this, GossipActivity.class);
+                startActivity(intent30);
+                break;
+
+            case 31:
+                Intent intent31 = new Intent(this, TestTextSwitcher.class);
+                startActivity(intent31);
+                break;
+
+            case 32:
+                Intent intent32 = new Intent(this, TestRatinBarActivity.class);
+                startActivity(intent32);
+                break;
+
+            case 33:
+                Intent intent33 = new Intent(this, com.meterial.demo.commonActivity.cardview.MainActivity.class);
+                startActivity(intent33);
+                break;
             default:
                 break;
         }
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
     }
 }

@@ -92,6 +92,16 @@
         android:background="@android:color/black"
         android:text="自定义"/>
 
+    <TextView
+        android:id="@+id/btn_use"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:text="项目可以使用"/>
+
 
 
 </LinearLayout>
