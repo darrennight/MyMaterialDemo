@@ -9,7 +9,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
- 
+import com.nineoldandroids.view.ViewHelper;
+
 /** 
  * Created by Dacer on 10/8/13. 
  */ 
@@ -28,6 +29,14 @@ public class MyUtils {
     public static int sp2px(Context context, float spValue) {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * fontScale + 0.5f);
-    } 
-     
+    }
+
+    public static float centerX(View view){
+        return ViewHelper.getX(view) + view.getWidth()/2;
+    }
+
+    public static float centerY(View view){
+        return ViewHelper.getY(view) + view.getHeight()/2;
+    }
+
 } 

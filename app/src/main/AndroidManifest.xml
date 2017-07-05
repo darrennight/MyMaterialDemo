@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="com.meterial.demo"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-sdk tools:overrideLibrary="com.allattentionhere.fabulousfilter"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -123,6 +127,52 @@
         <activity android:name=".commonActivity.TestTextSwitcher"/>
         <activity android:name=".commonActivity.ratinbar.TestRatinBarActivity"/>
         <activity android:name=".commonActivity.cardview.MainActivity"/>
+        <activity android:name=".commonActivity.TextSpan.TestTextSpanActivity"/>
+        <activity android:name=".commonActivity.Carousel.CarouselActivity"/>
+        <activity android:name=".commonActivity.Carousel.DetailsActivity"/>
+        <activity android:name=".commonActivity.KenBurns.MainActivity"/>
+        <activity android:name=".commonActivity.KenBurns.FromURLActivity"/>
+        <activity android:name=".commonActivity.KenBurns.MultiImageActivity"/>
+        <activity android:name=".commonActivity.KenBurns.SingleImageActivity"/>
+        <activity android:name=".commonActivity.ship.MainActivity"/>
+        <activity android:name=".commonActivity.ship.view2.MainActivity"/>
+        <activity android:name=".commonActivity.ship.view3.MainActivity"/>
+        <activity android:name=".commonActivity.ship.view3.ContactListActivity"/>
+        <activity android:name=".commonActivity.ship.view3.ChipExamplesActivity"/>
+        <activity android:name=".commonActivity.TestRoundBgActivity"/>
+        <activity android:name=".commonActivity.TestAnimationsActivity"/>
+        <activity android:name=".commonActivity.TestItemViewPagerActivity"/>
+        <activity android:name=".commonActivity.ViewPagerCards.MainActivity"/>
+        <activity android:name=".commonActivity.GoodActivty"/>
+        <activity android:name=".commonActivity.index.ListIndexActivity"/>
+        <activity android:name=".commonActivity.MyTopTabActivity"/>
+        <activity android:name=".ProjectUse.custom.CircularRevealActivity"/>
+        <activity android:name=".RatingBar.TestRatinBarActivity"/>
+        <activity android:name=".commonActivity.blur.BlurMainActivity"/>
+        <activity android:name=".commonActivity.blur.Blur500pxActivity"/>
+        <activity android:name=".commonActivity.Panorama.PanorMainActiivty"/>
+        <activity android:name=".commonActivity.Panorama.HorizontalSampleActivity"/>
+        <activity android:name=".commonActivity.Panorama.RecyclerViewSampleActivity"/>
+        <activity android:name=".commonActivity.Panorama.VerticalSampleActivity"/>
+        <activity android:name=".commonActivity.Panorama.Panorama360Activity"/>
+        <activity android:name=".commonActivity.Panorama.Panorama360Activity2"/>
+        <activity android:name=".commonActivity.BilibiliSearchView.MainActivity"/>
+        <activity android:name=".commonActivity.Nice9.NineMainActivity"/>
+        <activity android:name=".commonActivity.Nice9.DemoDragActivity"/>
+        <activity android:name=".commonActivity.Nice9.DemoListActivity"/>
+        <activity android:name=".commonActivity.recyvleviewTest.MainActivity"/>
+        <activity android:name=".commonActivity.recyvleviewTest.BeautifulRecyclerViewActivity"/>
+        <activity android:name=".commonActivity.recyvleviewTest.PowerfulStickyRecyclerViewActivity"/>
+        <activity android:name=".commonActivity.recyvleviewTest.StickyRecyclerViewActivity"/>
+        <activity android:name=".CoordinatorLayout.easeBehavior.ui.TestActivity13"/>
+        <activity android:name=".commonActivity.XEditTextActivity"/>
+        <activity android:name=".commonActivity.DashBoardActivity"/>
+        <activity android:name=".commonActivity.ChameleonActivity"/>
+        <activity android:name=".commonActivity.scaleImg.ScaleTransitionImageAnim"/>
+        <activity android:name=".commonActivity.FabulousFilter.FabulousFilterActivity"/>
+        <activity android:name=".commonActivity.FabulousFilter.FragmentExampleActivity"/>
+        <activity android:name=".commonActivity.FabulousFilter.MainSampleActivity"/>
+        <activity android:name=".commonActivity.FabulousFilter.MenuActivity"/>
     </application>
 
 </manifest>

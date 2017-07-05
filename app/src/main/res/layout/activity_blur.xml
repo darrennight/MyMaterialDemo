@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/blur_frame"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center">
+
+        <com.meterial.demo.commonActivity.blur.RealtimeBlurView
+            android:id="@+id/blur_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- tune radius -->
+
+        <SeekBar
+            android:id="@+id/blur_radius"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:max="50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/blur_radius"
+            android:layout_toLeftOf="@+id/blur_radius"
+            android:text="radius"
+            android:textColor="#000"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/blur_radius_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/blur_radius"
+            android:layout_toRightOf="@+id/blur_radius"
+            android:textColor="#000"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="DRAG HERE!"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:onClick="doSlide"
+            android:text="Slide Anim"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <com.meterial.demo.commonActivity.blur.CustomShapeBlurView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|center_horizontal"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:text="Custom Shape"
+        android:textSize="20sp"/>
+
+</FrameLayout>

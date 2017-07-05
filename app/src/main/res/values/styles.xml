@@ -206,5 +206,22 @@
         <item name="android:windowExitAnimation">@anim/wish_share_out</item>
     </style>
 
+    <style name="TransparentText">
+        <item name="android:textColor">@color/transparent_white</item>
+    </style>
 
-    </resources>
+    <style name="Font.Button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="Anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_right_to_left</item>
+        <item name="android:windowExitAnimation">@anim/out_left_to_right</item>
+    </style>
+</resources>

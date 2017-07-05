@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BaseRatingBar"
+        android:textStyle="bold"
+        android:layout_marginTop="96dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+       />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add rating"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="ScaleRatingBar"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <com.meterial.demo.RatingBar.BaseRatingBar
+        android:id="@+id/baseRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        rb:numStars="7"
+        rb:starPadding="5"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+    </com.meterial.demo.RatingBar.BaseRatingBar>
+
+    <com.meterial.demo.RatingBar.ScaleRatingBar
+        android:id="@+id/simpleRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+    </com.meterial.demo.RatingBar.ScaleRatingBar>
+</LinearLayout>

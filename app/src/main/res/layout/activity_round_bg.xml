@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bread="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_test_round"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="haha"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_test_round1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="haha"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_test_round2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="haha"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="12sp"
+        />
+
+    <com.meterial.demo.customview.RoundBg
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        bread:bread_bt_text="hahaXML"
+        bread:bread_bt_text_color="@color/black"
+        bread:bread_bt_text_size="12sp"
+        bread:pure_normal_color="@color/md_deeporange400"
+        bread:pure_press_color="@color/md_deeporange900"
+        />
+
+    <com.meterial.demo.customview.RoundBg
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        bread:bread_bt_text="hahaXML"
+        bread:bread_bt_text_color="@color/black"
+        bread:bread_bt_text_size="12sp"
+        bread:pure_normal_color="@color/md_deeporange400"
+        bread:pure_press_color="@color/md_deeporange900"
+        bread:bread_corner_radius="2dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.meterial.demo.customview.RoundBg
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        bread:bread_bt_text="hahaXML"
+        bread:bread_bt_text_color="@color/black"
+        bread:bread_bt_text_size="12sp"
+        bread:pure_normal_color="@color/md_deeporange400"
+        bread:pure_press_color="@color/md_deeporange900"
+        bread:bread_corner_radius="25dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.meterial.demo.customview.RoundBg
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        bread:bread_bt_text="hahaXML"
+        bread:bread_bt_text_color="@color/black"
+        bread:bread_bt_text_size="12sp"
+        bread:pure_normal_color="@color/md_deeporange400"
+        bread:pure_press_color="@color/md_deeporange900"
+        bread:bread_corner_radius="25dp"
+        bread:bread_stroke_size="2dp"
+        bread:bread_stroke_color="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.meterial.demo.customview.RoundBg
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        bread:bread_bt_text="hahaXML"
+        bread:bread_bt_text_color="@color/black"
+        bread:bread_bt_text_size="12sp"
+        bread:bread_corner_radius="25dp"
+
+        bread:bread_has_gradient="true"
+
+        bread:gradient_normal_start_color="#56cbd8"
+        bread:gradient_normal_end_color="#7ad199"
+        bread:gradient_press_start_color="#4BBBC8"
+        bread:gradient_press_end_color="#67C388"
+        bread:bread_gradient_orientation="top_bottom"
+
+        android:layout_marginTop="10dp"
+        />
+
+
+    <com.meterial.demo.customview.RoundBg
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        bread:bread_bt_text="hahaXML"
+        bread:bread_bt_text_color="@color/black"
+        bread:bread_bt_text_size="12sp"
+
+        bread:stroke_gradient_start_color="@color/md_deeporange400"
+        bread:stroke_gradient_end_color="@color/md_deeporange900"
+
+        bread:pure_normal_color="#56cbd8"
+        bread:pure_press_color="#7ad199"
+
+        bread:bread_corner_radius="25dp"
+        bread:bread_has_stroke_gradient="true"
+
+        android:layout_marginTop="10dp"
+        bread:bread_stroke_size="2dp"
+        />
+
+
+    <com.meterial.demo.customview.RoundBgTest2
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        bread:bread_bt_text="hahaXML"
+        bread:bread_bt_text_color="@color/black"
+        bread:bread_bt_text_size="12sp"
+        bread:pure_normal_color="@color/md_deeporange400"
+        bread:pure_press_color="@color/md_deeporange900"
+        bread:bread_corner_radius="25dp"
+        bread:bread_text_padding_left="50dp"
+        bread:bread_text_padding_right="50dp"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

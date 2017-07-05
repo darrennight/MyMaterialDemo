@@ -30,27 +30,52 @@ import com.meterial.demo.activity.RecyclerViewUsed;
 import com.meterial.demo.activity.Smallwidget;
 import com.meterial.demo.activity.TransitionMainActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
+import com.meterial.demo.commonActivity.Carousel.CarouselActivity;
+import com.meterial.demo.commonActivity.ChameleonActivity;
 import com.meterial.demo.commonActivity.CircleImageViewActivity;
+import com.meterial.demo.commonActivity.DashBoardActivity;
+import com.meterial.demo.commonActivity.FabulousFilter.FabulousFilterActivity;
+import com.meterial.demo.commonActivity.GoodActivty;
 import com.meterial.demo.commonActivity.GossipActivity;
+import com.meterial.demo.commonActivity.MyTopTabActivity;
+import com.meterial.demo.commonActivity.Nice9.NineMainActivity;
 import com.meterial.demo.commonActivity.PanningViewActivity;
+import com.meterial.demo.commonActivity.Panorama.PanorMainActiivty;
+import com.meterial.demo.commonActivity.Panorama.Panorama360Activity;
+import com.meterial.demo.commonActivity.Panorama.Panorama360Activity2;
 import com.meterial.demo.commonActivity.SecretActivity;
+import com.meterial.demo.commonActivity.TestAnimationsActivity;
+import com.meterial.demo.commonActivity.TestItemViewPagerActivity;
 import com.meterial.demo.commonActivity.TestPinActivity;
+import com.meterial.demo.commonActivity.TestRoundBgActivity;
 import com.meterial.demo.commonActivity.TestTextSwitcher;
+import com.meterial.demo.commonActivity.TextSpan.TestTextSpanActivity;
 import com.meterial.demo.commonActivity.ToolbarTitleAnimation;
 import com.meterial.demo.commonActivity.VerticalTextVActivity;
 import com.meterial.demo.commonActivity.WheelActivity;
+import com.meterial.demo.commonActivity.XEditTextActivity;
+import com.meterial.demo.commonActivity.blur.Blur500pxActivity;
+import com.meterial.demo.commonActivity.blur.BlurMainActivity;
+import com.meterial.demo.commonActivity.index.ListIndexActivity;
 import com.meterial.demo.commonActivity.ratinbar.TestRatinBarActivity;
+import com.meterial.demo.commonActivity.scaleImg.ScaleTransitionImageAnim;
 import com.meterial.demo.commonActivity.spruce.RecyclerActivity;
 import com.meterial.demo.commonActivity.spruce.SpruceActivity;
 import com.meterial.demo.commonActivity.wheel.WheelActivity1;
 import com.meterial.demo.customview.MDDialog;
-import com.meterial.demo.customview.PanningView;
 import com.meterial.demo.holder.OnItemClick;
 import com.meterial.demo.scene.TransitionActivity;
 import com.meterial.demo.svg.SvgActivity;
 
+import com.squareup.pollexor.Thumbor;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.squareup.pollexor.ThumborUrlBuilder.HorizontalAlign.RIGHT;
+import static com.squareup.pollexor.ThumborUrlBuilder.VerticalAlign.BOTTOM;
+import static com.squareup.pollexor.ThumborUrlBuilder.quality;
+import static com.squareup.pollexor.ThumborUrlBuilder.roundCorner;
+import static com.squareup.pollexor.ThumborUrlBuilder.watermark;
 
 public class MainActivity extends AppCompatActivity implements OnItemClick {
 
@@ -65,6 +90,35 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        //android Pollexor server Thumbor
+        Thumbor thumbor = Thumbor.create("http://example.com/");
+        String s1 = thumbor.buildImage("image.png")
+                .resize(48, 48)
+                .toUrl();// Produces: /unsafe/48x48/example.com/image.pngthumbor.buildImage("http://example.com/image.png")
+
+        String s2 = thumbor.buildImage("http://example.com/image.png")
+                .crop(10, 10, 90, 90)
+                .resize(40, 40)
+                .smart()
+                .toUrl();// Produces: /unsafe/10x10:90x90/smart/40x40/example.com/image.pngthumbor.buildImage("http://example.com/image.png")
+
+        String s3 = thumbor.buildImage("http://example.com/image.png")
+                .crop(5, 5, 195, 195)
+                .resize(95, 95)
+                .align(BOTTOM, RIGHT)
+                .toUrl();// Produces: /unsafe/5x5:195x195/right/bottom/95x95/example.com/image.pngthumbor.buildImage("http://example.com/background.png")
+
+
+       String s4 = thumbor.buildImage("http://example.com/image.png")
+               .resize(200, 100)
+                .filter(
+                        roundCorner(10),
+                        watermark(thumbor.buildImage("http://example.com/overlay1.png").resize(200, 100)),
+                        watermark(thumbor.buildImage("http://example.com/overlay2.png").resize(50, 50), 75, 25),
+                        quality(85)
+                )
+                .toUrl();
 
     }
 
@@ -122,8 +176,35 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("29列表item动画");
         list.add("30圆形菜单");
         list.add("31textswitcher&&&FadeTextView");
-        list.add("32ratingbar");
+        list.add("32评分ratingbar");
         list.add("33自定义cardView");
+        list.add("34textView Span");
+        list.add("35Carousel");
+        list.add("36背景左右移动缩放");
+        list.add("37editText显示分块内容");
+        list.add("38editText显示分块内容2");
+        list.add("39editText显示分块内容3");
+        list.add("40背景圆角");
+        list.add("41动画测试");
+        list.add("42item是viewpager");
+        list.add("43viewpager卡片式");
+        list.add("44点赞+1效果");
+        list.add("45列表字母索引");
+        list.add("46顶部table&Viewpager");
+        list.add("47MD圆形放大切换");
+        list.add("48评分ratingbar");
+        list.add("49毛玻璃");
+        list.add("50毛玻璃");
+        list.add("51panoramaImage");
+        list.add("52panorama360");
+        list.add("53搜索框");
+        list.add("54 9张图样式变化");
+        list.add("55recycleView悬浮吸顶");
+        list.add("56XEditText");
+        list.add("57仪表盘");
+        list.add("58两个颜色平滑过渡");
+        list.add("59图片缩放过度");
+        list.add("60交互样式效果");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -325,6 +406,142 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
                 Intent intent33 = new Intent(this, com.meterial.demo.commonActivity.cardview.MainActivity.class);
                 startActivity(intent33);
                 break;
+
+            case 34:
+                Intent intent34 = new Intent(this, TestTextSpanActivity.class);
+                startActivity(intent34);
+                break;
+
+            case 35:
+                Intent intent35 = new Intent(this, CarouselActivity.class);
+                startActivity(intent35);
+                break;
+
+            case 36:
+                Intent intent36 = new Intent(this, com.meterial.demo.commonActivity.KenBurns.MainActivity.class);
+                startActivity(intent36);
+                break;
+
+            case 37:
+                Intent intent37 = new Intent(this, com.meterial.demo.commonActivity.ship.MainActivity.class);
+                startActivity(intent37);
+                break;
+
+            case 38:
+                Intent intent38 = new Intent(this, com.meterial.demo.commonActivity.ship.view2.MainActivity.class);
+                startActivity(intent38);
+                break;
+
+            case 39:
+                Intent intent39 = new Intent(this, com.meterial.demo.commonActivity.ship.view3.MainActivity.class);
+                startActivity(intent39);
+                break;
+
+            case 40:
+                Intent intent40 = new Intent(this, TestRoundBgActivity.class);
+                startActivity(intent40);
+                break;
+
+            case 41:
+                Intent intent41 = new Intent(this, TestAnimationsActivity.class);
+                startActivity(intent41);
+                break;
+
+            case 42:
+                Intent intent42 = new Intent(this, TestItemViewPagerActivity.class);
+                startActivity(intent42);
+                break;
+
+            case 43:
+                Intent intent43 = new Intent(this, com.meterial.demo.commonActivity.ViewPagerCards.MainActivity.class);
+                startActivity(intent43);
+                break;
+
+            case 44:
+                Intent intent44 = new Intent(this, GoodActivty.class);
+                startActivity(intent44);
+                break;
+
+            case 45:
+                Intent intent45 = new Intent(this, ListIndexActivity.class);
+                startActivity(intent45);
+                break;
+
+            case 46:
+                Intent intent46 = new Intent(this, MyTopTabActivity.class);
+                startActivity(intent46);
+                break;
+
+            case 47:
+                Intent intent47 = new Intent(this, com.meterial.demo.ProjectUse.custom.CircularRevealActivity.class);
+                startActivity(intent47);
+                break;
+
+            case 48:
+                Intent intent48 = new Intent(this, com.meterial.demo.RatingBar.TestRatinBarActivity.class);
+                startActivity(intent48);
+                break;
+            case 49:
+                Intent intent49 = new Intent(this, BlurMainActivity.class);
+                startActivity(intent49);
+                break;
+
+            case 50:
+                Intent intent50 = new Intent(this, Blur500pxActivity.class);
+                startActivity(intent50);
+                break;
+
+            case 51:
+                Intent intent51 = new Intent(this, PanorMainActiivty.class);
+                startActivity(intent51);
+                break;
+
+            case 52:
+                Intent intent52 = new Intent(this, Panorama360Activity2.class);
+                //Intent intent52 = new Intent(this, Panorama360Activity.class);
+                startActivity(intent52);
+                break;
+
+            case 53:
+                Intent intent53 = new Intent(this, com.meterial.demo.commonActivity.BilibiliSearchView.MainActivity.class);
+                startActivity(intent53);
+                break;
+
+            case 54:
+                Intent intent54 = new Intent(this, NineMainActivity.class);
+                startActivity(intent54);
+                break;
+
+            case 55:
+                Intent intent55 = new Intent(this, com.meterial.demo.commonActivity.recyvleviewTest.MainActivity.class);
+                startActivity(intent55);
+                break;
+
+            case 56:
+                Intent intent56 = new Intent(this, XEditTextActivity.class);
+                startActivity(intent56);
+                break;
+
+            case 57:
+                Intent intent57 = new Intent(this, DashBoardActivity.class);
+                startActivity(intent57);
+                break;
+
+            case 58:
+                Intent intent58 = new Intent(this, ChameleonActivity.class);
+                startActivity(intent58);
+                break;
+
+            case 59:
+                Intent intent59 = new Intent(this, ScaleTransitionImageAnim.class);
+                startActivity(intent59);
+                break;
+
+            case 60:
+                Intent intent60 = new Intent(this, FabulousFilterActivity.class);
+                startActivity(intent60);
+                break;
+
             default:
                 break;
         }

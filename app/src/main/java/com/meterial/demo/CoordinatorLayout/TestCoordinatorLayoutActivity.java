@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import com.meterial.demo.CoordinatorLayout.custom.LoadHeaderImageFromNetworkActivity;
 import com.meterial.demo.CoordinatorLayout.custom.MainActivity;
+import com.meterial.demo.CoordinatorLayout.easeBehavior.ui.TestActivity13;
 import com.meterial.demo.R;
 import com.meterial.demo.customview.NestedScrolling.TestActivity;
 
@@ -30,6 +31,7 @@ public class TestCoordinatorLayoutActivity extends AppCompatActivity {
     private Button mButton10;
     private Button mButton11;
     private Button mButton12;
+    private Button mButton13;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -140,6 +142,16 @@ public class TestCoordinatorLayoutActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         startActivity(new Intent(TestCoordinatorLayoutActivity.this,
                                 com.meterial.demo.CoordinatorLayout.third.MainActivity.class));
+                    }
+                });
+
+
+        mButton13 = ((Button) findViewById(R.id.btn_13));
+        mButton13.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(TestCoordinatorLayoutActivity.this,
+                                TestActivity13.class));
                     }
                 });
 

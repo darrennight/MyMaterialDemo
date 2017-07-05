@@ -30,5 +30,36 @@
     <dimen name="font_space_width">12dp</dimen>
     <dimen name="base_padding">16dp</dimen>
 
+    <!-- Item -->
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="picture_padding">20dp</dimen>
+    <dimen name="picture_translate_distance">30dp</dimen>
+    <dimen name="more_card_padding">10dp</dimen>
+    <dimen name="more_card_margin">5dp</dimen>
+    <dimen name="more_card_margin_top">-20dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="chip_height">32dp</dimen>
+    <dimen name="chip_horizontal_padding">12dp</dimen>
+    <dimen name="chip_icon_horizontal_margin">8dp</dimen>
+    <dimen name="chip_close_horizontal_margin">4dp</dimen>
+    <dimen name="chip_close_icon_size">18dp</dimen>
+    <dimen name="chip_close_icon_size2">24dp</dimen>
+    <dimen name="chip_close_icon_padding">3dp</dimen>
 
+    <dimen name="card_padding">60dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+
+    <dimen name="contact_row_height">80dp</dimen>
+    <dimen name="contact_heading_size">65dp</dimen>
+    <dimen name="contact_img_size">65dp</dimen>
+    <dimen name="contact_row_padding">4dp</dimen>
+    <dimen name="contact_name_padding">20dp</dimen>
+    <dimen name="contact_divider_size">160dp</dimen>
+
+    <dimen name="titlebar_height">48dp</dimen>
+    <dimen name="bg_height">300dp</dimen>
 </resources>

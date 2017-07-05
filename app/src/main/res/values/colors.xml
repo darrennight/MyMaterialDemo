@@ -639,4 +639,80 @@
     <color name="material_black">#ff000000</color>
     <color name="material_white">#ffffffff</color>
 
+    <color name="transparent_white">#00FFFFFF</color>
+
+    <color name="colorFootball">#CDDC39</color>
+    <color name="colorFootballSelected">#827717</color>
+    <color name="colorBasketball">#FFC107</color>
+    <color name="colorBasketballSelected">#E65100</color>
+    <color name="colorTennis">#03A9F4</color>
+    <color name="colorTennisSelected">#01579B</color>
+    <color name="colorChipBackground">#e0e0e0</color>
+    <color name="colorChipBackgroundClicked">#424242</color>
+    <color name="colorChipText">#424242</color>
+    <color name="colorChipTextClicked">#F5F5F5</color>
+    <color name="colorChipCloseInactive">#757575</color>
+    <color name="colorChipCloseClicked">#F5F5F5</color>
+
+    <color name="paper">#fafafa</color>
+
+    <color name="blue">#4a90e2</color>
+    <color name="mediumBlue">#3978c1</color>
+
+    <color name="color_error">#FFCB0017</color>
+
+    <color name="base10">#eaeaea</color>
+    <color name="base30">#c1c1c1</color>
+    <color name="colorChipViewBackground">#E0E0E0</color>
+    <color name="chips_opened_bg">#009688</color>
+    <color name="colorCloseChip">#ababab</color>
+    <color name="white_transparency">#b9ffffff</color>
+
+    <color name="swipeselector_color_indicator_active">#398DE3</color>
+    <color name="swipeselector_color_indicator_inactive">#DDDDDD</color>
+    <color name="ic_default_bg_color">#33000000</color>
+    <color name="green">#4b993b</color>
+    <color name="blue_light">#1966FF</color>
+    <color name="blue_deep">#383d53</color>
+    <color name="chrome">#a3a3a3</color>
+    <color name="ghost">#a85c5c5c</color>
+    <color name="gravel">#1e1e1e</color>
+    <color name="grey">#3d3636</color>
+    <color name="lake">#235b49</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="red">#F44336</color>
+
+
+    <color name="bg1">#42CFBE</color>
+    <color name="bg2">#57B1CC</color>
+    <color name="bg3">#B888E5</color>
+    <color name="bg4">#F695A8</color>
+    <color name="bg5">#F9D461</color>
+
+
+    <color name="colorBg">#f5f5f5</color>
+    <color name="colorBlack33">#333333</color>
+    <color name="pink_fc4f74">#fc4f74</color>
+
+    <color name="color_red">#FF5722</color>
+    <color name="color_orange">#FF9800</color>
+    <color name="color_yellow">#FFC107</color>
+    <color name="color_green">#3FB830</color>
+    <color name="color_blue">#00BAED</color>
+    <color name="color_dark">#263238</color>
+    <color name="color_dark_light">#455A64</color>
+    <color name="color_light">#ECEFF1</color>
+    <color name="yellow">#fff9bb05</color>
+
+    <color name="bgnew">#464756</color>
+
+    <color name="filtersfab">#3f51b5</color>
+    <color name="filters_header">#303f9f</color>
+    <color name="filters_buttons">#ff4081</color>
+    <color name="filters_buttons_selected">#c2185b</color>
+    <color name="filters_chips">#b3e5fc</color>
+
+    <color name="orange">#ff5722</color>
+    <color name="brown">#795548</color>
+    <color name="bg">#f5f5f5</color>
 </resources>

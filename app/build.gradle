@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.meterial.demo"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 25
         //23 pop dialog 底部弹出从虚拟机下面
 
@@ -21,6 +21,10 @@ android {
         versionName "1.0"
 
         generatedDensities = []
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+
     }
 
     aaptOptions {
@@ -31,36 +35,57 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile "com.android.support:appcompat-v7:$supportVersion"
     compile "com.android.support:design:$supportVersion"
     compile "com.android.support:cardview-v7:$supportVersion"
     compile "com.android.support:palette-v7:$supportVersion"
     compile "com.android.support:animated-vector-drawable:$supportVersion"
-
     compile 'com.nineoldandroids:library:2.4.0'
     //compile 'de.hdodenhof:circleimageview:1.3.0'
     compile 'uk.co.ribot:easyadapter:1.4.0@aar'
-
+    //如果app不是以图片展示为主或者展示图片少可以用glide加载其他可以用fresco
     compile 'com.github.bumptech.glide:glide:3.7.0'
-
     /*compile 'com.jakewharton:butterknife:7.0.1'*/
-
     compile 'com.airbnb.android:lottie:1.5.1'
-
     compile 'com.jakewharton:butterknife:8.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.2.1'
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
     compile 'com.matthew-tamlin:sliding-intro-screen:3.2.0'
-
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.github.lukedeighton:wheelview:0.4.1'
     compile 'github.hellocsl:CursorWheelLayout:1.1.0'
     compile 'com.iarcuschin:simpleratingbar:0.1.5'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.2'
+    compile 'com.makeramen:roundedimageview:2.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.8'
+    compile 'com.squareup:pollexor:2.0.4'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    /*compile ('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+            transitive = true;
+        }*/
+    compile 'com.github.ozodrukh:CircularReveal:1.0.4@aar'
+    compile 'com.github.asyl.animation:arcanimator:1.0.0'
+    compile 'com.jaeger.statusbarutil:library:1.4.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.0.5'
+    compile files('libs/PanoramaGL_0.2-beta.jar')
 
+    compile('com.alibaba.android:vlayout:1.0.6@aar') {
+        transitive = true
+    }
+    compile 'com.allattentionhere:fabulousfilter:0.0.2'
+
+    compile ('com.google.android:flexbox:0.2.7'){
+        exclude group: 'com.android.support'
+    }
 }
