@@ -9,6 +9,8 @@ import android.widget.Button;
 import com.meterial.demo.CoordinatorLayout.custom.LoadHeaderImageFromNetworkActivity;
 import com.meterial.demo.CoordinatorLayout.custom.MainActivity;
 import com.meterial.demo.CoordinatorLayout.easeBehavior.ui.TestActivity13;
+import com.meterial.demo.CoordinatorLayout.easeBehavior.ui.TestActivity15;
+import com.meterial.demo.CoordinatorLayout.easeBehavior.ui.TestActivity16;
 import com.meterial.demo.R;
 import com.meterial.demo.customview.NestedScrolling.TestActivity;
 
@@ -32,6 +34,9 @@ public class TestCoordinatorLayoutActivity extends AppCompatActivity {
     private Button mButton11;
     private Button mButton12;
     private Button mButton13;
+    private Button mButton14;
+    private Button mButton15;
+    private Button mButton16;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -152,6 +157,34 @@ public class TestCoordinatorLayoutActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         startActivity(new Intent(TestCoordinatorLayoutActivity.this,
                                 TestActivity13.class));
+                    }
+                });
+
+
+        mButton14 = ((Button) findViewById(R.id.btn_14));
+        mButton14.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(TestCoordinatorLayoutActivity.this,
+                                TestActivity14.class));
+                    }
+                });
+
+        mButton15 = ((Button) findViewById(R.id.btn_15));
+        mButton15.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(TestCoordinatorLayoutActivity.this,
+                                TestActivity15.class));
+                    }
+                });
+
+        mButton16 = ((Button) findViewById(R.id.btn_16));
+        mButton16.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(TestCoordinatorLayoutActivity.this,
+                                TestActivity16.class));
                     }
                 });
 

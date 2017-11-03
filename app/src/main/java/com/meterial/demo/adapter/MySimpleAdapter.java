@@ -2,6 +2,7 @@ package com.meterial.demo.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +32,7 @@ public class MySimpleAdapter extends RecyclerView.Adapter<MyBaseHolder> {
     public MyBaseHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mContext);
         View holderView = inflater.inflate(R.layout.list_item, parent, false);
-
+        Log.e("====","===onCreateViewHolder"+viewType);
         return new MySimpleHolder(holderView,mClick);
     }
 

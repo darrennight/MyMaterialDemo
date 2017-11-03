@@ -2,6 +2,10 @@ package com.meterial.demo;
 
 import android.app.Application;
 import android.support.v4.util.Pair;
+import android.support.v7.app.AppCompatDelegate;
+import com.meterial.demo.commonActivity.supportBottom.AppConstants;
+import com.wuxiaolong.androidutils.library.LogUtil;
+import com.wuxiaolong.androidutils.library.SharedPreferencesUtil;
 
 /**
  * TODO
@@ -17,7 +21,6 @@ public class MyApplication extends Application implements ILottieApplication{
 
     @Override public void onCreate() {
         super.onCreate();
-
     }
 
     @Override public void startRecordingDroppedFrames() {

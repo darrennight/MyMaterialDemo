@@ -92,6 +92,10 @@
         <activity android:name=".CoordinatorLayout.TestActivity8"/>
         <activity android:name=".CoordinatorLayout.TestActivity9"/>
         <activity android:name=".CoordinatorLayout.TestActivity10"/>
+        <activity android:name=".CoordinatorLayout.TestActivity14"/>
+        <activity android:name=".CoordinatorLayout.easeBehavior.ui.TestActivity15"/>
+        <activity android:name=".CoordinatorLayout.easeBehavior.ui.TestActivity16"/>
+
         <activity android:name=".CoordinatorLayout.custom.LoadHeaderImageFromNetworkActivity"/>
         <activity android:name=".CoordinatorLayout.custom.MainActivity"/>
         <activity android:name=".customview.NestedScrolling.TestActivity"/>
@@ -173,6 +177,36 @@
         <activity android:name=".commonActivity.FabulousFilter.FragmentExampleActivity"/>
         <activity android:name=".commonActivity.FabulousFilter.MainSampleActivity"/>
         <activity android:name=".commonActivity.FabulousFilter.MenuActivity"/>
+        <activity android:name=".activity.BottomNavigationActivity"/>
+
+        <activity android:name=".commonActivity.supportBottom.SupportBottomActivity"/>
+        <activity android:name=".commonActivity.supportBottom.DetailActivity"/>
+        <activity android:name=".commonActivity.supportBottom.BottomNavigationActivity"/>
+        <activity android:name=".commonActivity.supportBottom.LoginActivity"/>
+
+        <activity android:name=".commonActivity.bottomNav.BadgeActivity"/>
+        <activity android:name=".commonActivity.bottomNav.BottomNavMainActivity"/>
+        <activity android:name=".commonActivity.bottomNav.CustomColorAndFontActivity"/>
+        <activity android:name=".commonActivity.bottomNav.FiveColorChangingTabsActivity"/>
+        <activity android:name=".commonActivity.bottomNav.IconsOnlyActivity"/>
+        <activity android:name=".commonActivity.bottomNav.ThreeTabsActivity"/>
+        <activity android:name=".commonActivity.bottomNav.ThreeTabsQRActivity"/>
+        <activity android:name=".activity.MyCalendarActivity"/>
+        <activity android:name=".activity.MyCalendarThumb"/>
+        <activity android:name=".activity.MyCalendarActivity2"/>
+        <activity android:name=".activity.MyCalendarThumbGrid"/>
+        <activity android:name=".activity.LableMoveActivity"/>
+        <activity android:name=".commonActivity.ExpandLayoutActivity"/>
+        <activity android:name=".commonActivity.ExpandLayoutCustomActivity"/>
+        <activity android:name=".customview.expandLayout.ExpandLayoutActivity3"/>
+        <activity android:name=".activity.LableMove2Activity"/>
+        <activity android:name=".activity.TestActivity"/>
+        <activity android:name=".commonActivity.TextAroundActivity"/>
+
+        <activity android:name=".sticky.RecycleStickyActivity"/>
+        <activity android:name=".index.sample.MainActivity"/>
+        <activity android:name=".index.sample.city.PickCityActivity"/>
+        <activity android:name=".index.sample.contact.PickContactActivity"/>
     </application>
 
 </manifest>

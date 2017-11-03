@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingTop="20dp">
+    android:paddingTop="20dp"
+    android:background="@color/black">
 
     <RelativeLayout
         android:id="@+id/top"
@@ -37,7 +38,7 @@
         android:layout_height="10dp"
         android:scaleType="matrix"
         android:layout_gravity="center_horizontal"></ImageView>
-
+<!--android:layout_marginTop="10dp"-->
     <EditText
         android:id="@+id/comment"
         android:layout_width="285dp"

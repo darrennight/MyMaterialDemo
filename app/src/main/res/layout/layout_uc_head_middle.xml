@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.meterial.demo.CoordinatorLayout.easeBehavior.ui.DisInterceptNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.meterial.demo.CoordinatorLayout.easeBehavior.ui.DisInterceptNestedScrollViewTest16 xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/middle_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/bg_height"
-    android:tag="middle"
-    app:layout_collapseMode="parallax"
-    app:layout_collapseParallaxMultiplier="0.5">
 
+    android:tag="middle"
+    >
+   <!--
+   app:layout_collapseMode="parallax"
+    app:layout_collapseParallaxMultiplier="0.5"
+   android:layout_marginTop="@dimen/bg_height"-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -93,4 +95,4 @@
 
 
     </LinearLayout>
-</com.meterial.demo.CoordinatorLayout.easeBehavior.ui.DisInterceptNestedScrollView>
+    </com.meterial.demo.CoordinatorLayout.easeBehavior.ui.DisInterceptNestedScrollViewTest16>

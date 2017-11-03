@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.meterial.demo.calendar.MonthViewStyle xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mv_thum_monthview"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:selectedCircleColor="#3F51B5"
+    app:dayTextSize="16sp"
+    app:monthTextSize="18sp"/>-->
+
+
+<com.meterial.demo.calendar.MonthViewThum xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mv_thum_monthview"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:selectedCircleColor="#3F51B5"
+    app:dayTextSize="16sp"
+    app:monthTextSize="18sp"/>
+
+<!--
+<com.meterial.demo.calendar.MonthView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mv_thum_monthview"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:selectedCircleColor="#3F51B5"
+    app:dayTextSize="16sp"
+    app:monthTextSize="18sp"/>-->

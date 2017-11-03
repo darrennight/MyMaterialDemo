@@ -68,8 +68,11 @@ public class AppBarLayoutOverScrollViewBehavior extends AppBarLayout.Behavior {
  
  
             @Override 
-            public final void onOffsetChanged(AppBarLayout appBarLayout, int i) { 
-                mToolBar.setAlpha(Float.valueOf(Math.abs(i)) / Float.valueOf(appBarLayout.getTotalScrollRange())); 
+            public final void onOffsetChanged(AppBarLayout appBarLayout, int i) {
+                if(mToolBar!=null){
+                    mToolBar.setAlpha(Float.valueOf(Math.abs(i)) / Float.valueOf(appBarLayout.getTotalScrollRange()));
+                }
+
  
             } 
  

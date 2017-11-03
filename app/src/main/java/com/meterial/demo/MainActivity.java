@@ -21,19 +21,29 @@ import com.meterial.demo.MDesign.BehaviorMainActivity;
 import com.meterial.demo.ProjectUse.ProjectUserMainActivity;
 import com.meterial.demo.RecycleViewCommon.RVCommonActivity;
 import com.meterial.demo.activity.BannerActivity;
+import com.meterial.demo.activity.BottomNavigationActivity;
 import com.meterial.demo.activity.BottomSheetActivity;
 import com.meterial.demo.activity.CircularRevealActivity;
 import com.meterial.demo.activity.CoordinatorAndFloating;
 import com.meterial.demo.activity.EndlessRecycle;
 import com.meterial.demo.activity.ImmersionStatusBar;
+import com.meterial.demo.activity.LableMove2Activity;
+import com.meterial.demo.activity.LableMoveActivity;
+import com.meterial.demo.activity.MyCalendarActivity;
+import com.meterial.demo.activity.MyCalendarActivity2;
+import com.meterial.demo.activity.MyCalendarThumb;
+import com.meterial.demo.activity.MyCalendarThumbGrid;
 import com.meterial.demo.activity.RecyclerViewUsed;
 import com.meterial.demo.activity.Smallwidget;
+import com.meterial.demo.activity.TestActivity;
 import com.meterial.demo.activity.TransitionMainActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
 import com.meterial.demo.commonActivity.Carousel.CarouselActivity;
 import com.meterial.demo.commonActivity.ChameleonActivity;
 import com.meterial.demo.commonActivity.CircleImageViewActivity;
 import com.meterial.demo.commonActivity.DashBoardActivity;
+import com.meterial.demo.commonActivity.ExpandLayoutActivity;
+import com.meterial.demo.commonActivity.ExpandLayoutCustomActivity;
 import com.meterial.demo.commonActivity.FabulousFilter.FabulousFilterActivity;
 import com.meterial.demo.commonActivity.GoodActivty;
 import com.meterial.demo.commonActivity.GossipActivity;
@@ -49,6 +59,7 @@ import com.meterial.demo.commonActivity.TestItemViewPagerActivity;
 import com.meterial.demo.commonActivity.TestPinActivity;
 import com.meterial.demo.commonActivity.TestRoundBgActivity;
 import com.meterial.demo.commonActivity.TestTextSwitcher;
+import com.meterial.demo.commonActivity.TextAroundActivity;
 import com.meterial.demo.commonActivity.TextSpan.TestTextSpanActivity;
 import com.meterial.demo.commonActivity.ToolbarTitleAnimation;
 import com.meterial.demo.commonActivity.VerticalTextVActivity;
@@ -56,15 +67,19 @@ import com.meterial.demo.commonActivity.WheelActivity;
 import com.meterial.demo.commonActivity.XEditTextActivity;
 import com.meterial.demo.commonActivity.blur.Blur500pxActivity;
 import com.meterial.demo.commonActivity.blur.BlurMainActivity;
+import com.meterial.demo.commonActivity.bottomNav.BottomNavMainActivity;
 import com.meterial.demo.commonActivity.index.ListIndexActivity;
 import com.meterial.demo.commonActivity.ratinbar.TestRatinBarActivity;
 import com.meterial.demo.commonActivity.scaleImg.ScaleTransitionImageAnim;
 import com.meterial.demo.commonActivity.spruce.RecyclerActivity;
 import com.meterial.demo.commonActivity.spruce.SpruceActivity;
+import com.meterial.demo.commonActivity.supportBottom.SupportBottomActivity;
 import com.meterial.demo.commonActivity.wheel.WheelActivity1;
 import com.meterial.demo.customview.MDDialog;
+import com.meterial.demo.customview.expandLayout.ExpandLayoutActivity3;
 import com.meterial.demo.holder.OnItemClick;
 import com.meterial.demo.scene.TransitionActivity;
+import com.meterial.demo.sticky.RecycleStickyActivity;
 import com.meterial.demo.svg.SvgActivity;
 
 import com.squareup.pollexor.Thumbor;
@@ -205,11 +220,29 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("58两个颜色平滑过渡");
         list.add("59图片缩放过度");
         list.add("60交互样式效果");
+        list.add("61google规范底部导航样式第三方开源");
+        list.add("62googleSupporot底部导航");
+        list.add("63google规范底部导航样式第三方开源");
+        list.add("64airbnb日历");
+        list.add("65日历缩略图显示");
+        list.add("66 日历");
+        list.add("67日历缩略图显示grid");
+        list.add("68文字跟随移动");
+        list.add("69expandLayout显示隐藏layout");
+        list.add("70expandLayout显示隐藏layout");
+        list.add("71expandLayout");
+        list.add("72多行文字跟随移动");
+        list.add("73测试Test");
+        list.add("74图片文字环绕");
+        list.add("75RecyclerView悬浮吸顶01");
+        list.add("76RecyclerView悬浮吸顶+索引");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
         mAdapter = new MySimpleAdapter(this, list, this);
         mRecycler.setAdapter(mAdapter);
+
+        lm.scrollToPosition(list.size()-1);
     }
 
     @Override
@@ -540,6 +573,86 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 60:
                 Intent intent60 = new Intent(this, FabulousFilterActivity.class);
                 startActivity(intent60);
+                break;
+
+            case 61:
+                Intent intent61 = new Intent(this, BottomNavigationActivity.class);
+                startActivity(intent61);
+                break;
+
+            case 62:
+                Intent intent62 = new Intent(this, SupportBottomActivity.class);
+                startActivity(intent62);
+                break;
+
+            case 63:
+                Intent intent63 = new Intent(this, BottomNavMainActivity.class);
+                startActivity(intent63);
+                break;
+
+            case 64:
+                Intent intent64 = new Intent(this, MyCalendarActivity.class);
+                startActivity(intent64);
+                break;
+
+            case 65:
+                Intent intent65 = new Intent(this, MyCalendarThumb.class);
+                startActivity(intent65);
+                break;
+
+            case 66:
+                Intent intent66 = new Intent(this, MyCalendarActivity2.class);
+                startActivity(intent66);
+                break;
+
+            case 67:
+                Intent intent67 = new Intent(this, MyCalendarThumbGrid.class);
+                startActivity(intent67);
+                break;
+
+            case 68:
+                Intent intent68 = new Intent(this, LableMoveActivity.class);
+                startActivity(intent68);
+                break;
+
+            case 69:
+                Intent intent69 = new Intent(this, ExpandLayoutActivity.class);
+                startActivity(intent69);
+                break;
+
+            case 70:
+                Intent intent70 = new Intent(this, ExpandLayoutCustomActivity.class);
+                startActivity(intent70);
+                break;
+
+            case 71:
+                Intent intent71 = new Intent(this, ExpandLayoutActivity3.class);
+                startActivity(intent71);
+                break;
+
+            case 72:
+                Intent intent72 = new Intent(this, LableMove2Activity.class);
+                startActivity(intent72);
+                break;
+
+            case 73:
+                Intent intent73 = new Intent(this, TestActivity.class);
+                startActivity(intent73);
+                break;
+
+            case 74:
+                Intent intent74 = new Intent(this, TextAroundActivity.class);
+                startActivity(intent74);
+                break;
+
+            case 75:
+                Intent intent75 = new Intent(this, RecycleStickyActivity.class);
+                startActivity(intent75);
+                break;
+
+            case 76:
+                Intent intent76 = new Intent(this, com.meterial.demo.index.sample.MainActivity.class);
+                startActivity(intent76);
                 break;
 
             default:

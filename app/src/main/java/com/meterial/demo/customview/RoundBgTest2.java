@@ -86,8 +86,10 @@ public class RoundBgTest2 extends RelativeLayout {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
         int specMode = MeasureSpec.getMode(widthMeasureSpec);
         int specSize = MeasureSpec.getSize(widthMeasureSpec);
+
         if (specMode == MeasureSpec.AT_MOST) {//相当于我们设置为wrap_content
             //设置左右padding textview的padding
             View view =   getChildAt(0);

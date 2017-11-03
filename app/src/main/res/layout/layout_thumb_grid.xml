@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+<com.meterial.demo.calendar.MonthViewGrid
+    android:id="@+id/mvg_mothon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="7"
+    android:columnWidth="50dp"
+    android:horizontalSpacing="0dp"
+    android:verticalSpacing="0dp"
+    android:listSelector="@null"
+    android:stretchMode="none"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="20dp"
+    ></com.meterial.demo.calendar.MonthViewGrid>
+</RelativeLayout>

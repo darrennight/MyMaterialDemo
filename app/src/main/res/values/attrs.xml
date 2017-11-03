@@ -551,4 +551,83 @@
         <attr name="x_hidePwdDrawable" format="reference"/>
         <attr name="x_disableEmoji" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="MonthView">
+        <attr name="selectedCircleColor" format="color" />
+        <attr name="dayTextColor" format="color" />
+        <attr name="unavailableDayTextColor" format="color" />
+        <attr name="selectedDayTextColor" format="color" />
+        <attr name="monthTextColor" format="color" />
+        <attr name="dayTextSize" format="dimension" />
+        <attr name="monthTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AirCalendarView">
+        <attr name="visibleYearCount" format="integer" />
+        <attr name="daySelectOffset" format="integer" />
+        <attr name="isSelectFuture" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarPickerView">
+        <attr name="android:background"/>
+        <attr name="tsquare_dividerColor" format="color"/>
+        <attr name="tsquare_dayBackground" format="reference"/>
+        <attr name="tsquare_dayTextColor" format="color"/>
+        <attr name="tsquare_titleTextColor" format="color"/>
+        <attr name="tsquare_displayHeader" format="boolean"/>
+        <attr name="tsquare_headerTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="calendar_cell">
+        <attr name="tsquare_state_selectable" format="boolean" />
+        <attr name="tsquare_state_current_month" format="boolean" />
+        <attr name="tsquare_state_today" format="boolean" />
+        <attr name="tsquare_state_range_first" format="boolean" />
+        <attr name="tsquare_state_range_middle" format="boolean" />
+        <attr name="tsquare_state_range_last" format="boolean" />
+        <attr name="tsquare_state_highlighted" format="boolean" />
+        <attr name="tsquare_state_unavailable" format="boolean" />
+        <attr name="tsquare_state_deactivated" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLinearLayout">
+        <!--默认显示的条目数-->
+        <attr name="defaultItemCount" format="integer" />
+        <!--提示文字的大小-->
+        <attr name="tipTextSize" format="dimension" />
+        <!--字体颜色-->
+        <attr name="tipTextColor" format="color"/>
+        <!--待展开的文字提示-->
+        <attr name="expandText" format="string" />
+        <!--待收起时的文字提示-->
+        <attr name="hideText" format="string" />
+        <!--向下的箭头的图标-->
+        <attr name="arrowDownImg" format="reference" />
+        <!--是否使用默认的底部-->
+        <attr name="useDefaultBottom" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="parentLayout" format="integer" />
+        <attr name="childLayout" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableLayout2">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_parallax" format="float" />
+        <attr name="android:orientation"/>
+    </declare-styleable>
+
+
+    <!-- titleView自定义属性 -->
+    <declare-styleable name="titleview" >
+        <attr name="title_content" format="string"/>
+        <attr name="count_content" format="string"/>
+        <attr name="title_text_size" format="dimension"/>
+        <attr name="title_text_color" format="color"/>
+        <attr name="count_text_size" format="dimension"/>
+        <attr name="count_text_color" format="color"/>
+    </declare-styleable>
+
 </resources>
