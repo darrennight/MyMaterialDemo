@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-sdk tools:overrideLibrary="com.allattentionhere.fabulousfilter"/>
 
     <application
@@ -207,6 +208,82 @@
         <activity android:name=".index.sample.MainActivity"/>
         <activity android:name=".index.sample.city.PickCityActivity"/>
         <activity android:name=".index.sample.contact.PickContactActivity"/>
+        <activity android:name=".activity.ArcActivity"/>
+        <activity android:name=".activity.TestIPCActivity"/>
+        <activity android:name=".excelpanel.ExcelPanelActivity"/>
+        <activity android:name=".activity.WindowImageActivity"/>
+        <activity android:name=".commonActivity.captcha.CaptchaMainActivity"/>
+        <activity android:name=".commonActivity.switchloop3D.LoopRotarySwitchActivity"/>
+        <activity android:name=".menu.m1.DemoActivity"/>
+        <activity android:name=".menu.m1.MenuInScrollViewActivity"/>
+        <activity android:name=".menu.m1.MenuWithCustomActionButtonActivity"/>
+        <activity android:name=".menu.m1.MenuWithCustomAnimationActivity"/>
+        <activity android:name=".menu.m1.MenuWithFABActivity"/>
+        <activity android:name=".menu.m1.SystemOverlayMenuActivity"/>
+        <service android:name=".menu.m1.SystemOverlayMenuService"/>
+
+        <activity android:name=".menu.m2.Menu2Activity"/>
+
+        <activity android:name=".menu.m3.MenuMain3Activity"/>
+        <activity android:name=".menu.m3.ActionBarActivity"/>
+        <activity android:name=".menu.m3.BoomExampleActivity"/>
+        <activity android:name=".menu.m3.ButtonPlaceAlignmentActivity"/>
+        <activity android:name=".menu.m3.ChangeBoomButtonActivity"/>
+        <activity android:name=".menu.m3.ControlActivity"/>
+        <activity android:name=".menu.m3.CustomPositionActivity"/>
+        <activity android:name=".menu.m3.DraggableActivity"/>
+        <activity android:name=".menu.m3.EaseActivity"/>
+        <activity android:name=".menu.m3.FadeViewsActivity"/>
+        <activity android:name=".menu.m3.FragmentActivity"/>
+        <activity android:name=".menu.m3.HamButtonActivity"/>
+        <activity android:name=".menu.m3.ListenerActivity"/>
+        <activity android:name=".menu.m3.ListViewActivity"/>
+        <activity android:name=".menu.m3.OrderExampleActivity"/>
+        <activity android:name=".menu.m3.OrientationActivity"/>
+        <activity android:name=".menu.m3.RecyclerViewActivity"/>
+        <activity android:name=".menu.m3.ShareActivity"/>
+        <activity android:name=".menu.m3.SimpleCircleButtonActivity"/>
+        <activity android:name=".menu.m3.SquareAndPieceCornerRadiusActivity"/>
+        <activity android:name=".menu.m3.TextInsideCircleButtonActivity"/>
+        <activity android:name=".menu.m3.TextOutsideCircleButtonActivity"/>
+        <activity android:name=".menu.m3.ThreeDAnimationActivity"/>
+        <activity android:name=".menu.m3.ToolBarActivity"/>
+        <activity android:name=".menu.m4.CircleMenuActivity"/>
+        <activity android:name=".menu.m5.CircleMenu5Activity"/>
+        <activity android:name=".menu.m6.Menu6Activity"/>
+        <activity android:name=".menu.m7.Menu7Activity"/>
+        <activity android:name=".menu.m7.SecondaryActivity"/>
+        <activity android:name=".commonActivity.captcha1.CaptchaMainActivity1"/>
+        <activity android:name=".itemAnimation.ItemAnimaActivity"/>
+        <activity android:name=".itemAnimation.RecyclerViewActivity"/>
+        <activity android:name=".itemAnimation.StaggeredGridActivity"/>
+
+        <activity android:name=".itemAnimation.anim1.AdapterSampleActivity"/>
+        <activity android:name=".itemAnimation.anim1.AnimatorSampleActivity"/>
+        <activity android:name=".itemAnimation.anim1.ItemAnima1Activity"/>
+
+        <activity android:name=".itemAnimation.anim2.ExampleActivity"/>
+        <activity android:name=".itemAnimation.anim2.MyActivity"/>
+
+        <activity android:name=".commonActivity.swipecard.SwipeCardActivity"/>
+        <activity android:name=".commonActivity.swipecard.tantan.TanTanActivity"/>
+        <activity android:name=".commonActivity.swipecard.zuimei.ScaleCardActivity"/>
+        <activity android:name=".commonActivity.drag.demo1.ViewDragActivity"/>
+        <activity android:name=".commonActivity.drag.demo2.DragDeleteActivity"/>
+        <activity android:name=".commonActivity.drag.demo3.DragSortMainActivity"/>
+        <activity android:name=".commonActivity.drag.demo3.GridViewActivity"/>
+        <activity android:name=".commonActivity.drag.demo3.ListViewActivity"/>
+        <activity android:name=".commonActivity.swipecard.demo.SwipCardActivity"/>
+        <activity android:name=".commonActivity.layoutmanager.demo1.CustomManagerActivity1"/>
+
+        <activity android:name=".commonActivity.layoutmanager.demo2.CustomManager2Activity"/>
+        <activity android:name=".commonActivity.layoutmanager.demo2.carousel.CarouselLayoutActivity"/>
+        <activity android:name=".commonActivity.layoutmanager.demo2.circle.CircleLayoutActivity"/>
+        <activity android:name=".commonActivity.layoutmanager.demo2.circlescale.CircleScaleLayoutActivity"/>
+        <activity android:name=".commonActivity.layoutmanager.demo2.gallery.GalleryLayoutActivity"/>
+        <activity android:name=".commonActivity.layoutmanager.demo2.rotate.RotateLayoutActivity"/>
+        <activity android:name=".commonActivity.layoutmanager.demo2.scale.ScaleLayoutActivity"/>
+
     </application>
 
 </manifest>

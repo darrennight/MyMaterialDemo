@@ -20,6 +20,7 @@ import com.meterial.demo.CoordinatorLayout.TestCoordinatorLayoutActivity;
 import com.meterial.demo.MDesign.BehaviorMainActivity;
 import com.meterial.demo.ProjectUse.ProjectUserMainActivity;
 import com.meterial.demo.RecycleViewCommon.RVCommonActivity;
+import com.meterial.demo.activity.ArcActivity;
 import com.meterial.demo.activity.BannerActivity;
 import com.meterial.demo.activity.BottomNavigationActivity;
 import com.meterial.demo.activity.BottomSheetActivity;
@@ -36,7 +37,9 @@ import com.meterial.demo.activity.MyCalendarThumbGrid;
 import com.meterial.demo.activity.RecyclerViewUsed;
 import com.meterial.demo.activity.Smallwidget;
 import com.meterial.demo.activity.TestActivity;
+import com.meterial.demo.activity.TestIPCActivity;
 import com.meterial.demo.activity.TransitionMainActivity;
+import com.meterial.demo.activity.WindowImageActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
 import com.meterial.demo.commonActivity.Carousel.CarouselActivity;
 import com.meterial.demo.commonActivity.ChameleonActivity;
@@ -51,7 +54,6 @@ import com.meterial.demo.commonActivity.MyTopTabActivity;
 import com.meterial.demo.commonActivity.Nice9.NineMainActivity;
 import com.meterial.demo.commonActivity.PanningViewActivity;
 import com.meterial.demo.commonActivity.Panorama.PanorMainActiivty;
-import com.meterial.demo.commonActivity.Panorama.Panorama360Activity;
 import com.meterial.demo.commonActivity.Panorama.Panorama360Activity2;
 import com.meterial.demo.commonActivity.SecretActivity;
 import com.meterial.demo.commonActivity.TestAnimationsActivity;
@@ -68,16 +70,39 @@ import com.meterial.demo.commonActivity.XEditTextActivity;
 import com.meterial.demo.commonActivity.blur.Blur500pxActivity;
 import com.meterial.demo.commonActivity.blur.BlurMainActivity;
 import com.meterial.demo.commonActivity.bottomNav.BottomNavMainActivity;
+import com.meterial.demo.commonActivity.captcha.CaptchaMainActivity;
+import com.meterial.demo.commonActivity.captcha1.CaptchaMainActivity1;
+import com.meterial.demo.commonActivity.drag.demo1.ViewDragActivity;
+import com.meterial.demo.commonActivity.drag.demo2.DragDeleteActivity;
+import com.meterial.demo.commonActivity.drag.demo3.DragSortMainActivity;
 import com.meterial.demo.commonActivity.index.ListIndexActivity;
+import com.meterial.demo.commonActivity.layoutmanager.demo1.CustomManagerActivity1;
+import com.meterial.demo.commonActivity.layoutmanager.demo2.CustomManager2Activity;
 import com.meterial.demo.commonActivity.ratinbar.TestRatinBarActivity;
 import com.meterial.demo.commonActivity.scaleImg.ScaleTransitionImageAnim;
 import com.meterial.demo.commonActivity.spruce.RecyclerActivity;
 import com.meterial.demo.commonActivity.spruce.SpruceActivity;
 import com.meterial.demo.commonActivity.supportBottom.SupportBottomActivity;
+import com.meterial.demo.commonActivity.swipecard.SwipeCardActivity;
+import com.meterial.demo.commonActivity.swipecard.demo.SwipCardActivity;
+import com.meterial.demo.commonActivity.swipecard.tantan.TanTanActivity;
+import com.meterial.demo.commonActivity.swipecard.zuimei.ScaleCardActivity;
+import com.meterial.demo.commonActivity.switchloop3D.LoopRotarySwitchActivity;
 import com.meterial.demo.commonActivity.wheel.WheelActivity1;
 import com.meterial.demo.customview.MDDialog;
 import com.meterial.demo.customview.expandLayout.ExpandLayoutActivity3;
+import com.meterial.demo.excelpanel.ExcelPanelActivity;
 import com.meterial.demo.holder.OnItemClick;
+import com.meterial.demo.itemAnimation.ItemAnimaActivity;
+import com.meterial.demo.itemAnimation.anim1.ItemAnima1Activity;
+import com.meterial.demo.itemAnimation.anim2.MyActivity;
+import com.meterial.demo.menu.m1.DemoActivity;
+import com.meterial.demo.menu.m2.Menu2Activity;
+import com.meterial.demo.menu.m3.MenuMain3Activity;
+import com.meterial.demo.menu.m4.CircleMenuActivity;
+import com.meterial.demo.menu.m5.CircleMenu5Activity;
+import com.meterial.demo.menu.m6.Menu6Activity;
+import com.meterial.demo.menu.m7.Menu7Activity;
 import com.meterial.demo.scene.TransitionActivity;
 import com.meterial.demo.sticky.RecycleStickyActivity;
 import com.meterial.demo.svg.SvgActivity;
@@ -236,6 +261,32 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("74图片文字环绕");
         list.add("75RecyclerView悬浮吸顶01");
         list.add("76RecyclerView悬浮吸顶+索引");
+        list.add("77顶部弧形");
+        list.add("78和AndroidStudayDemo两个apk进程通信");
+        list.add("79excel表格");
+        list.add("80windowImage");
+        list.add("81拼图验证码");
+        list.add(("82旋转木马"));
+        list.add("83菜单1");
+        list.add("84菜单2");
+        list.add(("85菜单3"));
+        list.add("86菜单4");
+        list.add("87菜单5");
+        list.add("88菜单6");
+        list.add("89菜单7");
+        list.add("90滑块拼图验证码");
+        list.add("91itemAnimation");
+        list.add("92itemAnimation");
+        list.add("93动画集合");
+        list.add("94卡片滑动");
+        list.add("95卡片滑动");
+        list.add("96卡片滑动");
+        list.add("97item侧滑动ViewDragHelper");
+        list.add("98item侧滑");
+        list.add("99拖动排序");
+        list.add("100卡片滑动");
+        list.add("101RecycleerView自定义样式");
+        list.add("102RecycleerView自定义样式");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -653,6 +704,136 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 76:
                 Intent intent76 = new Intent(this, com.meterial.demo.index.sample.MainActivity.class);
                 startActivity(intent76);
+                break;
+
+            case 77:
+                Intent intent77 = new Intent(this, ArcActivity.class);
+                startActivity(intent77);
+                break;
+
+            case 78:
+                Intent intent78 = new Intent(this, TestIPCActivity.class);
+                startActivity(intent78);
+                break;
+
+            case 79:
+                Intent intent79 = new Intent(this, ExcelPanelActivity.class);
+                startActivity(intent79);
+                break;
+
+            case 80:
+                Intent intent80 = new Intent(this, WindowImageActivity.class);
+                startActivity(intent80);
+                break;
+
+            case 81:
+                Intent intent81 = new Intent(this, CaptchaMainActivity.class);
+                startActivity(intent81);
+                break;
+
+            case 82:
+                Intent intent82 = new Intent(this, LoopRotarySwitchActivity.class);
+                startActivity(intent82);
+                break;
+
+            case 83:
+                Intent intent83 = new Intent(this, DemoActivity.class);
+                startActivity(intent83);
+                break;
+
+            case 84:
+                Intent intent84 = new Intent(this, Menu2Activity.class);
+                startActivity(intent84);
+                break;
+
+            case 85:
+                Intent intent85 = new Intent(this, MenuMain3Activity.class);
+                startActivity(intent85);
+                break;
+
+            case 86:
+                Intent intent86 = new Intent(this, CircleMenuActivity.class);
+                startActivity(intent86);
+                break;
+
+            case 87:
+                Intent intent87 = new Intent(this, CircleMenu5Activity.class);
+                startActivity(intent87);
+                break;
+
+            case 88:
+                Intent intent88 = new Intent(this, Menu6Activity.class);
+                startActivity(intent88);
+                break;
+
+            case 89:
+                Intent intent89 = new Intent(this, Menu7Activity.class);
+                startActivity(intent89);
+                break;
+
+            case 90:
+                Intent intent90 = new Intent(this, CaptchaMainActivity1.class);
+                startActivity(intent90);
+                break;
+
+            case 91:
+                Intent intent91 = new Intent(this, ItemAnimaActivity.class);
+                startActivity(intent91);
+                break;
+
+            case 92:
+                Intent intent92 = new Intent(this, ItemAnima1Activity.class);
+                startActivity(intent92);
+                break;
+
+            case 93:
+                Intent intent93 = new Intent(this, MyActivity.class);
+                startActivity(intent93);
+                break;
+
+            case 94:
+                Intent intent94 = new Intent(this, SwipeCardActivity.class);
+                startActivity(intent94);
+                break;
+
+            case 95:
+                Intent intent95 = new Intent(this, TanTanActivity.class);
+                startActivity(intent95);
+                break;
+
+            case 96:
+                Intent intent96 = new Intent(this, ScaleCardActivity.class);
+                startActivity(intent96);
+                break;
+
+            case 97:
+                Intent intent97 = new Intent(this, ViewDragActivity.class);
+                startActivity(intent97);
+                break;
+
+            case 98:
+                Intent intent98 = new Intent(this, DragDeleteActivity.class);
+                startActivity(intent98);
+                break;
+
+            case 99:
+                Intent intent99 = new Intent(this, DragSortMainActivity.class);
+                startActivity(intent99);
+                break;
+
+            case 100:
+                Intent intent100 = new Intent(this, SwipCardActivity.class);
+                startActivity(intent100);
+                break;
+
+            case 101:
+                Intent intent101 = new Intent(this, CustomManagerActivity1.class);
+                startActivity(intent101);
+                break;
+
+            case 102:
+                Intent intent102 = new Intent(this, CustomManager2Activity.class);
+                startActivity(intent102);
                 break;
 
             default:

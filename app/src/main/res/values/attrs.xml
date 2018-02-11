@@ -630,4 +630,87 @@
         <attr name="count_text_color" format="color"/>
     </declare-styleable>
 
+
+    <attr name="arcHeight" format="dimension"/>
+
+    <declare-styleable name="ArcView">
+        <attr name="arcHeight"/>
+        <attr name="bgColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcImageView">
+        <attr name="arcHeight"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ExcelPanel">
+        <attr name="left_cell_width" format="dimension" />
+        <attr name="top_cell_height" format="dimension" />
+        <attr name="normal_cell_width" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="WindowImageView">
+        <attr name="src" format="reference" />
+        <attr name="frescoEnable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension"/>
+        <attr name="captchaHeight" format="dimension"/>
+        <attr name="matchDeviation" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoopRotarySwitchView">
+        <attr name="rotaryorientation">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+        <attr name="autoRotation" format="boolean"/>
+        <attr name="r" format="dimension"/>
+
+        <attr name="direction">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="SmartMenu">
+        <attr name="inner_padding" format="dimension" />
+        <attr name="outer_padding" format="dimension" />
+        <attr name="smart_btn_size" format="dimension" />
+        <attr name="vertical_padding" format="dimension" />
+        <attr name="dot_radius" format="dimension" />
+        <attr name="dot_distance" format="dimension" />
+        <attr name="dot_color" format="color|reference" />
+        <attr name="bg_color" format="color|reference" />
+        <attr name="shadow_color" format="color|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="Captcha">
+        <attr name="captchasrc" format="reference"/>
+        <attr name="progressDrawable" format="reference"/>
+        <attr name="thumbDrawable" format="reference"/>
+        <attr name="mode" format="enum">
+            <enum name="mode_bar" value="1"/>
+            <enum name="mode_nonbar" value="2"/>
+        </attr>
+        <attr name="max_fail_count" format="integer"/>
+        <attr name="blockSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="radius" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoPlayRecyclerView">
+        <attr name="timeInterval" format="integer" />
+        <attr name="autodirection" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
 </resources>

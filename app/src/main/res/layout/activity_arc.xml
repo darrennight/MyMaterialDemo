@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.meterial.demo.customview.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:arcHeight="80dp"
+        app:bgColor="@color/strong"
+        />
+
+
+    <com.meterial.demo.customview.ArcImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:arcHeight="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tree"
+        />
+</LinearLayout>
