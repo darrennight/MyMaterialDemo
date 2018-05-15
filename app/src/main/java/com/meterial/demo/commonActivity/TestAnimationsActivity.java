@@ -38,7 +38,7 @@ public class TestAnimationsActivity extends AppCompatActivity {
         final ImageView shakeImage = (ImageView)findViewById(R.id.shake);
 
         ShakeAnimation.create().with(shakeImage)
-                .setDuration(1000)
+                .setDuration(2000)
                 //.setRepeatMode(ShakeAnimation.RESTART)
                 //.setRepeatCount(ShakeAnimation.INFINITE)
                 .start();

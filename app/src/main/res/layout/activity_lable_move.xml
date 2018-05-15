@@ -66,4 +66,32 @@
         android:layout_height="wrap_content"
         android:text="clean"
         />
+
+    <com.meterial.demo.customview.LableTextView3
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#252525">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android开发android开发android开发android开发android开发android开发android开发android开发android开发android开发android开发android开发"
+            android:background="#de6565"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:background="#3e95ec"/>
+
+    </com.meterial.demo.customview.LableTextView3>
+
+    <com.meterial.demo.customview.LableTextView4
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfaasdfsadfafsa"
+        android:textColor="@color/black"
+        android:background="@color/amber_100"
+        />
 </LinearLayout>

@@ -25,6 +25,10 @@ public class MyApplication extends Application implements ILottieApplication{
     private int droppedFrames;
     private long droppedFramesStartingNs;
     private long currentFrameNs;
+    static {
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+    }
+
 
     @Override public void onCreate() {
         super.onCreate();

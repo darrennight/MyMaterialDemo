@@ -14,13 +14,13 @@
             android:id="@+id/img1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img1" />
+            android:src="@drawable/img1roll" />
 
         <com.meterial.demo.commonActivity.KenBurns.view.KenBurnsView
             android:id="@+id/img2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img2" />
+            android:src="@drawable/img2roll" />
 
     </ViewSwitcher>
 

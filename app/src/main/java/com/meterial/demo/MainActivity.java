@@ -18,6 +18,10 @@ import android.widget.Toast;
 
 import com.meterial.demo.CoordinatorLayout.TestCoordinatorLayoutActivity;
 import com.meterial.demo.MDesign.BehaviorMainActivity;
+import com.meterial.demo.ObjectAnim.TestSetAndGet;
+import com.meterial.demo.ObjectAnim.customAnim.NumberAnimationActivity;
+import com.meterial.demo.ObjectAnim.customAnim.TestCustomAnimation;
+import com.meterial.demo.ObjectAnim.customAnim.TestCustomAnimationActivity01;
 import com.meterial.demo.ProjectUse.ProjectUserMainActivity;
 import com.meterial.demo.RecycleViewCommon.RVCommonActivity;
 import com.meterial.demo.activity.ArcActivity;
@@ -41,23 +45,42 @@ import com.meterial.demo.activity.TestIPCActivity;
 import com.meterial.demo.activity.TransitionMainActivity;
 import com.meterial.demo.activity.WindowImageActivity;
 import com.meterial.demo.adapter.MySimpleAdapter;
+import com.meterial.demo.chart.ChartActivity1;
+import com.meterial.demo.chart.ChartActivity2;
+import com.meterial.demo.chart.ChartActivity3;
+import com.meterial.demo.chart.ChartActivity4;
+import com.meterial.demo.chart.ChartActivity5;
+import com.meterial.demo.chart.ChartActivity6;
+import com.meterial.demo.chart.ChartActivity7;
+import com.meterial.demo.chart.ChartActivity8;
+import com.meterial.demo.commonActivity.CardStack.CardStackMainActivity;
 import com.meterial.demo.commonActivity.Carousel.CarouselActivity;
 import com.meterial.demo.commonActivity.ChameleonActivity;
 import com.meterial.demo.commonActivity.CircleImageViewActivity;
+import com.meterial.demo.commonActivity.ClipChildrenActivity;
+import com.meterial.demo.commonActivity.CustomLayoutAnimation.TestCustomLayoutAnimationController;
 import com.meterial.demo.commonActivity.DashBoardActivity;
 import com.meterial.demo.commonActivity.ExpandLayoutActivity;
 import com.meterial.demo.commonActivity.ExpandLayoutCustomActivity;
+import com.meterial.demo.commonActivity.ExpandingCollection.ExpandCollectionActivity;
 import com.meterial.demo.commonActivity.FabulousFilter.FabulousFilterActivity;
+import com.meterial.demo.commonActivity.FoldableLayout.FoldMainActivity;
 import com.meterial.demo.commonActivity.GoodActivty;
 import com.meterial.demo.commonActivity.GossipActivity;
+import com.meterial.demo.commonActivity.InfiniteCards.InfiniteCardActivity;
 import com.meterial.demo.commonActivity.MyTopTabActivity;
+import com.meterial.demo.commonActivity.NextLayout.demo1.ui.NextLayoutActivity;
 import com.meterial.demo.commonActivity.Nice9.NineMainActivity;
 import com.meterial.demo.commonActivity.PanningViewActivity;
 import com.meterial.demo.commonActivity.Panorama.PanorMainActiivty;
 import com.meterial.demo.commonActivity.Panorama.Panorama360Activity2;
 import com.meterial.demo.commonActivity.SecretActivity;
+import com.meterial.demo.commonActivity.SlidingDeck.DeckMainActivity;
+import com.meterial.demo.commonActivity.SmileView.SmileMainActivity;
 import com.meterial.demo.commonActivity.TestAnimationsActivity;
 import com.meterial.demo.commonActivity.TestItemViewPagerActivity;
+import com.meterial.demo.commonActivity.TestLayoutTransition.TestLayoutTransition;
+import com.meterial.demo.commonActivity.TestLayoutTransition.TestLayoutTransition2;
 import com.meterial.demo.commonActivity.TestPinActivity;
 import com.meterial.demo.commonActivity.TestRoundBgActivity;
 import com.meterial.demo.commonActivity.TestTextSwitcher;
@@ -72,16 +95,28 @@ import com.meterial.demo.commonActivity.blur.BlurMainActivity;
 import com.meterial.demo.commonActivity.bottomNav.BottomNavMainActivity;
 import com.meterial.demo.commonActivity.captcha.CaptchaMainActivity;
 import com.meterial.demo.commonActivity.captcha1.CaptchaMainActivity1;
+import com.meterial.demo.commonActivity.carouse.CustomCarouseActivity;
+import com.meterial.demo.commonActivity.cube.CubeMainActivity;
+import com.meterial.demo.commonActivity.dialogAnima.DialogAnimActivity;
 import com.meterial.demo.commonActivity.drag.demo1.ViewDragActivity;
 import com.meterial.demo.commonActivity.drag.demo2.DragDeleteActivity;
 import com.meterial.demo.commonActivity.drag.demo3.DragSortMainActivity;
+import com.meterial.demo.commonActivity.drag.demo4.DragGroupActivity;
+import com.meterial.demo.commonActivity.expandView.ExpandViewActivity;
 import com.meterial.demo.commonActivity.index.ListIndexActivity;
 import com.meterial.demo.commonActivity.layoutmanager.demo1.CustomManagerActivity1;
 import com.meterial.demo.commonActivity.layoutmanager.demo2.CustomManager2Activity;
+import com.meterial.demo.commonActivity.rangeseekbar.RangeSeekBarActivity;
 import com.meterial.demo.commonActivity.ratinbar.TestRatinBarActivity;
+import com.meterial.demo.commonActivity.remote.RemoteActivity;
+import com.meterial.demo.commonActivity.retail.ListDemoActivity;
+import com.meterial.demo.commonActivity.roll3D.Roll3DMainActivity;
+import com.meterial.demo.commonActivity.rotateText.RotatingTextActivity;
 import com.meterial.demo.commonActivity.scaleImg.ScaleTransitionImageAnim;
+import com.meterial.demo.commonActivity.spinMenu.SpinMenuActivity;
 import com.meterial.demo.commonActivity.spruce.RecyclerActivity;
 import com.meterial.demo.commonActivity.spruce.SpruceActivity;
+import com.meterial.demo.commonActivity.stereoview.StereoMainActivity;
 import com.meterial.demo.commonActivity.supportBottom.SupportBottomActivity;
 import com.meterial.demo.commonActivity.swipecard.SwipeCardActivity;
 import com.meterial.demo.commonActivity.swipecard.demo.SwipCardActivity;
@@ -91,6 +126,8 @@ import com.meterial.demo.commonActivity.switchloop3D.LoopRotarySwitchActivity;
 import com.meterial.demo.commonActivity.wheel.WheelActivity1;
 import com.meterial.demo.customview.MDDialog;
 import com.meterial.demo.customview.expandLayout.ExpandLayoutActivity3;
+import com.meterial.demo.enterAnim.EnterAnimActivity;
+import com.meterial.demo.enterAnim.enter2.EnterAnimActivity2;
 import com.meterial.demo.excelpanel.ExcelPanelActivity;
 import com.meterial.demo.holder.OnItemClick;
 import com.meterial.demo.itemAnimation.ItemAnimaActivity;
@@ -107,6 +144,10 @@ import com.meterial.demo.scene.TransitionActivity;
 import com.meterial.demo.sticky.RecycleStickyActivity;
 import com.meterial.demo.svg.SvgActivity;
 
+import com.meterial.demo.test.DiDi.DiDiAnimationActivity;
+import com.meterial.demo.test.TestScanerActivity;
+import com.meterial.demo.wheel.w1.WheelMainActivity1;
+import com.meterial.demo.wheel.w2.WheelMainActivity2;
 import com.squareup.pollexor.Thumbor;
 import java.util.ArrayList;
 import java.util.List;
@@ -275,8 +316,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("88菜单6");
         list.add("89菜单7");
         list.add("90滑块拼图验证码");
-        list.add("91itemAnimation");
-        list.add("92itemAnimation");
+        list.add("91itemAnimation进入动画");
+        list.add("92itemAnimation列表添加删除item动画和滑动时动画");
         list.add("93动画集合");
         list.add("94卡片滑动");
         list.add("95卡片滑动");
@@ -287,6 +328,53 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("100卡片滑动");
         list.add("101RecycleerView自定义样式");
         list.add("102RecycleerView自定义样式");
+        list.add("103头条feed");
+        list.add("104RecyclerView分组滑动删除");
+        list.add("105text文字下移动切换");
+        list.add("106NextLayout上拉下一个界面");
+        list.add("107card可以自定义动画切换");
+        list.add("108卡片放大成界面");
+        list.add("109范围seekbar");
+        list.add("110菜单8");
+        list.add("111card动画");
+        list.add("112层叠item");
+        list.add("113dialog动画");
+        list.add("114测试扫描动画");
+        list.add("115指纹扫描动画");
+        list.add("116立体旋转切换3D无限");
+        list.add("117花式3D翻转效果");
+        list.add("118轮盘fragment菜单");
+        list.add("119竖直方向的SlidingPanelLayout");
+        list.add("120饼状图1");
+        list.add("121饼状图2");
+        list.add("122饼状图3");
+        list.add("123饼状图4");
+        list.add("124饼状图5");
+        list.add("125饼状图6");
+        list.add("126饼状图7");
+        list.add("127饼状图8");
+        list.add("128进入动画");
+        list.add("129进入动画");
+        list.add("130子控件高度超过父控件 类似底部导航");
+        list.add("131万能遥控器交互效果");
+        list.add("132自定义carouse");
+        list.add("133列表向上滑动item放大");
+        list.add("134expand展开收起layout");
+        list.add("135滴滴动画");
+        list.add("136wheel滑动选择器1");
+        list.add("137wheel滑动选择器2");
+        list.add("138仿《最美有物》笑脸点赞控件");
+        list.add("139自定义LayoutAnimation");
+        list.add("140layoutTransition动画使用");
+        list.add("141listview属性动画test");
+        list.add("142继承animation自定义动画");
+        list.add("143layoutTransition动画使用2");
+        list.add("144自定义动画");
+        list.add("145数字切换自定义动画");
+        list.add("146cube立体切换界面动画");
+        list.add("147fold不明天demo");
+        list.add(("148Deck交互样式"));
+        list.add("149CardStack卡片堆栈");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -834,6 +922,237 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 102:
                 Intent intent102 = new Intent(this, CustomManager2Activity.class);
                 startActivity(intent102);
+                break;
+            case 103:
+                Intent intent103 = new Intent(this, com.meterial.demo.commonActivity.toutiao.MainActivity.class);
+                startActivity(intent103);
+                break;
+
+            case 104:
+                Intent intent104 = new Intent(this, DragGroupActivity.class);
+                startActivity(intent104);
+                break;
+
+            case 105:
+                Intent intent105 = new Intent(this, RotatingTextActivity.class);
+                startActivity(intent105);
+                break;
+
+            case 106:
+                Intent intent106 = new Intent(this, NextLayoutActivity.class);
+                startActivity(intent106);
+                break;
+
+            case 107:
+                Intent intent107 = new Intent(this, InfiniteCardActivity.class);
+                startActivity(intent107);
+                break;
+
+            case 108:
+                Intent intent108 = new Intent(this, ExpandCollectionActivity.class);
+                startActivity(intent108);
+                break;
+
+            case 109:
+                Intent intent109 = new Intent(this, RangeSeekBarActivity.class);
+                startActivity(intent109);
+                break;
+
+            case 110:
+                Intent intent110 = new Intent(this, com.meterial.demo.menu.m8.MainActivity.class);
+                startActivity(intent110);
+                break;
+
+            case 111:
+                Intent intent111 = new Intent(this, com.meterial.demo.commonActivity.filpcard.MainActivity.class);
+                startActivity(intent111);
+                break;
+
+            case 112:
+                Intent intent112 = new Intent(this, com.meterial.demo.commonActivity.overflyingview.MainActivity.class);
+                startActivity(intent112);
+                break;
+
+            case 113:
+                Intent intent113 = new Intent(this, DialogAnimActivity.class);
+                startActivity(intent113);
+                break;
+
+            case 114:
+                Intent intent114 = new Intent(this, TestScanerActivity.class);
+                startActivity(intent114);
+                break;
+
+            case 115:
+                Intent intent115 = new Intent(this, com.meterial.demo.commonActivity.finger.MainActivity.class);
+                startActivity(intent115);
+                break;
+
+            case 116:
+                Intent intent116 = new Intent(this, StereoMainActivity.class);
+                startActivity(intent116);
+                break;
+
+            case 117:
+                Intent intent117 = new Intent(this, Roll3DMainActivity.class);
+                startActivity(intent117);
+                break;
+
+            case 118:
+                Intent intent118 = new Intent(this, SpinMenuActivity.class);
+                startActivity(intent118);
+                break;
+
+            case 119:
+                Intent intent119 = new Intent(this, com.meterial.demo.commonActivity.PanelLayout.MainActivity.class);
+                startActivity(intent119);
+                break;
+
+            case 120:
+                Intent intent120 = new Intent(this, ChartActivity1.class);
+                startActivity(intent120);
+                break;
+
+            case 121:
+                Intent intent121 = new Intent(this, ChartActivity2.class);
+                startActivity(intent121);
+                break;
+
+            case 122:
+                Intent intent122 = new Intent(this, ChartActivity3.class);
+                startActivity(intent122);
+                break;
+
+            case 123:
+                Intent intent123 = new Intent(this, ChartActivity4.class);
+                startActivity(intent123);
+                break;
+
+            case 124:
+                Intent intent124 = new Intent(this, ChartActivity5.class);
+                startActivity(intent124);
+                break;
+
+            case 125:
+                Intent intent125 = new Intent(this, ChartActivity6.class);
+                startActivity(intent125);
+                break;
+
+            case 126:
+                Intent intent126 = new Intent(this, ChartActivity7.class);
+                startActivity(intent126);
+                break;
+
+            case 127:
+                Intent intent127 = new Intent(this, ChartActivity8.class);
+                startActivity(intent127);
+                break;
+
+            case 128:
+                Intent intent128 = new Intent(this, EnterAnimActivity.class);
+                startActivity(intent128);
+                break;
+
+            case 129:
+                Intent intent129 = new Intent(this, EnterAnimActivity2.class);
+                startActivity(intent129);
+                break;
+
+            case 130:
+                Intent intent130 = new Intent(this, ClipChildrenActivity.class);
+                startActivity(intent130);
+                break;
+
+            case 131:
+                Intent intent131 = new Intent(this, RemoteActivity.class);
+                startActivity(intent131);
+                break;
+
+            case 132:
+                Intent intent132 = new Intent(this, CustomCarouseActivity.class);
+                startActivity(intent132);
+                break;
+
+            case 133:
+                Intent intent133 = new Intent(this, ListDemoActivity.class);
+                startActivity(intent133);
+                break;
+
+            case 134:
+                Intent intent134 = new Intent(this, ExpandViewActivity.class);
+                startActivity(intent134);
+                break;
+
+            case 135:
+                Intent intent135 = new Intent(this, DiDiAnimationActivity.class);
+                startActivity(intent135);
+                break;
+
+            case 136:
+                Intent intent136 = new Intent(this, WheelMainActivity1.class);
+                startActivity(intent136);
+                break;
+
+            case 137:
+                Intent intent137 = new Intent(this, WheelMainActivity2.class);
+                startActivity(intent137);
+                break;
+
+            case 138:
+                Intent intent138 = new Intent(this, SmileMainActivity.class);
+                startActivity(intent138);
+                break;
+
+            case 139:
+                Intent intent139 = new Intent(this, TestCustomLayoutAnimationController.class);
+                startActivity(intent139);
+                break;
+
+            case 140:
+                Intent intent140 = new Intent(this, TestLayoutTransition.class);
+                startActivity(intent140);
+                break;
+
+            case 141:
+                Intent intent141 = new Intent(this, TestSetAndGet.class);
+                startActivity(intent141);
+                break;
+
+            case 142:
+                Intent intent142 = new Intent(this, TestCustomAnimation.class);
+                startActivity(intent142);
+                break;
+
+            case 143:
+                Intent intent143 = new Intent(this, TestLayoutTransition2.class);
+                startActivity(intent143);
+                break;
+
+            case 144:
+                Intent intent144 = new Intent(this, TestCustomAnimationActivity01.class);
+                startActivity(intent144);
+                break;
+
+            case 145:
+                Intent intent145 = new Intent(this, NumberAnimationActivity.class);
+                startActivity(intent145);
+                break;
+
+            case 146:
+                Intent intent146 = new Intent(this, CubeMainActivity.class);
+                startActivity(intent146);
+                break;
+            case 147:
+                Intent intent147 = new Intent(this, FoldMainActivity.class);
+                startActivity(intent147);
+                break;
+            case 148:
+                Intent intent148 = new Intent(this, DeckMainActivity.class);
+                startActivity(intent148);
+                break;
+            case 149:
+                Intent intent149 = new Intent(this, CardStackMainActivity.class);
+                startActivity(intent149);
                 break;
 
             default:

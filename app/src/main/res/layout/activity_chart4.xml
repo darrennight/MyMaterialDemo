@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.meterial.demo.chart.view.PieChart
+            android:id="@+id/Pie"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_weight="100"
+            android:background="#90A4AE"
+            android:padding="4dp"
+            custom:autoCenterPointerInSlice="true"
+            custom:highlightStrength="1.12"
+            custom:chartLabelColor="#fff"
+            custom:labelHeight="14dp"
+            custom:labelPosition="left"
+            custom:labelWidth="20dp"
+            custom:labelY="35dp"
+            custom:pieRotation="0"
+            custom:pointerRadius="4dp"
+            custom:showText="true" />
+
+        <com.meterial.demo.chart.view.PieChart
+            android:id="@+id/Pie2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_weight="100"
+            android:background="#BCAAA4"
+            android:padding="4dp"
+            custom:autoCenterPointerInSlice="false"
+            custom:highlightStrength="1.12"
+            custom:chartLabelColor="#fff"
+            custom:labelHeight="14dp"
+            custom:labelPosition="left"
+            custom:labelWidth="20dp"
+            custom:labelY="35dp"
+            custom:pieRotation="0"
+            custom:pointerRadius="4dp"
+            custom:showText="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置" />
+</LinearLayout>

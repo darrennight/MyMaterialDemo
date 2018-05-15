@@ -25,7 +25,7 @@ public class ShakeAnimation {
  
         imageViewObjectAnimator.setDuration(duration);
         //imageViewObjectAnimator.setRepeatMode(repeatMode);
-        //imageViewObjectAnimator.setRepeatCount(repeatCount);
+        imageViewObjectAnimator.setRepeatCount(repeatCount);
         imageViewObjectAnimator.setInterpolator(new LinearInterpolator());
         imageViewObjectAnimator.start();
     } 

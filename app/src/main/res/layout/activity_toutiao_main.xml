@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meterial.demo.commonActivity.toutiao.WLLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.meterial.demo.commonActivity.toutiao.MyWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+    <com.meterial.demo.commonActivity.toutiao.MyListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+    </com.meterial.demo.commonActivity.toutiao.MyListView>
+
+</com.meterial.demo.commonActivity.toutiao.WLLayout>

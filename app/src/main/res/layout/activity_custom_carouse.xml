@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.meterial.demo.commonActivity.carouse.CarouselView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        cv:image_left="@drawable/bg_default_artist_art2"
+        cv:image_middle="@drawable/bg_default_artist_art3"
+        cv:image_right="@drawable/bg_default_artist_art4"
+        ></com.meterial.demo.commonActivity.carouse.CarouselView>
+
+</android.support.constraint.ConstraintLayout>

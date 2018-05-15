@@ -283,6 +283,89 @@
         <activity android:name=".commonActivity.layoutmanager.demo2.gallery.GalleryLayoutActivity"/>
         <activity android:name=".commonActivity.layoutmanager.demo2.rotate.RotateLayoutActivity"/>
         <activity android:name=".commonActivity.layoutmanager.demo2.scale.ScaleLayoutActivity"/>
+        <activity android:name=".commonActivity.toutiao.MainActivity"/>
+        <activity android:name=".commonActivity.drag.demo4.DragGroupActivity"/>
+        <activity android:name=".commonActivity.rotateText.RotatingTextActivity"/>
+        <activity android:name=".commonActivity.NextLayout.demo1.ui.NextLayoutActivity"/>
+        <activity android:name=".commonActivity.NextLayout.demo1.ui.OtherModelActivity"/>
+        <activity android:name=".commonActivity.NextLayout.demo1.ui.ScrollViewModelActivity"/>
+        <activity android:name=".commonActivity.NextLayout.demo1.ui.WebViewActivity"/>
+
+        <activity android:name=".commonActivity.InfiniteCards.InfiniteCardActivity"/>
+        <activity android:name=".commonActivity.ExpandingCollection.ExpandCollectionActivity"/>
+        <activity android:name=".commonActivity.rangeseekbar.RangeSeekBarActivity"/>
+        <activity android:name=".menu.m8.MainActivity"/>
+        <activity android:name=".commonActivity.filpcard.MainActivity"/>
+        <activity android:name=".commonActivity.overflyingview.MainActivity"/>
+        <activity android:name=".commonActivity.overflyingview.HorizontalActivity"/>
+        <activity android:name=".commonActivity.overflyingview.VertialActivity"/>
+        <activity android:name=".commonActivity.overflyingview.Vertial2Activity"/>
+
+
+        <activity android:name=".commonActivity.dialogAnima.DialogAnimActivity"/>
+        <activity android:name=".test.TestScanerActivity"/>
+
+        <activity android:name=".commonActivity.finger.MainActivity"/>
+        <activity android:name=".commonActivity.finger.ScannerActivity"/>
+
+        <activity android:name=".commonActivity.stereoview.StereoMainActivity"/>
+        <activity android:name=".commonActivity.stereoview.ImageActivity"/>
+        <activity android:name=".commonActivity.stereoview.LoginActivity"/>
+        <activity android:name=".commonActivity.stereoview.SettingActivity"/>
+        <activity android:name=".commonActivity.roll3D.Roll3DMainActivity"/>
+        <activity android:name=".commonActivity.roll3D.DemoAct"/>
+        <activity android:name=".commonActivity.roll3D.RollDebugAct"/>
+
+        <activity android:name=".commonActivity.spinMenu.SpinMenuActivity"/>
+
+        <activity android:name=".commonActivity.PanelLayout.DemoActivity1"/>
+        <activity android:name=".commonActivity.PanelLayout.DemoActivity2"/>
+        <activity android:name=".commonActivity.PanelLayout.MainActivity"/>
+
+        <activity android:name=".chart.ChartActivity1"/>
+        <activity android:name=".chart.ChartActivity2"/>
+        <activity android:name=".chart.ChartActivity3"/>
+        <activity android:name=".chart.ChartActivity4"/>
+        <activity android:name=".chart.ChartActivity5"/>
+        <activity android:name=".chart.ChartActivity6"/>
+        <activity android:name=".chart.ChartActivity7"/>
+        <activity android:name=".chart.ChartActivity8"/>
+
+        <activity android:name=".enterAnim.EnterAnimActivity"/>
+        <activity android:name=".enterAnim.enter2.EnterAnimActivity2"/>
+        <activity android:name=".enterAnim.enter2.RecyclerViewActivity"/>
+        <activity android:name=".enterAnim.enter2.StaggeredGridActivity"/>
+
+        <activity android:name=".commonActivity.ClipChildrenActivity"/>
+
+        <activity android:name=".commonActivity.remote.RemoteActivity"/>
+        <activity android:name=".commonActivity.carouse.CustomCarouseActivity"/>
+        <activity android:name=".commonActivity.retail.ListDemoActivity"/>
+        <activity android:name=".commonActivity.expandView.ExpandViewActivity"/>
+        <activity android:name=".test.DiDi.DiDiAnimationActivity"/>
+
+        <activity android:name=".wheel.w1.WheelMainActivity1"/>
+        <activity android:name=".wheel.w1.DatePickerTestActivity"/>
+        <activity android:name=".wheel.w1.SimpleTestActivity"/>
+
+        <activity android:name=".wheel.w2.WheelMainActivity2"/>
+        <activity android:name=".commonActivity.SmileView.SmileMainActivity"/>
+        <activity android:name=".commonActivity.CustomLayoutAnimation.TestCustomLayoutAnimationController"/>
+        <activity android:name=".commonActivity.TestLayoutTransition.TestLayoutTransition"/>
+        <activity android:name=".ObjectAnim.TestSetAndGet"/>
+        <activity android:name=".ObjectAnim.customAnim.TestCustomAnimation"/>
+        <activity android:name=".commonActivity.TestLayoutTransition.TestLayoutTransition2"/>
+        <activity android:name=".ObjectAnim.customAnim.TestCustomAnimationActivity01"/>
+        <activity android:name=".ObjectAnim.customAnim.NumberAnimationActivity"/>
+        <activity android:name=".commonActivity.cube.CubeMainActivity"/>
+
+        <activity android:name=".commonActivity.FoldableLayout.FoldMainActivity"/>
+        <activity android:name=".commonActivity.FoldableLayout.FoldableListActivity"/>
+        <activity android:name=".commonActivity.FoldableLayout.UnfoldableDetailsActivity"/>
+        <activity android:name=".commonActivity.SlidingDeck.DeckMainActivity"/>
+
+        <activity android:name=".commonActivity.CardStack.CardStackMainActivity"/>
+
 
     </application>
 

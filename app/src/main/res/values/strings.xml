@@ -680,4 +680,118 @@ Vivamus placerat lacus vel vehicula scelerisque, dui enim adipiscing lacus sit a
     <string name="right_on_top">Right On Top</string>
     <string name="center_on_top">Center On Top</string>
 
+
+
+    <string name="ptn_no_more_data">没有更多信息</string>
+    <string name="ptn_release_to_next">放手查看下一个</string>
+    <string name="ptn_pull_up_to_next">上拉查看下一个</string>
+    <string name="ptn_the_first">已经是第一个了</string>
+    <string name="ptn_release_to_previous">放手查看前一个</string>
+    <string name="ptn_pull_down_to_previous">下拉查看前一个</string>
+
+
+    <string name="text">Squid blog crucifix Marfa, consectetur vero placeat mixtape. Non seitan sriracha eu, do Banksy fashion axe cred qui vegan delectus consequat Helvetica mollit. XOXO gluten-free disrupt, gastropub officia cliche chillwave hella pop-up. Fixie swag raw denim, YOLO craft beer assumenda occupy veniam photo booth pug consectetur next level Portland tote bag +1. Mlkshk PBR aliquip placeat Wes Anderson.</string>
+    <string name="title">My Description</string>
+    <string name="context_menu">Context menu</string>
+
+
+
+    <string name="costomview">im custom view</string>
+
+
+    <string name="start_scan">start scan demo!</string>
+    <string name="btn_start">start</string>
+    <string name="long_press_scan">long press to scan</string>
+
+    <string name="button_reload">Reload</string>
+    <string name="button_list">List</string>
+    <string name="button_grid">Grid</string>
+    <string name="enter_title">Enter Title</string>
+
+    <string-array name="default_array">
+        <item>北京</item>
+        <item>天津</item>
+        <item>上海</item>
+        <item>重庆</item>
+        <item>河北</item>
+        <item>河南</item>
+        <item>云南</item>
+        <item>辽宁</item>
+        <item>黑龙江</item>
+        <item>湖南</item>
+        <item>安徽</item>
+        <item>山东</item>
+        <item>新疆</item>
+        <item>江苏</item>
+        <item>浙江</item>
+        <item>江西</item>
+        <item>湖北</item>
+        <item>广西</item>
+        <item>甘肃</item>
+        <item>山西</item>
+        <item>内蒙古</item>
+        <item>陕西</item>
+        <item>吉林</item>
+        <item>福建</item>
+        <item>贵州</item>
+        <item>广东</item>
+        <item>青海</item>
+        <item>西藏</item>
+        <item>四川</item>
+        <item>宁夏</item>
+        <item>海南</item>
+        <item>台湾</item>
+        <item>香港</item>
+        <item>澳门</item>
+    </string-array>
+
+
+    <string-array name="paintings_titles">
+        <item>Starry Night</item>
+        <item>Cafe Terrace at Night</item>
+        <item>Starry Night Over the Rhone</item>
+        <item>Sunflowers</item>
+        <item>Almond Blossoms</item>
+    </string-array>
+
+    <string-array name="paintings_years">
+        <item>1889</item>
+        <item>1888</item>
+        <item>1888</item>
+        <item>1888</item>
+        <item>1890</item>
+    </string-array>
+
+    <string-array name="paintings_locations">
+        <item>Museum of Modern Art, New York City</item>
+        <item>Kröller-Müller Museum, Otterlo</item>
+        <item>Musée d\'Orsay, Paris</item>
+        <item>National Gallery, London</item>
+        <item>Van Gogh Museum, Amsterdam</item>
+    </string-array>
+
+    <array name="paintings_images">
+        <item>@drawable/starry_night</item>
+        <item>@drawable/cafe_terrace</item>
+        <item>@drawable/starry_night_over_the_rhone</item>
+        <item>@drawable/sunflowers</item>
+        <item>@drawable/almond_blossoms</item>
+    </array>
+
+    <string name="year">Year</string>
+    <string name="location">Location</string>
+
+    <string name="nice_job">Nice Job!</string>
+    <string name="no_task">Don\'t have pending tasks.</string>
+    <string name="fill_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+
+
+
+    <string name="menu_action_all_down">All down</string>
+    <string name="menu_action_up_down">Up down</string>
+    <string name="menu_action_up_down_stack">Up down stack</string>
+
+
+
 </resources>

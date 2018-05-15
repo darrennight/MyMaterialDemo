@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    >
+
+
+    <com.meterial.demo.commonActivity.rangeseekbar.RangeSeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rsb_markTextArray="@array/markArray"
+        app:rsb_lineColorSelected="@color/colorAccent"
+        app:rsb_thumbResId="@drawable/seekbar_thumb"
+        app:rsb_lineColorEdge="@color/colorSeekBarDefault"
+        app:rsb_cellMode="number"
+        app:rsb_seekBarMode="single"
+        />
+
+
+    <TextView
+        android:id="@+id/progress2_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <com.meterial.demo.commonActivity.rangeseekbar.RangeSeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:rsb_markTextArray="@array/markArray2"
+        app:rsb_lineColorSelected="@color/colorAccent"
+        app:rsb_lineColorEdge="@color/colorSeekBarDefault"
+        app:rsb_textPadding="17dp"
+        app:rsb_min="-1"
+        app:rsb_max="1"
+        app:rsb_thumbPrimaryColor="@color/colorSeekBarDefault"
+        app:rsb_thumbSecondaryColor="@color/colorAccent"
+        app:rsb_seekBarHeight="4dp"
+        app:rsb_thumbSize="20dp"
+        app:rsb_cellMode="number"
+        app:rsb_seekBarMode="range"
+        app:rsb_progressHintMode="alwaysShow"
+        />
+    <com.meterial.demo.commonActivity.rangeseekbar.RangeSeekBar
+        android:id="@+id/seekbar3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:rsb_markTextArray="@array/negativeMarkArray"
+        app:rsb_lineColorSelected="#a6c1ee"
+        app:rsb_lineColorEdge="@color/colorSeekBarDefault"
+        app:rsb_textPadding="17dp"
+        app:rsb_textSize="16sp"
+        app:rsb_min="-100"
+        app:rsb_max="100"
+        app:rsb_reserve="60"
+        app:rsb_hintBGHeight="50dp"
+        app:rsb_seekBarHeight="2dp"
+        app:rsb_hintBGWith="60dp"
+        app:rsb_thumbSize="20dp"
+        app:rsb_cellMode="other"
+        app:rsb_seekBarMode="range"
+        app:rsb_thumbResId="@drawable/custom_thumb"
+        />
+    <com.meterial.demo.commonActivity.rangeseekbar.RangeSeekBar
+        android:id="@+id/seekbar4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:rsb_markTextArray="@array/wordsArray"
+        app:rsb_lineColorSelected="@color/colorPrimary"
+        app:rsb_lineColorEdge="@color/colorSeekBarDefault"
+        app:rsb_textPadding="17dp"
+        app:rsb_cells="4"
+        app:rsb_progressHintMode="alwaysHide"
+        app:rsb_textSize="12sp"
+        app:rsb_hintBGHeight="28dp"
+        app:rsb_seekBarHeight="8dp"
+        app:rsb_thumbSize="26dp"
+        app:rsb_cellMode="other"
+        app:rsb_seekBarMode="single"
+        />
+
+</LinearLayout>

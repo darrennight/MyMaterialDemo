@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    >
+
+<Button
+    android:id="@+id/btn_test_anim"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="测试动画点击抖动"
+    android:layout_centerInParent="true"/>
+
+    <com.meterial.demo.ObjectAnim.customAnim.ZLoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:z_type="CircleBuilder"
+        app:z_color="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/btn_swing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swing摇摆"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
