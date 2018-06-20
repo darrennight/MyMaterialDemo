@@ -18,7 +18,25 @@
             android:layout_gravity="center"
             app:lottie_fileName="Logo/LogoSmall.json"
             app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view2"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            app:lottie_fileName="Logo/logo_splash.json"
+            app:lottie_loop="true" />
+
+
     </FrameLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view3"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        app:lottie_fileName="Logo/logo_loading.json"
+        app:lottie_loop="true" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"

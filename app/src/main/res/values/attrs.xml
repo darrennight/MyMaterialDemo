@@ -1015,4 +1015,178 @@
         </attr>
     </declare-styleable>
 
+
+
+
+    <attr name="duration" format="integer"/>
+    <attr name="showPainter" format="boolean"/>
+    <attr name="showPainterActually" format="boolean"/>
+    <attr name="pathStrokeWidth" format="dimension"/>
+    <attr name="pathStrokeColor" format="color"/>
+    <attr name="paintStrokeWidth" format="dimension"/>
+    <attr name="paintStrokeColor" format="color"/>
+    <attr name="fillColor" format="color"/>
+    <attr name="repeat" format="enum">
+        <enum name="RESTART" value="1"/>
+        <enum name="REVERSE" value="2"/>
+    </attr>
+
+    <declare-styleable name="TextPathView">
+        <attr name="path_textSize" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="autoStart" format="boolean"/>
+        <attr name="showInStart" format="boolean"/>
+        <attr name="textInCenter" format="boolean"/>
+        <attr name="duration" />
+        <attr name="showPainter" />
+        <attr name="showPainterActually" />
+        <attr name="pathStrokeWidth" />
+        <attr name="pathStrokeColor" />
+        <attr name="paintStrokeWidth" />
+        <attr name="paintStrokeColor" />
+        <attr name="repeat" />
+    </declare-styleable>
+
+    <declare-styleable name="PathView">
+        <attr name="duration" />
+        <attr name="showPainter" />
+        <attr name="showPainterActually" />
+        <attr name="pathStrokeWidth" />
+        <attr name="pathStrokeColor" />
+        <attr name="paintStrokeWidth" />
+        <attr name="paintStrokeColor" />
+        <attr name="repeat" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="bandCardEditText">
+        <attr name="editTextType" format="integer">
+            <enum name="bankCard" value="0"/>
+            <enum name="phoneNum"   value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="WaveProgress">
+        <!-- 是否开启抗锯齿 -->
+        <attr name="antiAlias" />
+        <!-- 深色水波动画时间 -->
+        <attr name="darkWaveAnimTime" format="integer" />
+        <!-- 浅色水波动画时间 -->
+        <attr name="lightWaveAnimTime" format="integer" />
+        <!-- 最大值 -->
+        <attr name="maxValue" />
+        <!-- 当前值 -->
+        <attr name="value" />
+        <attr name="valueColor" />
+        <attr name="valueSize" />
+        <!-- 绘制内容相应的提示语 -->
+        <attr name="hint" />
+        <attr name="hintSize" />
+        <attr name="hintColor" />
+        <!-- 圆环宽度 -->
+        <attr name="circleWidth" format="dimension" />
+        <!-- 圆环颜色 -->
+        <attr name="circleColor" format="color|reference" />
+        <!-- 背景圆环颜色 -->
+        <attr name="bgCircleColor" format="color|reference" />
+        <!-- 锁定水波不随圆环进度改变，默认锁定在50%处 -->
+        <attr name="lockWave" format="boolean" />
+        <!-- 水波数量 -->
+        <attr name="waveNum" format="integer" />
+        <!-- 水波高度，峰值和谷值之和 -->
+        <attr name="waveHeight" format="dimension" />
+        <!-- 深色水波颜色 -->
+        <attr name="darkWaveColor" format="color" />
+        <!-- 是否显示浅色水波 -->
+        <attr name="showLightWave" format="boolean" />
+        <!-- 浅色水波颜色 -->
+        <attr name="lightWaveColor" format="color" />
+        <!-- 浅色水波的方向 -->
+        <attr name="lightWaveDirect" format="enum">
+            <enum name="L2R" value="0" />
+            <enum name="R2L" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="AnimatedDoorSignView">
+        <attr name="adsv_friction" format="float|reference"/>
+        <attr name="adsv_tension" format="float|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="DoorSignView">
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:typeface"/>
+        <attr name="dsv_textFont" format="string|reference"/>
+        <attr name="dsv_cornerRadius" format="dimension|reference"/>
+        <attr name="dsv_signColor" format="color|reference"/>
+        <attr name="dsv_shadowSize" format="dimension|reference"/>
+        <attr name="dsv_textPaddingLeft" format="dimension|reference"/>
+        <attr name="dsv_textPaddingTop" format="dimension|reference"/>
+        <attr name="dsv_textPaddingRight" format="dimension|reference"/>
+        <attr name="dsv_textPaddingBottom" format="dimension|reference"/>
+        <attr name="dsv_pinRadius" format="dimension|reference"/>
+        <attr name="dsv_pinOffsetX" format="float|reference"/>
+        <attr name="dsv_pinOffsetY" format="float|reference"/>
+        <attr name="dsv_pinColor" format="color|reference"/>
+        <attr name="dsv_stringsWidth" format="dimension|reference"/>
+        <attr name="dsv_stringsColor" format="color|reference"/>
+        <attr name="dsv_textSpacingMult" format="float|reference"/>
+        <attr name="dsv_textSpacingAdd" format="dimension|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CouponView">
+        <attr name="cv_semicircle_gap" format="dimension|reference"/>
+        <attr name="cv_semicircle_radius" format="dimension|reference"/>
+        <attr name="cv_semicircle_color" format="color|reference"/>
+        <attr name="cv_dash_line_length" format="dimension|reference"/>
+        <attr name="cv_dash_line_gap" format="dimension|reference"/>
+        <attr name="cv_dash_line_height" format="dimension|reference"/>
+        <attr name="cv_dash_line_color" format="color|reference"/>
+        <attr name="cv_is_semicircle_top" format="boolean|reference"/>
+        <attr name="cv_is_semicircle_bottom" format="boolean|reference"/>
+        <attr name="cv_is_semicircle_left" format="boolean|reference"/>
+        <attr name="cv_is_semicircle_right" format="boolean|reference"/>
+        <attr name="cv_is_dash_line_top" format="boolean|reference"/>
+        <attr name="cv_is_dash_line_bottom" format="boolean|reference"/>
+        <attr name="cv_is_dash_line_left" format="boolean|reference"/>
+        <attr name="cv_is_dash_line_right" format="boolean|reference"/>
+        <attr name="cv_dash_line_margin_top" format="dimension|reference"/>
+        <attr name="cv_dash_line_margin_bottom" format="dimension|reference"/>
+        <attr name="cv_dash_line_margin_left" format="dimension|reference"/>
+        <attr name="cv_dash_line_margin_right" format="dimension|reference"/>
+    </declare-styleable>
+
+    <bool name="is_rtl">false</bool>
+
+
+    <declare-styleable name="SeatTableView">
+        <attr name="seat_checked" format="reference" />
+        <attr name="seat_sold" format="reference" />
+        <attr name="seat_available" format="reference" />
+        <attr name="overview_checked" format="color" />
+        <attr name="overview_sold" format="color" />
+        <attr name="txt_color" format="color"/>
+    </declare-styleable>
+
+
 </resources>

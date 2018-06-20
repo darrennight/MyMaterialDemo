@@ -25,6 +25,8 @@ public class ListFragment extends Fragment {
   @BindView(R.id.container) ViewGroup container;
   @BindView(R.id.recycler_view) RecyclerView recyclerView;
   @BindView(R.id.animation_view) LottieAnimationView animationView;
+  @BindView(R.id.animation_view2) LottieAnimationView animationView2;
+  @BindView(R.id.animation_view3) LottieAnimationView animationView3;
 
   private final FileAdapter adapter = new FileAdapter();
 
@@ -44,12 +46,20 @@ public class ListFragment extends Fragment {
     super.onStart();
     animationView.setProgress(0f);
     animationView.playAnimation();
+
+    animationView2.setProgress(0f);
+    animationView2.playAnimation();
+
+    animationView3.setProgress(0f);
+    animationView3.playAnimation();
   }
 
   @Override
   public void onStop() {
     super.onStop();
     animationView.cancelAnimation();
+    animationView2.cancelAnimation();
+    animationView3.cancelAnimation();
   }
 
   private void onViewerClicked() {

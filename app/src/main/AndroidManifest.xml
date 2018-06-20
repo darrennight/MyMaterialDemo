@@ -366,6 +366,67 @@
 
         <activity android:name=".commonActivity.CardStack.CardStackMainActivity"/>
 
+        <activity android:name=".commonActivity.TextPathView.FirstActivity"/>
+        <activity android:name=".commonActivity.TextPathView.ForthActivity"/>
+        <activity android:name=".commonActivity.TextPathView.SecondActivity"/>
+        <activity android:name=".commonActivity.TextPathView.TextPathMainActivity"/>
+        <activity android:name=".commonActivity.TextPathView.ThirdActivity"/>
+
+        <activity android:name=".commonActivity.ViewpagerHeader.VPHeaderMainActivity"/>
+
+        <activity android:name=".FragmentAnimation.anim1.MainActivityAnim1"/>
+        <activity android:name=".FragmentAnimation.anim2.MainActivityAnim2"/>
+
+        <activity android:name=".commonActivity.BankCard.AddBankCardActivity"/>
+
+        <activity android:name=".commonActivity.WaveView.WaveViewMainActivity"/>
+        <activity android:name=".commonActivity.WaveView.DoubleSplitTextActivity"/>
+
+        <activity android:name=".commonActivity.ShimmerText.TestXFormodeActivity"/>
+        <activity android:name=".commonActivity.ShimmerText.TestShimmerActivity"/>
+        <activity android:name=".commonActivity.ShimmerText.TestKTVTextActivity"/>
+
+        <activity android:name=".commonActivity.Door.DoorMainActivity"/>
+        <activity android:name=".commonActivity.FlipAnimation.FilpAnimActivity"/>
+
+        <activity android:name=".commonActivity.FlightSeat.FlightSeatActivity"/>
+
+        <activity android:name=".commonActivity.AnimatedRandomLayout.AnimaRandomLayoutActivity"/>
+
+        <activity android:name=".commonActivity.CouponView.CouponViewActivity"/>
+
+        <activity android:name=".widgetActivity.AccentFirst.AccentFIrstActivity"/>
+        <activity android:name=".widgetActivity.ExpandTable.ExpandTableActivity"/>
+
+        <activity android:name=".widgetActivity.InDoor.InDoorActivity"/>
+        <activity android:name=".widgetActivity.SeatTable.SeatTableActivity1"/>
+        <activity android:name=".widgetActivity.SeatTable2.SeatSelectionActivity"/>
+
+        <activity android:name=".widgetActivity.PhotoView.ImageViewActivity"/>
+        <activity android:name=".widgetActivity.PhotoView.ImgActivity"/>
+        <activity android:name=".widgetActivity.PhotoView.ImgClick"/>
+        <activity android:name=".widgetActivity.PhotoView.PhotoViewActivity"/>
+        <activity android:name=".widgetActivity.PhotoView.ViewPagerActivity"/>
+        <activity android:name=".widgetActivity.PhotoView.PhotoBrowse"/>
+
+
+        <activity android:name=".widgetActivity.PhotoView2.LauncherActivity"/>
+
+
+        <activity android:name=".widgetActivity.PhotoView2.SimpleSampleActivity" />
+
+        <activity android:name=".widgetActivity.PhotoView2.ViewPagerActivity" />
+
+        <activity android:name=".widgetActivity.PhotoView2.RotationSampleActivity" />
+
+        <activity android:name=".widgetActivity.PhotoView2.PicassoSampleActivity" />
+
+        <activity android:name=".widgetActivity.PhotoView2.ActivityTransitionActivity" />
+
+        <activity android:name=".widgetActivity.PhotoView2.ActivityTransitionToActivity" />
+
+        <activity android:name=".widgetActivity.PhotoView2.ImmersiveActivity" />
+        <activity android:name=".widgetActivity.TouchImage.TouchImageActivity"/>
 
     </application>
 

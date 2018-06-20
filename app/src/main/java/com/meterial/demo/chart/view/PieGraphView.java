@@ -181,7 +181,8 @@ public class PieGraphView extends View {
         mPaintOuter.setColor(Color.WHITE);
 
         mPaintInner = new Paint(mPaintOuter);
-        mPaintInner.setColor(Color.WHITE);
+        mPaintInner.setColor(Color.BLUE);
+        //mPaintInner.setColor(Color.WHITE);
 
         mTextPaint = new Paint(mPaintOuter);
         mTextPaint.setColor(Color.BLACK);

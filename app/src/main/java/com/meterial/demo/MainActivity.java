@@ -17,6 +17,8 @@ import android.view.MotionEvent;
 import android.widget.Toast;
 
 import com.meterial.demo.CoordinatorLayout.TestCoordinatorLayoutActivity;
+import com.meterial.demo.FragmentAnimation.anim1.MainActivityAnim1;
+import com.meterial.demo.FragmentAnimation.anim2.MainActivityAnim2;
 import com.meterial.demo.MDesign.BehaviorMainActivity;
 import com.meterial.demo.ObjectAnim.TestSetAndGet;
 import com.meterial.demo.ObjectAnim.customAnim.NumberAnimationActivity;
@@ -53,17 +55,23 @@ import com.meterial.demo.chart.ChartActivity5;
 import com.meterial.demo.chart.ChartActivity6;
 import com.meterial.demo.chart.ChartActivity7;
 import com.meterial.demo.chart.ChartActivity8;
+import com.meterial.demo.commonActivity.AnimatedRandomLayout.AnimaRandomLayoutActivity;
+import com.meterial.demo.commonActivity.BankCard.AddBankCardActivity;
 import com.meterial.demo.commonActivity.CardStack.CardStackMainActivity;
 import com.meterial.demo.commonActivity.Carousel.CarouselActivity;
 import com.meterial.demo.commonActivity.ChameleonActivity;
 import com.meterial.demo.commonActivity.CircleImageViewActivity;
 import com.meterial.demo.commonActivity.ClipChildrenActivity;
+import com.meterial.demo.commonActivity.CouponView.CouponViewActivity;
 import com.meterial.demo.commonActivity.CustomLayoutAnimation.TestCustomLayoutAnimationController;
 import com.meterial.demo.commonActivity.DashBoardActivity;
+import com.meterial.demo.commonActivity.Door.DoorMainActivity;
 import com.meterial.demo.commonActivity.ExpandLayoutActivity;
 import com.meterial.demo.commonActivity.ExpandLayoutCustomActivity;
 import com.meterial.demo.commonActivity.ExpandingCollection.ExpandCollectionActivity;
 import com.meterial.demo.commonActivity.FabulousFilter.FabulousFilterActivity;
+import com.meterial.demo.commonActivity.FlightSeat.FlightSeatActivity;
+import com.meterial.demo.commonActivity.FlipAnimation.FilpAnimActivity;
 import com.meterial.demo.commonActivity.FoldableLayout.FoldMainActivity;
 import com.meterial.demo.commonActivity.GoodActivty;
 import com.meterial.demo.commonActivity.GossipActivity;
@@ -75,6 +83,10 @@ import com.meterial.demo.commonActivity.PanningViewActivity;
 import com.meterial.demo.commonActivity.Panorama.PanorMainActiivty;
 import com.meterial.demo.commonActivity.Panorama.Panorama360Activity2;
 import com.meterial.demo.commonActivity.SecretActivity;
+import com.meterial.demo.commonActivity.ShimmerText.KTVTextView;
+import com.meterial.demo.commonActivity.ShimmerText.TestKTVTextActivity;
+import com.meterial.demo.commonActivity.ShimmerText.TestShimmerActivity;
+import com.meterial.demo.commonActivity.ShimmerText.TestXFormodeActivity;
 import com.meterial.demo.commonActivity.SlidingDeck.DeckMainActivity;
 import com.meterial.demo.commonActivity.SmileView.SmileMainActivity;
 import com.meterial.demo.commonActivity.TestAnimationsActivity;
@@ -85,9 +97,12 @@ import com.meterial.demo.commonActivity.TestPinActivity;
 import com.meterial.demo.commonActivity.TestRoundBgActivity;
 import com.meterial.demo.commonActivity.TestTextSwitcher;
 import com.meterial.demo.commonActivity.TextAroundActivity;
+import com.meterial.demo.commonActivity.TextPathView.TextPathMainActivity;
 import com.meterial.demo.commonActivity.TextSpan.TestTextSpanActivity;
 import com.meterial.demo.commonActivity.ToolbarTitleAnimation;
 import com.meterial.demo.commonActivity.VerticalTextVActivity;
+import com.meterial.demo.commonActivity.ViewpagerHeader.VPHeaderMainActivity;
+import com.meterial.demo.commonActivity.WaveView.WaveViewMainActivity;
 import com.meterial.demo.commonActivity.WheelActivity;
 import com.meterial.demo.commonActivity.XEditTextActivity;
 import com.meterial.demo.commonActivity.blur.Blur500pxActivity;
@@ -148,6 +163,15 @@ import com.meterial.demo.test.DiDi.DiDiAnimationActivity;
 import com.meterial.demo.test.TestScanerActivity;
 import com.meterial.demo.wheel.w1.WheelMainActivity1;
 import com.meterial.demo.wheel.w2.WheelMainActivity2;
+import com.meterial.demo.widgetActivity.AccentFirst.AccentFIrstActivity;
+import com.meterial.demo.widgetActivity.ExpandTable.ExpandTableActivity;
+import com.meterial.demo.widgetActivity.InDoor.InDoorActivity;
+import com.meterial.demo.widgetActivity.PhotoView.PhotoViewActivity;
+import com.meterial.demo.widgetActivity.PhotoView2.LauncherActivity;
+import com.meterial.demo.widgetActivity.SeatTable.SeatTable;
+import com.meterial.demo.widgetActivity.SeatTable.SeatTableActivity1;
+import com.meterial.demo.widgetActivity.SeatTable2.SeatSelectionActivity;
+import com.meterial.demo.widgetActivity.TouchImage.TouchImageActivity;
 import com.squareup.pollexor.Thumbor;
 import java.util.ArrayList;
 import java.util.List;
@@ -375,6 +399,28 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("147fold不明天demo");
         list.add(("148Deck交互样式"));
         list.add("149CardStack卡片堆栈");
+        list.add("150textPath效果");
+        list.add("151viewpager有header一起滑动");
+        list.add("152Fragment切换动画1");
+        list.add("153Fragment切换动画2");
+        list.add("154添加银行卡");
+        list.add("155流量双波浪");
+        list.add("156Xfermode 制作动态文字加载动画");
+        list.add("157shimmer文字高亮");
+        list.add("158歌词颜色变化");
+        list.add("159重力感应器门票动画");
+        list.add("160flip翻转动画");
+        list.add("161飞机选座");
+        list.add("162随机出现子控件向中间移动动画");
+        list.add("163半圆锯齿背景虚线边框");
+        list.add("164RecycleView第一个item放大");
+        list.add("165点击展开的表格效果");
+        list.add("166室内户型图交互组件库");
+        list.add("167电影选座");
+        list.add("168电影选座");
+        list.add("169PhotoView手势缩放旋转");
+        list.add("170PhotoView手势缩放旋转");
+        list.add("171ImageView手势缩放旋转");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -1153,6 +1199,116 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 149:
                 Intent intent149 = new Intent(this, CardStackMainActivity.class);
                 startActivity(intent149);
+                break;
+
+            case 150:
+                Intent intent150 = new Intent(this, TextPathMainActivity.class);
+                startActivity(intent150);
+                break;
+
+            case 151:
+                Intent intent151 = new Intent(this, VPHeaderMainActivity.class);
+                startActivity(intent151);
+                break;
+
+            case 152:
+                Intent intent152 = new Intent(this, MainActivityAnim1.class);
+                startActivity(intent152);
+                break;
+
+            case 153:
+                Intent intent153 = new Intent(this, MainActivityAnim2.class);
+                startActivity(intent153);
+                break;
+
+            case 154:
+                Intent intent154 = new Intent(this, AddBankCardActivity.class);
+                startActivity(intent154);
+                break;
+
+            case 155:
+                Intent intent155 = new Intent(this, WaveViewMainActivity.class);
+                startActivity(intent155);
+                break;
+
+            case 156:
+                Intent intent156 = new Intent(this, TestXFormodeActivity.class);
+                startActivity(intent156);
+                break;
+
+            case 157:
+                Intent intent157 = new Intent(this, TestShimmerActivity.class);
+                startActivity(intent157);
+                break;
+
+            case 158:
+                Intent intent158 = new Intent(this, TestKTVTextActivity.class);
+                startActivity(intent158);
+                break;
+
+            case 159:
+                Intent intent159 = new Intent(this, DoorMainActivity.class);
+                startActivity(intent159);
+                break;
+
+            case 160:
+                Intent intent160 = new Intent(this, FilpAnimActivity.class);
+                startActivity(intent160);
+                break;
+
+            case 161:
+                Intent intent161 = new Intent(this, FlightSeatActivity.class);
+                startActivity(intent161);
+                break;
+
+            case 162:
+                Intent intent162 = new Intent(this, AnimaRandomLayoutActivity.class);
+                startActivity(intent162);
+                break;
+
+            case 163:
+                Intent intent163 = new Intent(this, CouponViewActivity.class);
+                startActivity(intent163);
+                break;
+
+            case 164:
+                Intent intent164 = new Intent(this, AccentFIrstActivity.class);
+                startActivity(intent164);
+                break;
+
+            case 165:
+                Intent intent165 = new Intent(this, ExpandTableActivity.class);
+                startActivity(intent165);
+                break;
+
+            case 166:
+                Intent intent166 = new Intent(this, InDoorActivity.class);
+                startActivity(intent166);
+                break;
+
+            case 167:
+                Intent intent167 = new Intent(this, SeatTableActivity1.class);
+                startActivity(intent167);
+                break;
+
+            case 168:
+                Intent intent168 = new Intent(this, SeatSelectionActivity.class);
+                startActivity(intent168);
+                break;
+
+            case 169:
+                Intent intent169 = new Intent(this, PhotoViewActivity.class);
+                startActivity(intent169);
+                break;
+
+            case 170:
+                Intent intent170 = new Intent(this, LauncherActivity.class);
+                startActivity(intent170);
+                break;
+
+            case 171:
+                Intent intent171 = new Intent(this, TouchImageActivity.class);
+                startActivity(intent171);
                 break;
 
             default:

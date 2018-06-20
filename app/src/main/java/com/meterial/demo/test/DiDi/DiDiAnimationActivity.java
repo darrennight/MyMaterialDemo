@@ -29,8 +29,8 @@ public class DiDiAnimationActivity extends AppCompatActivity {
         mIcon = findViewById(R.id.layout_icon);
 
         //test1();
-        test2();
-        //test3();
+        //test2();
+        test3();
         //test4();
         //test5();
         //test6();

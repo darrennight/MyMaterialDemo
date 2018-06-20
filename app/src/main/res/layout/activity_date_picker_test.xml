@@ -46,7 +46,7 @@
             android:id="@+id/wv_month"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cyclic="true"
+            app:cyclic="false"
             style="@style/DatePickerStyle"/>
 
         <com.meterial.demo.wheel.w1.Wheel3DView

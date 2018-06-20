@@ -10,9 +10,12 @@ import com.meterial.demo.R;
  */
 public class SimpleTestActivity extends AppCompatActivity {
 
+    private Wheel3DView test = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wheel_view_test);
+        test = findViewById(R.id.wheel3d);
+        test.setEntries("A","B","C","D");
     }
 }

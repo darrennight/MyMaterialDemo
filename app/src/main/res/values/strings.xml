@@ -792,6 +792,50 @@ Vivamus placerat lacus vel vehicula scelerisque, dui enim adipiscing lacus sit a
     <string name="menu_action_up_down">Up down</string>
     <string name="menu_action_up_down_stack">Up down stack</string>
 
+    <string name="add_card">添加银行卡</string>
+    <string name="reserved_phonenumber">预留手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="input_bankcard_code">请输入银行卡号</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="front">Front side</string>
+    <string name="back">Back side</string>
+    <string name="animations">Animations</string>
+    <string name="flip_animation">Flip animation</string>
+
+    <string name="seat_selection_prompt_available">可选</string>
+    <string name="seat_selection_prompt_unavailable">已售</string>
+    <string name="seat_selection_prompt_selected">已选</string>
+    <string name="seat_selection_bottom_bar_title">已选座位</string>
+    <string name="seat_selection_bottom_bar_submit">确认座位</string>
+
+
+    <string name="menu_zoom_enable">Enable Zoom</string>
+    <string name="menu_zoom_disable">Disable Zoom</string>
+    <string name="menu_scale_fit_center">Change to FIT_CENTER</string>
+    <string name="menu_scale_fit_start">Change to FIT_START</string>
+    <string name="menu_scale_fit_end">Change to FIT_END</string>
+    <string name="menu_scale_fit_xy">Change to FIT_XY</string>
+    <string name="menu_scale_center">Change to CENTER</string>
+    <string name="menu_scale_center_inside">Change to CENTER_INSIDE</string>
+    <string name="menu_scale_center_crop">Change to CENTER_CROP</string>
+    <string name="menu_zoom_random_animate">Animate scale to random value</string>
+    <string name="menu_zoom_random">Set scale to random value</string>
+    <string name="menu_matrix_restore">Restore Display Matrix</string>
+    <string name="menu_matrix_capture">Capture Display Matrix</string>
+    <string name="extract_visible_bitmap">Extract visible bitmap</string>
+
+    <string name="action_scale_image">缩放图片</string>
+    <string name="action_rotate_image">旋转图片</string>
+    <string name="action_scroll_image">滑动图片</string>
+    <string name="action_change_resource">切换图片</string>
+
+
+
+
 
 
 </resources>
