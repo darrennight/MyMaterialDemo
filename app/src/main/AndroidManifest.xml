@@ -428,6 +428,30 @@
         <activity android:name=".widgetActivity.PhotoView2.ImmersiveActivity" />
         <activity android:name=".widgetActivity.TouchImage.TouchImageActivity"/>
 
+        <activity android:name=".widgetActivity.Calendar1.SampleActivity"/>
+
+        <activity android:name=".widgetActivity.TimesSquare.SampleTimesSquareActivity"/>
+        <activity android:name=".widgetActivity.selectorAttr.TestSelectorAttrActivity"/>
+
+        <activity android:name=".widgetActivity.HotelCalendar.MenuActivity"/>
+        <activity android:name=".widgetActivity.HotelCalendar.PeroidSelectedActivity"/>
+        <activity android:name=".widgetActivity.HotelCalendar.SingleSelectActivity"/>
+
+        <activity android:name=".widgetActivity.ScrollCalendar.activity.DateActivity"/>
+        <activity android:name=".widgetActivity.ScrollCalendar.activity.DefaultAdapterActivity"/>
+        <activity android:name=".widgetActivity.ScrollCalendar.activity.DefaultRangeAdapterActivity"/>
+        <activity android:name=".widgetActivity.ScrollCalendar.activity.NavigationActivity"/>
+        <activity android:name=".widgetActivity.ScrollCalendar.activity.RangeActivity"/>
+
+        <activity android:name=".widgetActivity.SublimePicker.Sampler"/>
+
+        <activity android:name=".widgetActivity.CalendarView.HomeActivity"/>
+        <activity android:name=".widgetActivity.CalendarView.CalendarActivity"/>
+        <activity android:name=".widgetActivity.CalendarView.CalendarMonthActivity"/>
+        <activity android:name=".widgetActivity.CalendarView.CalendarWeekActivity"/>
+        <activity android:name=".widgetActivity.CalendarView.DashBoardActivity"/>
+        <activity android:name=".widgetActivity.CalendarView.RingActivity"/>
+
     </application>
 
 </manifest>

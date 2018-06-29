@@ -71,7 +71,6 @@
                 android:layout_toLeftOf="@+id/completeCommand"
                 android:textColor="@color/grey_dark_2"
                 android:singleLine="true"
-                android:fontFamily="sans-serif-bold"
                 android:textSize="20sp"
                 tools:text="Name"/>
 
@@ -86,7 +85,7 @@
                 android:layout_toRightOf="@+id/avatar"
                 android:layout_toLeftOf="@+id/completeCommand"
                 android:textColor="@color/grey_dark"
-                android:fontFamily="sans-serif-bold"
+
                 android:maxLines="5"
                 android:textSize="12sp"
                 tools:text="Description"/>

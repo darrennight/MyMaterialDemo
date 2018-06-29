@@ -966,7 +966,73 @@
     <color name="click">#f1f1f1</color>
 
 
+    <color name="calendar_text_unselectable">#7f778088</color>
+
+    <color name="custom_selected">#A8D324</color>
+    <color name="custom_background">#F0F8DB</color>
+    <color name="custom_background_today">#FF9105</color>
+    <color name="custom_background_disabled">#F0F8DB</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="custom_text_inactive">#7f778088</color>
+
+    <color name="normal_black">#303030</color>
+    <color name="past_gray">#aeaeae</color>
+    <color name="weekend_fore">#ff9147</color>
 
 
+    <!-- SublimeDatePicker -->
+    <color name="calendar_disabled_text_color_dark">#35ffffff</color>
+    <color name="calendar_disabled_text_color_light">#23000000</color>
 
+    <!-- SublimeTimePicker -->
+    <color name="timepicker_default_numbers_background_color_material">@android:color/transparent
+    </color>
+
+    <!-- Recurrence Picker -->
+    <color name="recurrence_menu_divider_color">#30888888</color>
+
+    <!-- fake shadow (not used at present) -->
+    <!-- Shadow color for the first pixels around the fake shadow for recents. -->
+    <color name="fake_shadow_start_color">#44000000</color>
+
+    <!-- Shadow color for the furthest pixels around the fake shadow for recents. -->
+    <color name="fake_shadow_end_color">#03000000</color>
+
+    <!-- Overflow icon colors -->
+    <color name="overflow_icon_pressed_state_bg_color_light">#40ffffff</color>
+    <color name="overflow_icon_pressed_state_bg_color_dark">#40000000</color>
+
+    <color name="sp_ripple_material_dark">#33ffffff</color>
+
+    <color name="sp_primary_text_default_material_dark">#ffffffff</color>
+    <color name="sp_secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="c_accent">#325C80</color>
+
+    <color name="c_primary">#2B4F6F</color>
+
+    <color name="c_primary_dark">#24435D</color>
+
+    <color name="floating_action_button_bg">@color/c_accent</color>
+    <color name="floating_action_button_pressed_bg">#212121</color>
+
+    <color name="cal_sign_color">#ee5b4f</color>
+    <color name="cal_buckle_color">#d4d4d4</color>
+    <color name="cal_safe_color">#b7d961</color>
+    <color name="cal_buckle_text_color">#949494</color>
+    <color name="drak_calendar_text_color">#222222</color>
+    <color name="base_black_title_color">#222222</color>
+
+    <color name="arc1">#099bfb</color>
+    <color name="arc2">#37d547</color>
+    <color name="arc3">#f86669</color>
+    <color name="arc_text">#999999</color>
+    <color name="arc_line">#cfcfcf</color>
+    <color name="selectColor">#f96767</color>
+    <color name="arc_bg">#f0f0f0</color>
+    <color name="arc_inteval">#E8e8e8</color>
+    <color name="arc_temp">#333333</color>
+
+    <color name="arc21">#fc843b</color>
+    <color name="arc22">#37d547</color>
+    <color name="arc23">#079df9</color>
 </resources>

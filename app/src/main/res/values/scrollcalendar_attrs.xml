@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollCalendar">
+        <!--Text Color-->
+        <attr name="fontColor" format="color" />
+        <attr name="disabledTextColor" format="color" />
+        <attr name="unavailableTextColor" format="color" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="currentDayTextColor" format="color" />
+        <attr name="disabledBackgroundColor" format="color" />
+        <attr name="calendarbackgroundColor" format="color" />
+        <!--Drawable-->
+        <attr name="currentDayBackground" format="reference" />
+        <attr name="unavailableBackground" format="reference" />
+        <attr name="selectedBackground" format="reference" />
+        <attr name="selectedBackgroundBeginning" format="reference" />
+        <attr name="selectedBackgroundMiddle" format="reference" />
+        <attr name="selectedBackgroundEnd" format="reference" />
+        <!--font-->
+        <attr name="customFont" format="string" />
+        <attr name="fontSize" format="dimension" />
+        <!--adapter-->
+        <attr name="adapter" format="enum">
+            <enum name="none" value="0" />
+            <enum name="date" value="1" />
+            <enum name="range" value="2" />
+        </attr>
+        <!--settings-->
+        <attr name="endlessTop" format="boolean" />
+
+    </declare-styleable>
+
+    <attr name="scrollCalendarStyleAttr" format="reference" />
+</resources>

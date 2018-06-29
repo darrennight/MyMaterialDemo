@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meterial.demo.widgetActivity.TimesSquare.MonthView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- This is the place where the month title is added -->
+
+    <com.meterial.demo.widgetActivity.TimesSquare.CalendarGridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.meterial.demo.widgetActivity.TimesSquare.CalendarRowView
+            android:id="@+id/day_names_header_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/calendar_day_headers_paddingbottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SquareCalendarCell.DayHeader"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SquareCalendarCell.DayHeader"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SquareCalendarCell.DayHeader"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SquareCalendarCell.DayHeader"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SquareCalendarCell.DayHeader"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SquareCalendarCell.DayHeader"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SquareCalendarCell.DayHeader"
+                />
+        </com.meterial.demo.widgetActivity.TimesSquare.CalendarRowView>
+        <include layout="@layout/square_week"/>
+        <include layout="@layout/square_week"/>
+        <include layout="@layout/square_week"/>
+        <include layout="@layout/square_week"/>
+        <include layout="@layout/square_week"/>
+        <include layout="@layout/square_week"/>
+    </com.meterial.demo.widgetActivity.TimesSquare.CalendarGridView>
+</com.meterial.demo.widgetActivity.TimesSquare.MonthView>

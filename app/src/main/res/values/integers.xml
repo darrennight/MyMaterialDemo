@@ -8,4 +8,9 @@
     <integer name="slide_up_down_duration">200</integer>
     <integer name="half_slide_up_down_duration">150</integer>
     <integer name="slide_up_down_final_value">150</integer>
+
+    <integer name="sp_disabled_alpha_animation_duration">100</integer>
+
+    <integer name="sp_time_picker_column_start_material">0</integer>
+    <integer name="sp_time_picker_column_end_material">1</integer>
 </resources>

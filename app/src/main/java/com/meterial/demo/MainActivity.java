@@ -164,14 +164,21 @@ import com.meterial.demo.test.TestScanerActivity;
 import com.meterial.demo.wheel.w1.WheelMainActivity1;
 import com.meterial.demo.wheel.w2.WheelMainActivity2;
 import com.meterial.demo.widgetActivity.AccentFirst.AccentFIrstActivity;
+import com.meterial.demo.widgetActivity.Calendar1.SampleActivity;
+import com.meterial.demo.widgetActivity.CalendarView.HomeActivity;
 import com.meterial.demo.widgetActivity.ExpandTable.ExpandTableActivity;
+import com.meterial.demo.widgetActivity.HotelCalendar.MenuActivity;
 import com.meterial.demo.widgetActivity.InDoor.InDoorActivity;
 import com.meterial.demo.widgetActivity.PhotoView.PhotoViewActivity;
 import com.meterial.demo.widgetActivity.PhotoView2.LauncherActivity;
+import com.meterial.demo.widgetActivity.ScrollCalendar.activity.NavigationActivity;
 import com.meterial.demo.widgetActivity.SeatTable.SeatTable;
 import com.meterial.demo.widgetActivity.SeatTable.SeatTableActivity1;
 import com.meterial.demo.widgetActivity.SeatTable2.SeatSelectionActivity;
+import com.meterial.demo.widgetActivity.SublimePicker.Sampler;
+import com.meterial.demo.widgetActivity.TimesSquare.SampleTimesSquareActivity;
 import com.meterial.demo.widgetActivity.TouchImage.TouchImageActivity;
+import com.meterial.demo.widgetActivity.selectorAttr.TestSelectorAttrActivity;
 import com.squareup.pollexor.Thumbor;
 import java.util.ArrayList;
 import java.util.List;
@@ -313,7 +320,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("61google规范底部导航样式第三方开源");
         list.add("62googleSupporot底部导航");
         list.add("63google规范底部导航样式第三方开源");
-        list.add("64airbnb日历");
+        list.add("64airbnb日历 重点研究");
         list.add("65日历缩略图显示");
         list.add("66 日历");
         list.add("67日历缩略图显示grid");
@@ -421,6 +428,13 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("169PhotoView手势缩放旋转");
         list.add("170PhotoView手势缩放旋转");
         list.add("171ImageView手势缩放旋转");
+        list.add("172日历控件1 和下面一个api");
+        list.add("173日历控件2 重点研究 和上面一个api 研究这个即可");
+        list.add("174Selector自定义属性状态");
+        list.add("175日历控件3卡顿不太好");
+        list.add("176日历控件4");
+        list.add("177日历控件5 忽略");
+        list.add("178日历控件6 重点研究");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -1309,6 +1323,41 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 171:
                 Intent intent171 = new Intent(this, TouchImageActivity.class);
                 startActivity(intent171);
+                break;
+
+            case 172:
+                Intent intent172 = new Intent(this, SampleActivity.class);
+                startActivity(intent172);
+                break;
+
+            case 173:
+                Intent intent173 = new Intent(this, SampleTimesSquareActivity.class);
+                startActivity(intent173);
+                break;
+
+            case 174:
+                Intent intent174 = new Intent(this, TestSelectorAttrActivity.class);
+                startActivity(intent174);
+                break;
+
+            case 175:
+                Intent intent175 = new Intent(this, MenuActivity.class);
+                startActivity(intent175);
+                break;
+
+            case 176:
+                Intent intent176 = new Intent(this, NavigationActivity.class);
+                startActivity(intent176);
+                break;
+
+            case 177:
+                Intent intent177 = new Intent(this, Sampler.class);
+                startActivity(intent177);
+                break;
+
+            case 178:
+                Intent intent178 = new Intent(this, HomeActivity.class);
+                startActivity(intent178);
                 break;
 
             default:

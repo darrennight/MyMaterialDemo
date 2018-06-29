@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:bank_card_type_red="true">
+        <shape>
+            <gradient android:angle="180" android:endColor="#e85c65" android:startColor="#e9527b" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    <item app:bank_card_type_blue="true">
+        <shape>
+            <gradient android:angle="180" android:endColor="#41a4e5" android:startColor="#6280e0" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    <item app:bank_card_type_green="true">
+        <shape>
+            <gradient android:angle="180" android:endColor="#1ab093" android:startColor="#0ca3ac" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+</selector>
