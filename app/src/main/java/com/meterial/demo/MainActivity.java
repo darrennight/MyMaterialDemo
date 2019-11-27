@@ -164,18 +164,27 @@ import com.meterial.demo.test.TestScanerActivity;
 import com.meterial.demo.wheel.w1.WheelMainActivity1;
 import com.meterial.demo.wheel.w2.WheelMainActivity2;
 import com.meterial.demo.widgetActivity.AccentFirst.AccentFIrstActivity;
+import com.meterial.demo.widgetActivity.AliBehaver.AliMainActivity;
 import com.meterial.demo.widgetActivity.Calendar1.SampleActivity;
 import com.meterial.demo.widgetActivity.CalendarView.HomeActivity;
+import com.meterial.demo.widgetActivity.DragDrop.DragHelper.DragHelperMainActivity;
+import com.meterial.demo.widgetActivity.DragDrop.DragTestActivity;
+import com.meterial.demo.widgetActivity.DragDrop.drag1.DragActivity;
+import com.meterial.demo.widgetActivity.DragDrop.drag2.DragItemActivity;
 import com.meterial.demo.widgetActivity.ExpandTable.ExpandTableActivity;
 import com.meterial.demo.widgetActivity.HotelCalendar.MenuActivity;
 import com.meterial.demo.widgetActivity.InDoor.InDoorActivity;
+import com.meterial.demo.widgetActivity.MultiSnapRecyclerView.MultiSnapRVActivity;
 import com.meterial.demo.widgetActivity.PhotoView.PhotoViewActivity;
 import com.meterial.demo.widgetActivity.PhotoView2.LauncherActivity;
+import com.meterial.demo.widgetActivity.Scratch.ScratchCardActivity;
 import com.meterial.demo.widgetActivity.ScrollCalendar.activity.NavigationActivity;
 import com.meterial.demo.widgetActivity.SeatTable.SeatTable;
 import com.meterial.demo.widgetActivity.SeatTable.SeatTableActivity1;
 import com.meterial.demo.widgetActivity.SeatTable2.SeatSelectionActivity;
 import com.meterial.demo.widgetActivity.SublimePicker.Sampler;
+import com.meterial.demo.widgetActivity.TicketView.TicketViewActivity;
+import com.meterial.demo.widgetActivity.TicketView2.TicketView2Activity;
 import com.meterial.demo.widgetActivity.TimesSquare.SampleTimesSquareActivity;
 import com.meterial.demo.widgetActivity.TouchImage.TouchImageActivity;
 import com.meterial.demo.widgetActivity.selectorAttr.TestSelectorAttrActivity;
@@ -289,7 +298,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("30圆形菜单");
         list.add("31textswitcher&&&FadeTextView");
         list.add("32评分ratingbar");
-        list.add("33自定义cardView");
+        list.add("33自定义cardView-TicketView");
         list.add("34textView Span");
         list.add("35Carousel");
         list.add("36背景左右移动缩放");
@@ -435,6 +444,15 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("176日历控件4");
         list.add("177日历控件5 忽略");
         list.add("178日历控件6 重点研究");
+        list.add("179拖动test drag 跨layout");
+        list.add("180拖动test drag 跨layout");
+        list.add("181dragHelperTest");
+        list.add("182item侧滑动");
+        list.add("183recyclerView垂直水平");
+        list.add("184仿支付宝首页悬浮置顶");
+        list.add("185镂空TicketView");
+        list.add("186镂空TicketView2");
+        list.add("187刮刮卡ScratchCard");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -1360,6 +1378,50 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
                 startActivity(intent178);
                 break;
 
+            case 179:
+                Intent intent179 = new Intent(this, DragTestActivity.class);
+                startActivity(intent179);
+                break;
+
+            case 180:
+                Intent intent180 = new Intent(this, DragActivity.class);
+                startActivity(intent180);
+                break;
+
+            case 181:
+                Intent intent181 = new Intent(this, DragHelperMainActivity.class);
+                startActivity(intent181);
+                break;
+
+            case 182:
+                Intent intent182 = new Intent(this, DragItemActivity.class);
+                startActivity(intent182);
+                break;
+
+            case 183:
+                Intent intent183 = new Intent(this, MultiSnapRVActivity.class);
+                startActivity(intent183);
+                break;
+
+            case 184:
+                Intent intent184 = new Intent(this, AliMainActivity.class);
+                startActivity(intent184);
+                break;
+
+            case 185:
+                Intent intent185 = new Intent(this, TicketViewActivity.class);
+                startActivity(intent185);
+                break;
+
+            case 186:
+                Intent intent186 = new Intent(this, TicketView2Activity.class);
+                startActivity(intent186);
+                break;
+
+            case 187:
+                Intent intent187 = new Intent(this, ScratchCardActivity.class);
+                startActivity(intent187);
+                break;
             default:
                 break;
         }

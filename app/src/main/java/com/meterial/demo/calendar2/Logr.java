@@ -1,8 +1,8 @@
 package com.meterial.demo.calendar2;
 
-import android.support.v4.BuildConfig;
 import android.util.Log;
- 
+import com.meterial.demo.BuildConfig;
+
 /** Log utility class to handle the log tag and DEBUG-only logging. */ 
 final class Logr { 
   public static void d(String message) {

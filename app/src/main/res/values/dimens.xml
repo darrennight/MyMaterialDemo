@@ -321,4 +321,10 @@
     <dimen name="calendar_inval">6dp</dimen>
     <dimen name="calendar_small_circle">8dp</dimen>
 
+    <item name="normal_speed" type="dimen" format="float">100</item>
+    <item name="high_speed" type="dimen" format="float">50</item>
+    <item name="low_speed" type="dimen" format="float">120</item>
+
+    <dimen name="app_cut_big">10dp</dimen>
+    <dimen name="home_title_ends">10dp</dimen>
 </resources>

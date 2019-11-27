@@ -19,13 +19,17 @@ import java.util.List;
 
 public abstract class CalendarView extends View {
 
-
+    //列周日到周六
     public static final int TOTAL_COL = 7;
+    //行
     protected int TOTAL_ROW;
     private Paint mPaint;
+    //day的宽
     private int mCellSpace;
+    //day的高
     private int mCellSpaceY;
     protected Cell cells[][];
+    //移动最小距离
     private int touchSlop;
     private int defaultTextColor;
     private int defaultTextSize;

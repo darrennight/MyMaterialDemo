@@ -50,10 +50,12 @@ public abstract class CalendarAdapter extends RecyclerView.Adapter<CalendarAdapt
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Calendar calendar = Calendar.getInstance();
+
         int realPosition = position - Integer.MAX_VALUE / 2;
         if(mode == MONTH_MODE) {
             CalendarMonthView monthView = (CalendarMonthView) holder.itemView;
             calendar.add(Calendar.MONTH, realPosition);
+
             CustomDate customDate = new CustomDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH) + 1, 1);
             monthView.setShowDate(customDate);
         }else{

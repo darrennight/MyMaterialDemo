@@ -17,5 +17,8 @@ public class ArcActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arc);
+
+        //PerfectArcView
+        //https://github.com/pinguo-zhouwei/AndroidTrainingSimples/blob/master/app/src/main/res/values/styles.xml
     }
 }

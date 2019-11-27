@@ -61,7 +61,7 @@ public class DateUtil {
 
 
 
-
+	//该月的第一天是周几 周日==0
 	public static int getWeekDayFromDate(int year, int month) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(getDateFromString(year, month));

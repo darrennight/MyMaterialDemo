@@ -3,6 +3,7 @@ package com.meterial.demo.widgetActivity.CalendarView.lib;
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 
 public class CalendarMonthView extends CalendarView {
 
@@ -50,6 +51,7 @@ public class CalendarMonthView extends CalendarView {
 
     @Override
     public int getTotalRow() {
+        //行数需要动态调整
         return 6;
     }
 
@@ -96,6 +98,8 @@ public class CalendarMonthView extends CalendarView {
                 }
             }
         }
+
+        Log.e("======","array"+cells);
     }
 
 }

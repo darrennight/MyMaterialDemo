@@ -452,6 +452,20 @@
         <activity android:name=".widgetActivity.CalendarView.DashBoardActivity"/>
         <activity android:name=".widgetActivity.CalendarView.RingActivity"/>
 
+        <activity android:name=".widgetActivity.DragDrop.DragTestActivity"/>
+        <activity android:name=".widgetActivity.DragDrop.drag1.DragActivity"/>
+        <activity android:name=".widgetActivity.DragDrop.DragHelper.DragHelperMainActivity"/>
+
+        <activity android:name=".widgetActivity.DragDrop.drag2.DragItemActivity"/>
+        <activity android:name=".widgetActivity.MultiSnapRecyclerView.MultiSnapRVActivity"/>
+        <activity android:name=".widgetActivity.MultiSnapRecyclerView.HorizontalActivity"/>
+        <activity android:name=".widgetActivity.MultiSnapRecyclerView.VerticalActivity"/>
+        <activity android:name=".widgetActivity.AliBehaver.AliMainActivity"/>
+
+        <activity android:name=".widgetActivity.TicketView.TicketViewActivity"/>
+        <activity android:name=".widgetActivity.TicketView2.TicketView2Activity"/>
+        <activity android:name=".widgetActivity.Scratch.ScratchCardActivity"/>
+
     </application>
 
 </manifest>

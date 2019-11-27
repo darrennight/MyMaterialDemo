@@ -16,6 +16,7 @@ import com.meterial.demo.widgetActivity.CalendarView.utils.DensityUtils;
 
 /**
  * Created by huang on 2017/11/22.
+ * 各种状态绘制
  */
 
 public class CustomTextDrawFormat extends TextDrawFormat {
