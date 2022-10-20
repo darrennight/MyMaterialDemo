@@ -1054,4 +1054,10 @@
     <color name="blue_01aaee">#01AAEE</color>
     <color name="blue_00aaee">#00AAEE</color>
     <color name="red_f3323b">#F3323B</color>
+
+
+    <color name="black_thin">#0D0D0E</color>
+
+    <color name="demo_btn_bg_normal">#777777</color>
+    <color name="demo_btn_bg_pressed">#666666</color>
 </resources>

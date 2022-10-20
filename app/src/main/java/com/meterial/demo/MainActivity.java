@@ -76,12 +76,14 @@ import com.meterial.demo.commonActivity.FoldableLayout.FoldMainActivity;
 import com.meterial.demo.commonActivity.GoodActivty;
 import com.meterial.demo.commonActivity.GossipActivity;
 import com.meterial.demo.commonActivity.InfiniteCards.InfiniteCardActivity;
+import com.meterial.demo.commonActivity.MagicProgressBarActivity;
 import com.meterial.demo.commonActivity.MyTopTabActivity;
 import com.meterial.demo.commonActivity.NextLayout.demo1.ui.NextLayoutActivity;
 import com.meterial.demo.commonActivity.Nice9.NineMainActivity;
 import com.meterial.demo.commonActivity.PanningViewActivity;
 import com.meterial.demo.commonActivity.Panorama.PanorMainActiivty;
 import com.meterial.demo.commonActivity.Panorama.Panorama360Activity2;
+import com.meterial.demo.commonActivity.RemoteControllerDemoActivity;
 import com.meterial.demo.commonActivity.SecretActivity;
 import com.meterial.demo.commonActivity.ShimmerText.KTVTextView;
 import com.meterial.demo.commonActivity.ShimmerText.TestKTVTextActivity;
@@ -430,7 +432,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("162随机出现子控件向中间移动动画");
         list.add("163半圆锯齿背景虚线边框");
         list.add("164RecycleView第一个item放大");
-        list.add("165点击展开的表格效果");
+        list.add("165点击展开的表格效果---展开gridview--expand");
         list.add("166室内户型图交互组件库");
         list.add("167电影选座");
         list.add("168电影选座");
@@ -453,6 +455,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         list.add("185镂空TicketView");
         list.add("186镂空TicketView2");
         list.add("187刮刮卡ScratchCard");
+        list.add("188遥控器按键");
+        list.add("189圆形水平渐变进度条");
 //        for (int i = 0; i <= 10; i++) {
 //            list.add(i + "");
 //        }
@@ -510,7 +514,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
                 break;
             case 6:
                 Intent intent6 = new Intent(this,CircularRevealActivity.class);
-                startActivity(intent6);
+//                startActivity(intent6);
                 break;
             case 7:
                 Intent intent7 = new Intent(this, BottomSheetActivity.class);
@@ -1421,6 +1425,15 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
             case 187:
                 Intent intent187 = new Intent(this, ScratchCardActivity.class);
                 startActivity(intent187);
+                break;
+            case 188:
+                Intent intent188 = new Intent(this, RemoteControllerDemoActivity.class);
+                startActivity(intent188);
+                break;
+
+            case 189:
+                Intent intent189 = new Intent(this, MagicProgressBarActivity.class);
+                startActivity(intent189);
                 break;
             default:
                 break;

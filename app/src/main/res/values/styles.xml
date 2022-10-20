@@ -997,5 +997,21 @@
         <attr name="p_arc_showImage" format="boolean" />
     </declare-styleable>
 
+    <style name="def_remote_controller">
+        <item name="rcv_text_color">#A9D9F5</item>
+        <item name="rcv_shadow_color">#A9D9F5</item>
+        <item name="rcv_stroke_color">#A9D9F5</item>
+        <item name="rcv_text_size">14sp</item>
+        <item name="rcv_stroke_width">1px</item>
+        <item name="rcv_oval_degree">90</item>
+    </style>
+
+    <style name="demo_progress_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
 
 </resources>

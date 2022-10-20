@@ -23,6 +23,7 @@ import java.util.List;
 
 /**
  * https://github.com/haibuzou/ExpandTable
+ * https://github.com/wedcel/DragExpandGrid
  */
 public class ExpandTableActivity extends Activity implements ExpandGridAdapter.OnClick {
 

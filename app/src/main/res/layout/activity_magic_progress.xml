@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp">
+
+        <com.liulishuo.magicprogresswidget.MagicProgressCircle
+            android:id="@+id/demo_mpc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:mpc_stroke_width="18dp" />
+
+        <com.meterial.demo.customview.AnimTextView
+            android:id="@+id/demo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+
+    <com.liulishuo.magicprogresswidget.MagicProgressBar
+        android:id="@+id/demo_1_mpb"
+        style="@style/demo_progress_bar"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        app:mpb_background_color="#1AFFFFFF"
+        app:mpb_fill_color="#FF1CECBE"
+        app:mpb_flat="true" />
+
+    <com.liulishuo.magicprogresswidget.MagicProgressBar
+        android:id="@+id/demo_2_mpb"
+        style="@style/demo_progress_bar"
+        android:layout_height="32dp"
+        app:mpb_background_color="#1AFFFFFF"
+        app:mpb_fill_color="#FFFF493D" />
+
+    <com.liulishuo.magicprogresswidget.MagicProgressBar
+        android:id="@+id/demo_3_mpb"
+        style="@style/demo_progress_bar"
+        app:mpb_background_color="#1AFFFFFF"
+        app:mpb_fill_color="#FFF141B4" />
+
+    <com.liulishuo.magicprogresswidget.MagicProgressBar
+        android:id="@+id/demo_4_mpb"
+        style="@style/demo_progress_bar"
+        app:mpb_background_color="#1AFFFFFF"
+        app:mpb_fill_color="#FF86E50E"
+
+        />
+
+    <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:zpb_padding="0dp"
+        app:zpb_gradient_from="@android:color/holo_green_dark"
+        app:zpb_gradient_to="@android:color/holo_blue_bright"
+        app:zpb_max="100"
+        app:zpb_progress="30"
+        />
+
+    <!--        app:zpb_pb_color="@android:color/holo_green_dark"-->
+    <!--        app:zpb_bg_color="@android:color/holo_blue_bright"-->
+
+    <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+        android:id="@+id/pb1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:zpb_bg_color="#00000000"
+        app:zpb_gradient_from="#3AB7FF"
+        app:zpb_gradient_to="#74F6E4"
+        app:zpb_max="100"
+        app:zpb_open_gradient="true"
+        app:zpb_padding="1px"
+        app:zpb_progress="50"
+        app:zpb_second_pb_color="#00000000"
+        app:zpb_second_progress="100"
+        app:zpb_show_second_point_shape="point"
+        app:zpb_show_second_progress="true"
+        app:zpb_show_mode="round"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/demo_btn_bg"
+            android:onClick="onReRandomPercent"
+            android:text="@string/re_random_percent" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/demo_btn_bg"
+            android:onClick="onClickIncreaseSmoothly"
+            android:text="@string/increase_progress_smoothly" />
+    </LinearLayout>
+
+</LinearLayout>

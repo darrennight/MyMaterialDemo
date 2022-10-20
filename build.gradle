@@ -3,6 +3,7 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
 //    ext {
 //              projectBuildToolsVersion = BUILD_TOOLS_VERSION

@@ -466,6 +466,9 @@
         <activity android:name=".widgetActivity.TicketView2.TicketView2Activity"/>
         <activity android:name=".widgetActivity.Scratch.ScratchCardActivity"/>
 
+        <activity android:name=".commonActivity.RemoteControllerDemoActivity"/>
+        <activity android:name=".commonActivity.MagicProgressBarActivity"/>
+
     </application>
 
 </manifest>

@@ -1059,4 +1059,9 @@ Vivamus placerat lacus vel vehicula scelerisque, dui enim adipiscing lacus sit a
     <string name="gongyi">沃富公益</string>
     <string name="share_media">共享媒体</string>
     <string name="credit_payment">信用卡还款</string>
+
+    <string name="app_github">GitHub</string>
+    <string name="app_github_url">https://github.com/lingochamp/MagicProgressWidget</string>
+    <string name="re_random_percent">re-random percent</string>
+    <string name="increase_progress_smoothly">increase progress smoothly</string>
 </resources>
